@@ -3,541 +3,764 @@
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-  <title>مدرسة مربح الحلقة الثانية بنات</title>
+<title>
+مدرسة مربح الحلقة الثانية بنات
+</title>
 
 
-  <style>
+<style>
 
-    /* =====================================
-       الخط
-    ===================================== */
+/* =========================================
+   الخط
+========================================= */
 
-    @font-face {
-      font-family: "Sakkal Majalla";
-      src: local("Sakkal Majalla");
-    }
+@font-face {
+  font-family: "Sakkal Majalla";
+  src: local("Sakkal Majalla");
+}
 
 
-    /* =====================================
-       الإعدادات العامة
-    ===================================== */
+/* =========================================
+   الإعدادات العامة
+========================================= */
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 
-    html,
-    body {
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
 
-      width: 100%;
 
-      min-height: 100%;
+body {
 
-    }
+  font-family:
+    "Sakkal Majalla",
+    Arial,
+    sans-serif;
 
+  overflow: hidden;
 
-    body {
+}
 
-      font-family:
-        "Sakkal Majalla",
-        Arial,
-        sans-serif;
 
-      overflow-x: hidden;
+/* =========================================
+   صفحة الاستفتاح
+========================================= */
 
-    }
+.opening {
 
+  width: 100%;
 
-    /* =====================================
-       صفحة الاستفتاح
-    ===================================== */
+  height: 100vh;
 
-    .opening {
+  min-height: 650px;
 
-      width: 100%;
+  position: relative;
 
-      min-height: 100vh;
+  display: flex;
 
-      position: relative;
+  align-items: center;
 
-      display: flex;
+  justify-content: center;
 
-      align-items: center;
+  overflow: hidden;
 
-      justify-content: center;
+  background-image:
+    url("opening-bg.jpg");
 
-      overflow: hidden;
+  background-size: cover;
 
+  background-position: center center;
 
-      /*
-        الصورة الأصلية
-        بدون أي فلتر
-        وبدون لون بيج
-      */
+  background-repeat: no-repeat;
 
-      background-image:
-        url("opening-bg.jpg");
+  animation:
+    backgroundReveal 2.8s ease-out
+    forwards;
 
-      background-size: cover;
+}
 
-      background-position: center center;
 
-      background-repeat: no-repeat;
+/* =========================================
+   حركة ظهور الخلفية
+========================================= */
 
-    }
+@keyframes backgroundReveal {
 
+  0% {
 
-    /* =====================================
-       طبقة شفافة اختيارية
-       
-       تم إلغاؤها حتى تظهر الصورة
-       بألوانها الأصلية
-    ===================================== */
+    opacity: 0;
 
-    .overlay {
+    transform:
+      scale(1.04);
 
-      display: none;
+  }
 
-    }
+  100% {
 
+    opacity: 1;
 
-    /* =====================================
-       المحتوى
-    ===================================== */
+    transform:
+      scale(1);
 
-    .content {
+  }
 
-      position: relative;
+}
 
-      z-index: 5;
 
-      width: 92%;
+/* =========================================
+   المحتوى
+========================================= */
 
-      max-width: 900px;
+.content {
 
-      text-align: center;
+  position: relative;
 
-      padding:
-        30px 20px 90px;
+  z-index: 5;
 
-    }
+  width: 92%;
 
+  max-width: 950px;
 
-    /* =====================================
-       الشعارات
-    ===================================== */
+  text-align: center;
 
-    .logos {
+  padding: 25px;
 
-      display: flex;
+}
 
-      justify-content: center;
 
-      align-items: center;
+/* =========================================
+   الشعارات
+========================================= */
 
-      gap: 25px;
+.logos {
 
-      margin-bottom: 12px;
+  display: flex;
 
-    }
+  justify-content: center;
 
+  align-items: center;
 
-    .logo {
+  gap: 22px;
 
-      width: 95px;
+  opacity: 0;
 
-      height: 95px;
+  animation:
+    fadeUp 1.2s ease-out
+    0.7s forwards;
 
-      object-fit: contain;
+}
 
-      background:
-        rgba(255,255,255,0.94);
 
-      padding: 7px;
+.logo {
 
-      border-radius: 15px;
+  width: 88px;
 
-      border:
-        1px solid #c6a65b;
+  height: 88px;
 
-      box-shadow:
-        0 5px 18px
-        rgba(0,0,0,0.18);
+  object-fit: contain;
 
-    }
+  background:
+    rgba(255,255,255,0.95);
 
+  padding: 6px;
 
-    /* =====================================
-       اسم المدرسة
-    ===================================== */
+  border-radius: 14px;
 
-    .school {
+  border:
+    2px solid #c6a65b;
 
-      color: #126b4f;
+  box-shadow:
+    0 5px 18px
+    rgba(0,0,0,0.18);
 
-      font-size:
-        clamp(25px, 5vw, 40px);
+}
 
-      font-weight: bold;
 
-      line-height: 1.2;
+/* =========================================
+   اسم المدرسة
+========================================= */
 
-      text-shadow:
-        0 2px 4px
-        rgba(255,255,255,0.95);
+.school-name {
 
-    }
+  margin-top: 10px;
 
+  color: #126b4f;
 
-    /* =====================================
-       الوزارة
-    ===================================== */
+  font-size:
+    clamp(26px,5vw,42px);
 
-    .ministry {
+  font-weight: bold;
 
-      color: #403c35;
+  line-height: 1.1;
 
-      font-size:
-        clamp(17px, 3vw, 21px);
+  text-shadow:
+    0 2px 5px #ffffff,
+    0 0 8px #ffffff;
 
-      font-weight: bold;
+  opacity: 0;
 
-      margin-top: 3px;
+  animation:
+    fadeUp 1.1s ease-out
+    1.25s forwards;
 
-      text-shadow:
-        0 2px 4px
-        rgba(255,255,255,0.95);
+}
 
-    }
 
+.ministry-name {
 
-    /* =====================================
-       الترحيب
-    ===================================== */
+  color: #333333;
 
-    .welcome {
+  font-size:
+    clamp(17px,3vw,22px);
 
-      margin-top: 18px;
+  font-weight: bold;
 
-      color: #7a2837;
+  margin-top: 3px;
 
-      font-size:
-        clamp(28px, 5vw, 42px);
+  text-shadow:
+    0 2px 5px #ffffff,
+    0 0 8px #ffffff;
 
-      font-weight: bold;
+  opacity: 0;
 
-      text-shadow:
-        0 2px 5px
-        rgba(255,255,255,0.95);
+  animation:
+    fadeUp 1.1s ease-out
+    1.55s forwards;
 
-    }
+}
 
 
-    /* =====================================
-       شعار الميثاق
-    ===================================== */
+/* =========================================
+   الترحيب
+========================================= */
 
-    .title {
+.welcome {
 
-      margin-top: 4px;
+  margin-top: 17px;
 
-      line-height: 0.95;
+  color: #7a2837;
 
-      text-shadow:
-        0 3px 7px
-        rgba(255,255,255,0.95);
+  font-size:
+    clamp(30px,6vw,48px);
 
-    }
+  font-weight: bold;
 
+  text-shadow:
+    0 2px 5px #ffffff,
+    0 0 10px #ffffff;
 
-    .title .first {
+  opacity: 0;
 
-      display: block;
+  animation:
+    fadeUp 1.2s ease-out
+    1.9s forwards;
 
-      color: #7a2837;
+}
 
-      font-size:
-        clamp(55px, 10vw, 100px);
 
-      font-weight: bold;
+/* =========================================
+   الميثاق
+========================================= */
 
-    }
+.main-title {
 
+  margin-top: 4px;
 
-    .title .second {
+  line-height: 0.95;
 
-      display: block;
+}
 
-      color: #126b4f;
 
-      font-size:
-        clamp(48px, 9vw, 88px);
+.main-title .first {
 
-      font-weight: bold;
+  display: block;
 
-    }
+  color: #7a2837;
 
+  font-size:
+    clamp(58px,11vw,105px);
 
-    /* =====================================
-       الفاصل الذهبي
-    ===================================== */
+  font-weight: bold;
 
-    .gold-line {
+  text-shadow:
+    0 3px 7px #ffffff,
+    0 0 12px #ffffff;
 
-      width: 150px;
+  opacity: 0;
 
-      height: 3px;
+  animation:
+    titleReveal 1.5s ease-out
+    2.3s forwards;
 
-      background: #c6a65b;
+}
 
-      margin:
-        22px auto 18px;
 
-    }
+.main-title .second {
 
+  display: block;
 
-    /* =====================================
-       النص الترحيبي
-    ===================================== */
+  color: #126b4f;
 
-    .intro {
+  font-size:
+    clamp(50px,10vw,92px);
 
-      max-width: 700px;
+  font-weight: bold;
 
-      margin: auto;
+  text-shadow:
+    0 3px 7px #ffffff,
+    0 0 12px #ffffff;
 
-      color: #27352f;
+  opacity: 0;
 
-      font-size:
-        clamp(19px, 3vw, 25px);
+  animation:
+    titleReveal 1.5s ease-out
+    2.7s forwards;
 
-      font-weight: bold;
+}
 
-      line-height: 1.6;
 
-      text-shadow:
-        0 2px 5px
-        rgba(255,255,255,0.95);
+/* =========================================
+   حركة العنوان
+========================================= */
 
-    }
+@keyframes titleReveal {
 
+  0% {
 
-    /* =====================================
-       العام الدراسي
-    ===================================== */
+    opacity: 0;
 
-    .year {
+    transform:
+      translateY(25px)
+      scale(0.96);
 
-      color: #7a2837;
+    filter:
+      blur(4px);
 
-      font-size:
-        clamp(25px, 4vw, 32px);
+  }
 
-      font-weight: bold;
+  100% {
 
-      margin-top: 5px;
+    opacity: 1;
 
-      text-shadow:
-        0 2px 4px
-        rgba(255,255,255,0.95);
+    transform:
+      translateY(0)
+      scale(1);
 
-    }
+    filter:
+      blur(0);
 
+  }
 
-    /* =====================================
-       زر الدخول
-    ===================================== */
+}
 
-    .enter-button {
 
-      display: inline-block;
+/* =========================================
+   الفاصل الذهبي
+========================================= */
 
-      margin-top: 22px;
+.gold-line {
 
-      padding:
-        10px 48px;
+  width: 150px;
 
-      background: #126b4f;
+  height: 3px;
 
-      color: #ffffff;
+  background: #c6a65b;
 
-      text-decoration: none;
+  margin:
+    18px auto;
 
-      border:
-        2px solid #c6a65b;
+  opacity: 0;
 
-      border-radius: 50px;
+  animation:
+    lineReveal 1s ease-out
+    3.15s forwards;
 
-      font-size:
-        clamp(20px, 3vw, 25px);
+}
 
-      font-weight: bold;
 
-      box-shadow:
-        0 8px 25px
-        rgba(0,0,0,0.22);
+@keyframes lineReveal {
 
-      transition:
-        transform 0.3s ease,
-        background 0.3s ease;
+  0% {
 
-    }
+    opacity: 0;
 
+    width: 0;
 
-    .enter-button:hover {
+  }
 
-      background: #7a2837;
+  100% {
 
-      transform:
-        translateY(-4px);
+    opacity: 1;
 
-    }
+    width: 150px;
 
+  }
 
-    /* =====================================
-       التذييل
-    ===================================== */
+}
 
-    .footer {
 
-      position: absolute;
+/* =========================================
+   النص
+========================================= */
 
-      z-index: 6;
+.intro {
 
-      bottom: 12px;
+  max-width: 750px;
 
-      left: 0;
+  margin: auto;
 
-      right: 0;
+  color: #222222;
 
-      text-align: center;
+  font-size:
+    clamp(19px,3vw,25px);
 
-      color: #403c35;
+  font-weight: bold;
 
-      font-size: 16px;
+  line-height: 1.5;
 
-      font-weight: bold;
+  text-shadow:
+    0 2px 5px #ffffff,
+    0 0 8px #ffffff;
 
-      text-shadow:
-        0 2px 4px
-        rgba(255,255,255,0.95);
+  opacity: 0;
 
-    }
+  animation:
+    fadeUp 1.2s ease-out
+    3.45s forwards;
 
+}
 
-    /* =====================================
-       الجوال
-    ===================================== */
 
-    @media (max-width: 600px) {
+/* =========================================
+   العام الدراسي
+========================================= */
 
+.year {
 
-      .opening {
+  color: #7a2837;
 
-        min-height: 100svh;
+  font-size:
+    clamp(25px,4vw,34px);
 
-        background-position:
-          center center;
+  font-weight: bold;
 
-      }
+  margin-top: 4px;
 
+  text-shadow:
+    0 2px 5px #ffffff,
+    0 0 8px #ffffff;
 
-      .content {
+  opacity: 0;
 
-        padding:
-          20px 8px 85px;
+  animation:
+    fadeUp 1s ease-out
+    3.75s forwards;
 
-      }
+}
 
 
-      .logos {
+/* =========================================
+   زر الدخول
+========================================= */
 
-        gap: 12px;
+.enter-button {
 
-      }
+  display: inline-block;
 
+  margin-top: 20px;
 
-      .logo {
+  padding:
+    10px 48px;
 
-        width: 70px;
+  background: #126b4f;
 
-        height: 70px;
+  color: #ffffff;
 
-      }
+  text-decoration: none;
 
+  border:
+    2px solid #c6a65b;
 
-      .school {
+  border-radius: 50px;
 
-        font-size: 24px;
+  font-size:
+    clamp(21px,3vw,26px);
 
-      }
+  font-weight: bold;
 
+  box-shadow:
+    0 8px 25px
+    rgba(0,0,0,0.25);
 
-      .ministry {
+  opacity: 0;
 
-        font-size: 15px;
+  animation:
+    buttonReveal 1.2s ease-out
+    4.05s forwards,
+    buttonPulse 3s ease-in-out
+    5.5s infinite;
 
-      }
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 
+}
 
-      .welcome {
 
-        margin-top: 12px;
+.enter-button:hover {
 
-        font-size: 28px;
+  background: #7a2837;
 
-      }
+  transform:
+    translateY(-4px);
 
+}
 
-      .title .first {
 
-        font-size: 55px;
+/* =========================================
+   ظهور الزر
+========================================= */
 
-      }
+@keyframes buttonReveal {
 
+  0% {
 
-      .title .second {
+    opacity: 0;
 
-        font-size: 48px;
+    transform:
+      translateY(20px)
+      scale(0.95);
 
-      }
+  }
 
+  100% {
 
-      .intro {
+    opacity: 1;
 
-        font-size: 18px;
+    transform:
+      translateY(0)
+      scale(1);
 
-      }
+  }
 
+}
 
-      .enter-button {
 
-        padding:
-          8px 35px;
+/* =========================================
+   نبضة خفيفة للزر
+========================================= */
 
-        font-size: 21px;
+@keyframes buttonPulse {
 
-      }
+  0%,
+  100% {
 
+    box-shadow:
+      0 8px 25px
+      rgba(0,0,0,0.25);
 
-      .footer {
+  }
 
-        font-size: 14px;
+  50% {
 
-      }
+    box-shadow:
+      0 8px 30px
+      rgba(198,166,91,0.45);
 
-    }
+  }
 
+}
 
-  </style>
+
+/* =========================================
+   التذييل
+========================================= */
+
+.footer {
+
+  position: absolute;
+
+  bottom: 10px;
+
+  left: 0;
+
+  right: 0;
+
+  z-index: 6;
+
+  text-align: center;
+
+  color: #333333;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  text-shadow:
+    0 2px 5px #ffffff,
+    0 0 8px #ffffff;
+
+  opacity: 0;
+
+  animation:
+    fadeUp 1s ease-out
+    4.3s forwards;
+
+}
+
+
+/* =========================================
+   حركة عامة
+========================================= */
+
+@keyframes fadeUp {
+
+  0% {
+
+    opacity: 0;
+
+    transform:
+      translateY(22px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+
+  }
+
+}
+
+
+/* =========================================
+   الجوال
+========================================= */
+
+@media (max-width: 600px) {
+
+  .opening {
+
+    min-height: 100svh;
+
+    background-position:
+      center center;
+
+  }
+
+
+  .content {
+
+    width: 96%;
+
+    padding:
+      15px 8px 60px;
+
+  }
+
+
+  .logos {
+
+    gap: 12px;
+
+  }
+
+
+  .logo {
+
+    width: 68px;
+
+    height: 68px;
+
+  }
+
+
+  .school-name {
+
+    font-size: 24px;
+
+  }
+
+
+  .ministry-name {
+
+    font-size: 15px;
+
+  }
+
+
+  .welcome {
+
+    margin-top: 10px;
+
+    font-size: 29px;
+
+  }
+
+
+  .main-title .first {
+
+    font-size: 55px;
+
+  }
+
+
+  .main-title .second {
+
+    font-size: 48px;
+
+  }
+
+
+  .intro {
+
+    font-size: 17px;
+
+  }
+
+
+  .year {
+
+    font-size: 25px;
+
+  }
+
+
+  .enter-button {
+
+    font-size: 20px;
+
+    padding:
+      8px 35px;
+
+  }
+
+
+  .footer {
+
+    font-size: 13px;
+
+  }
+
+}
+
+</style>
 
 </head>
 
@@ -545,157 +768,147 @@
 <body>
 
 
-  <!-- =====================================
-       صفحة البداية
-  ====================================== -->
-
-  <main class="opening">
+<main class="opening">
 
 
-    <div class="content">
+  <div class="content">
 
 
-      <!-- ===============================
-           الشعارات الحقيقية
-      ================================ -->
+    <!-- ===============================
+         الشعارات
+    ================================ -->
 
-      <div class="logos">
-
-
-        <!-- شعار وزارة التربية -->
-
-        <img
-          src="moe.png.jfif"
-          class="logo"
-          alt="شعار وزارة التربية والتعليم"
-        >
+    <div class="logos">
 
 
-        <!-- شعار المدرسة -->
-
-        <img
-          src="school-logo.png"
-          class="logo"
-          alt="شعار مدرسة مربح الحلقة الثانية بنات"
-        >
-
-
-      </div>
-
-
-      <!-- ===============================
-           اسم المدرسة
-      ================================ -->
-
-      <div class="school">
-
-        مدرسة مربح الحلقة الثانية بنات
-
-      </div>
-
-
-      <div class="ministry">
-
-        وزارة التربية والتعليم
-        – الإمارات العربية المتحدة
-
-      </div>
-
-
-      <!-- ===============================
-           الترحيب
-      ================================ -->
-
-      <div class="welcome">
-
-        أَهْلًا وَسَهْلًا بِكُمْ
-
-      </div>
-
-
-      <!-- ===============================
-           الهوية
-      ================================ -->
-
-      <h1 class="title">
-
-
-        <span class="first">
-
-          بِالْمِيثَاقِ
-
-        </span>
-
-
-        <span class="second">
-
-          نَبْلُغُ الْآفَاقَ
-
-        </span>
-
-
-      </h1>
-
-
-      <div class="gold-line"></div>
-
-
-      <!-- ===============================
-           رسالة الترحيب
-      ================================ -->
-
-      <p class="intro">
-
-        مَرْحَبًا بِكُمْ فِي
-        مَرْجِعِ أَوْلِيَاءِ الأُمُورِ
-        لِلْعَامِ الدِّرَاسِيِّ
-        ٢٠٢٦ – ٢٠٢٧
-
-      </p>
-
-
-      <!-- ===============================
-           العام الدراسي
-      ================================ -->
-
-      <div class="year">
-
-        ٢٠٢٦ – ٢٠٢٧
-
-      </div>
-
-
-      <!-- ===============================
-           زر الدخول
-      ================================ -->
-
-      <a
-        href="home.html"
-        class="enter-button"
+      <img
+        src="moe.png.jfif"
+        class="logo"
+        alt="شعار وزارة التربية والتعليم"
       >
 
-        الدُّخُولُ إِلَى الْمَوْقِعِ
 
-      </a>
+      <img
+        src="school-logo.png"
+        class="logo"
+        alt="شعار مدرسة مربح الحلقة الثانية بنات"
+      >
 
 
     </div>
 
 
     <!-- ===============================
-         التذييل
+         اسم المدرسة
     ================================ -->
 
-    <div class="footer">
+    <div class="school-name">
 
       مدرسة مربح الحلقة الثانية بنات
-      &nbsp; | &nbsp;
-      بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
 
     </div>
 
 
-  </main>
+    <div class="ministry-name">
+
+      وزارة التربية والتعليم
+      – الإمارات العربية المتحدة
+
+    </div>
+
+
+    <!-- ===============================
+         الترحيب
+    ================================ -->
+
+    <div class="welcome">
+
+      أَهْلًا وَسَهْلًا بِكُمْ
+
+    </div>
+
+
+    <!-- ===============================
+         الميثاق
+    ================================ -->
+
+    <h1 class="main-title">
+
+
+      <span class="first">
+
+        بِالْمِيثَاقِ
+
+      </span>
+
+
+      <span class="second">
+
+        نَبْلُغُ الْآفَاقَ
+
+      </span>
+
+
+    </h1>
+
+
+    <div class="gold-line"></div>
+
+
+    <!-- ===============================
+         الرسالة
+    ================================ -->
+
+    <p class="intro">
+
+      مَرْحَبًا بِكُمْ فِي مَرْجِعِ
+      أَوْلِيَاءِ الأُمُورِ
+      لِلْعَامِ الدِّرَاسِيِّ
+      ٢٠٢٦ – ٢٠٢٧
+
+    </p>
+
+
+    <div class="year">
+
+      ٢٠٢٦ – ٢٠٢٧
+
+    </div>
+
+
+    <!-- ===============================
+         زر الدخول
+    ================================ -->
+
+    <a
+      href="home.html"
+      class="enter-button"
+    >
+
+      الدُّخُولُ إِلَى الْمَوْقِعِ
+
+    </a>
+
+
+  </div>
+
+
+  <!-- ===============================
+       التذييل
+  ================================ -->
+
+  <div class="footer">
+
+    مدرسة مربح الحلقة الثانية بنات
+
+    &nbsp; | &nbsp;
+
+    بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
+
+  </div>
+
+
+</main>
 
 
 </body>
