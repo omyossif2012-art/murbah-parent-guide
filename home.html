@@ -2,59 +2,1068 @@
 <html lang="ar" dir="rtl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>مرجع أولياء الأمور</title>
+<meta charset="UTF-8">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: white;
-      text-align: center;
-      color: #126b4f;
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>مرجع أولياء الأمور | مدرسة مربح الحلقة الثانية بنات</title>
+
+<style>
+
+/* =====================================
+   الخط
+===================================== */
+
+@font-face {
+    font-family: "Sakkal Majalla";
+    src: local("Sakkal Majalla");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        "Sakkal Majalla",
+        Arial,
+        sans-serif;
+
+    background: #ffffff;
+
+    color: #26352f;
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================
+   الهيدر
+===================================== */
+
+.header {
+
+    background:
+        linear-gradient(
+            135deg,
+            #126b4f,
+            #0b513c
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 15px 30px;
+
+    border-bottom:
+        5px solid #c6a65b;
+
+}
+
+
+.logos {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.logo {
+
+    width: 78px;
+
+    height: 78px;
+
+    object-fit: contain;
+
+    background: white;
+
+    padding: 5px;
+
+    border-radius: 13px;
+
+    border: 1px solid #c6a65b;
+
+}
+
+
+.school-name {
+
+    font-size:
+        clamp(26px,5vw,40px);
+
+    font-weight: bold;
+
+}
+
+
+.page-title {
+
+    color: #f0d995;
+
+    font-size:
+        clamp(30px,6vw,48px);
+
+    font-weight: bold;
+
+    line-height: 1.1;
+
+}
+
+
+.motto {
+
+    font-size: 20px;
+
+    margin-top: 3px;
+
+}
+
+
+/* =====================================
+   العدّاد
+===================================== */
+
+.countdown-section {
+
+    background: #faf8f3;
+
+    text-align: center;
+
+    padding: 30px 15px;
+
+    border-bottom:
+        1px solid #e0d5bd;
+
+}
+
+
+.countdown-title {
+
+    color: #7a2837;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+}
+
+
+.countdown-subtitle {
+
+    color: #625b52;
+
+    font-size: 19px;
+
+}
+
+
+.countdown {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 18px;
+
+}
+
+
+.time-box {
+
+    width: 95px;
+
+    background: white;
+
+    border:
+        2px solid #c6a65b;
+
+    border-radius: 16px;
+
+    padding: 10px;
+
+    box-shadow:
+        0 5px 18px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.number {
+
+    display: block;
+
+    color: #126b4f;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+}
+
+
+.label {
+
+    color: #6d655c;
+
+    font-size: 17px;
+
+}
+
+
+/* =====================================
+   الترحيب
+===================================== */
+
+.welcome {
+
+    text-align: center;
+
+    padding:
+        45px 20px 30px;
+
+}
+
+
+.welcome h2 {
+
+    color: #126b4f;
+
+    font-size:
+        clamp(30px,6vw,44px);
+
+}
+
+
+.welcome p {
+
+    max-width: 850px;
+
+    margin:
+        10px auto;
+
+    color: #514a40;
+
+    font-size: 21px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================
+   العنوان الرئيسي للأقسام
+===================================== */
+
+.section-heading {
+
+    text-align: center;
+
+    margin:
+        15px auto 25px;
+
+}
+
+
+.section-heading h2 {
+
+    color: #7a2837;
+
+    font-size:
+        clamp(28px,5vw,38px);
+
+}
+
+
+.section-heading span {
+
+    display: block;
+
+    width: 100px;
+
+    height: 3px;
+
+    background: #c6a65b;
+
+    margin: 8px auto;
+
+}
+
+
+/* =====================================
+   البطاقات
+===================================== */
+
+.cards {
+
+    width: 92%;
+
+    max-width: 1150px;
+
+    margin:
+        0 auto 55px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(230px,1fr)
+        );
+
+    gap: 20px;
+
+}
+
+
+.card {
+
+    background: white;
+
+    border:
+        1px solid #e0d6c3;
+
+    border-top:
+        5px solid #126b4f;
+
+    border-radius: 18px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 7px 22px
+        rgba(0,0,0,0.07);
+
+    transition:
+        0.3s ease;
+
+    cursor: pointer;
+
+}
+
+
+.card:hover {
+
+    transform:
+        translateY(-6px);
+
+    border-top-color:
+        #7a2837;
+
+    box-shadow:
+        0 12px 28px
+        rgba(0,0,0,0.11);
+
+}
+
+
+.icon {
+
+    font-size: 42px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.card h3 {
+
+    color: #7a2837;
+
+    font-size: 26px;
+
+}
+
+
+.card p {
+
+    color: #6b6359;
+
+    font-size: 18px;
+
+    line-height: 1.45;
+
+}
+
+
+/* =====================================
+   رسالة ختامية
+===================================== */
+
+.closing {
+
+    width: 92%;
+
+    max-width: 900px;
+
+    margin:
+        0 auto 50px;
+
+    text-align: center;
+
+    background:
+        #faf8f3;
+
+    border:
+        1px solid #dfd2b9;
+
+    border-radius: 20px;
+
+    padding: 30px 20px;
+
+}
+
+
+.closing h2 {
+
+    color: #126b4f;
+
+    font-size: 32px;
+
+}
+
+
+.closing p {
+
+    color: #5b544b;
+
+    font-size: 20px;
+
+}
+
+
+/* =====================================
+   التذييل
+===================================== */
+
+.footer {
+
+    background: #126b4f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-top:
+        4px solid #c6a65b;
+
+    font-size: 18px;
+
+}
+
+
+/* =====================================
+   الجوال
+===================================== */
+
+@media (max-width:600px) {
+
+    .logo {
+
+        width: 65px;
+
+        height: 65px;
+
     }
 
-    .box {
-      margin: 100px auto;
-      width: 80%;
-      max-width: 700px;
-      padding: 40px;
-      border: 2px solid #c6a65b;
-      border-radius: 20px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    .countdown {
+
+        gap: 7px;
+
     }
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 15px;
+    .time-box {
+
+        width: 75px;
+
     }
 
-    p {
-      font-size: 24px;
-      color: #7a2837;
+    .number {
+
+        font-size: 29px;
+
     }
-  </style>
+
+    .label {
+
+        font-size: 14px;
+
+    }
+
+    .welcome p {
+
+        font-size: 18px;
+
+    }
+
+    .card {
+
+        padding: 20px 15px;
+
+    }
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
-  <div class="box">
 
-    <h1>
-      مَرْجِعُ أَوْلِيَاءِ الأُمُورِ
-    </h1>
+<!-- =====================================
+     رأس الموقع
+===================================== -->
+
+<header class="header">
+
+
+    <div class="logos">
+
+        <img
+            src="moe.png.jfif"
+            class="logo"
+            alt="وزارة التربية والتعليم"
+        >
+
+        <img
+            src="school-logo.png"
+            class="logo"
+            alt="مدرسة مربح الحلقة الثانية بنات"
+        >
+
+    </div>
+
+
+    <div class="school-name">
+
+        مدرسة مربح الحلقة الثانية بنات
+
+    </div>
+
+
+    <div class="page-title">
+
+        مَرْجِعُ أَوْلِيَاءِ الأُمُورِ
+
+    </div>
+
+
+    <div class="motto">
+
+        بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
+
+    </div>
+
+
+</header>
+
+
+
+<!-- =====================================
+     العدّاد
+===================================== -->
+
+<section class="countdown-section">
+
+
+    <div class="countdown-title">
+
+        ⏳ الْعَدُّ التَّنَازُلِيُّ
+
+    </div>
+
+
+    <div class="countdown-subtitle">
+
+        مُتَبَقٍّ عَلَى بَدْءِ الْعَامِ الدِّرَاسِيِّ
+        ٢٠٢٦ – ٢٠٢٧
+
+    </div>
+
+
+    <div class="countdown">
+
+
+        <div class="time-box">
+
+            <span
+                class="number"
+                id="days">
+                00
+            </span>
+
+            <span class="label">
+                يَوْم
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <span
+                class="number"
+                id="hours">
+                00
+            </span>
+
+            <span class="label">
+                سَاعَة
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <span
+                class="number"
+                id="minutes">
+                00
+            </span>
+
+            <span class="label">
+                دَقِيقَة
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <span
+                class="number"
+                id="seconds">
+                00
+            </span>
+
+            <span class="label">
+                ثَانِيَة
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================
+     الترحيب
+===================================== -->
+
+<section class="welcome">
+
+
+    <h2>
+
+        أَهْلًا وَسَهْلًا بِأَوْلِيَاءِ أُمُورِ طَالِبَاتِنَا 🌷
+
+    </h2>
+
 
     <p>
-      مدرسة مربح الحلقة الثانية بنات
+
+        نُرَحِّبُ بِكُمْ فِي مَرْجِعِنَا
+        الإِلِكْتُرُونِيِّ الَّذِي
+        أُعِدَّ لِيَكُونَ دَلِيلًا
+        مُبَسَّطًا وَشَامِلًا
+        لِبِدَايَةِ عَامٍ دِرَاسِيٍّ
+        مُوَفَّقٍ.
+
     </p>
+
+
+</section>
+
+
+
+<!-- =====================================
+     عنوان الأقسام
+===================================== -->
+
+<div class="section-heading">
+
+    <h2>
+        دَلِيلُ أَوْلِيَاءِ الأُمُورِ
+    </h2>
+
+    <span></span>
+
+</div>
+
+
+
+<!-- =====================================
+     البطاقات
+===================================== -->
+
+<section class="cards">
+
+
+    <div class="card">
+
+        <div class="icon">
+            🏫
+        </div>
+
+        <h3>
+            مَنْ نَحْنُ؟
+        </h3>
+
+        <p>
+            تَعَرَّفُوا عَلَى الْمَدْرَسَةِ
+            وَرُؤْيَتِهَا وَرِسَالَتِهَا.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <div class="icon">
+            🎒
+        </div>
+
+        <h3>
+            الاسْتِعْدَادُ لِلْعَامِ
+        </h3>
+
+        <p>
+            كُلُّ مَا تَحْتَاجُهُ
+            الطَّالِبَةُ قَبْلَ بَدْءِ
+            الدِّرَاسَةِ.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <div class="icon">
+            📅
+        </div>
+
+        <h3>
+            الْمَوَاعِيدُ الْمُهِمَّةُ
+        </h3>
+
+        <p>
+            أَهَمُّ التَّوَارِيخِ
+            وَالْفَعَالِيَّاتِ
+            وَالْمُنَاسَبَاتِ.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <div class="icon">
+            👗
+        </div>
+
+        <h3>
+            الزِّيُّ الْمَدْرَسِيُّ
+        </h3>
+
+        <p>
+            التَّعْلِيمَاتُ الْخَاصَّةُ
+            بِالزِّيِّ الْمَدْرَسِيِّ
+            وَالْمَظْهَرِ الْعَامِّ.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <div class="icon">
+            ⏰
+        </div>
+
+        <h3>
+            الْحُضُورُ وَالانْصِرَافُ
+        </h3>
+
+        <p>
+            مَوَاعِيدُ الدَّوَامِ
+            وَتَعْلِيمَاتُ الْحُضُورِ
+            وَالانْصِرَافِ.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <div class="icon">
+            🚌
+        </div>
+
+        <h3>
+            الْمُوَاصَلَاتُ
+        </h3>
+
+        <p>
+            إِرْشَادَاتٌ وَمَعْلُومَاتٌ
+            تَخُصُّ الْمُوَاصَلَاتِ
+            الْمَدْرَسِيَّةِ.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <div class="icon">
+            📚
+        </div>
+
+        <h3>
+            التَّعْلِيمُ وَالتَّعَلُّمُ
+        </h3>
+
+        <p>
+            مَعْلُومَاتٌ تُسَاعِدُ
+            أَوْلِيَاءَ الأُمُورِ
+            عَلَى دَعْمِ تَعَلُّمِ
+            بَنَاتِنَا.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <div class="icon">
+            📱
+        </div>
+
+        <h3>
+            التَّوَاصُلُ مَعَ الْمَدْرَسَةِ
+        </h3>
+
+        <p>
+            قَنَوَاتُ التَّوَاصُلِ
+            وَالطُّرُقُ الرَّسْمِيَّةُ
+            لِلتَّوَاصُلِ.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <div class="icon">
+            ❓
+        </div>
+
+        <h3>
+            أَسْئِلَةٌ شَائِعَةٌ
+        </h3>
+
+        <p>
+            إِجَابَاتٌ مُخْتَصَرَةٌ
+            عَنْ أَهَمِّ اسْتِفْسَارَاتِ
+            أَوْلِيَاءِ الأُمُورِ.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================
+     الرسالة الختامية
+===================================== -->
+
+<section class="closing">
+
+
+    <h2>
+
+        مَعًا نَبْدَأُ عَامًا دِرَاسِيًّا مُلْهِمًا 🤍
+
+    </h2>
+
 
     <p>
-      بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
+
+        شَكَرًا لِثِقَتِكُمْ،
+        وَنَتَطَلَّعُ إِلَى شَرَاكَةٍ
+        فَاعِلَةٍ بَيْنَ الْبَيْتِ
+        وَالْمَدْرَسَةِ.
+
     </p>
 
-  </div>
+
+</section>
+
+
+
+<!-- =====================================
+     التذييل
+===================================== -->
+
+<footer class="footer">
+
+    مدرسة مربح الحلقة الثانية بنات
+
+    <br>
+
+    بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
+
+</footer>
+
+
+
+<!-- =====================================
+     JavaScript
+     العداد إلى 31 أغسطس 2026
+===================================== -->
+
+<script>
+
+const targetDate =
+    new Date(
+        "2026-08-31T00:00:00+04:00"
+    ).getTime();
+
+
+function updateCountdown() {
+
+    const now =
+        new Date().getTime();
+
+    const difference =
+        targetDate - now;
+
+
+    if (difference <= 0) {
+
+        document.getElementById("days")
+            .textContent = "00";
+
+        document.getElementById("hours")
+            .textContent = "00";
+
+        document.getElementById("minutes")
+            .textContent = "00";
+
+        document.getElementById("seconds")
+            .textContent = "00";
+
+        return;
+    }
+
+
+    const days =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (difference %
+            (1000 * 60 * 60 * 24)) /
+            (1000 * 60 * 60)
+        );
+
+
+    const minutes =
+        Math.floor(
+            (difference %
+            (1000 * 60 * 60)) /
+            (1000 * 60)
+        );
+
+
+    const seconds =
+        Math.floor(
+            (difference %
+            (1000 * 60)) /
+            1000
+        );
+
+
+    document.getElementById("days")
+        .textContent =
+        String(days).padStart(2,"0");
+
+
+    document.getElementById("hours")
+        .textContent =
+        String(hours).padStart(2,"0");
+
+
+    document.getElementById("minutes")
+        .textContent =
+        String(minutes).padStart(2,"0");
+
+
+    document.getElementById("seconds")
+        .textContent =
+        String(seconds).padStart(2,"0");
+
+}
+
+
+updateCountdown();
+
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+</script>
+
 
 </body>
 
