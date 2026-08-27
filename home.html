@@ -31,21 +31,27 @@ html {
 }
 
 body {
+
     font-family:
         "Sakkal Majalla",
         Arial,
         sans-serif;
 
     color: #26352f;
+
     line-height: 1.7;
 
     background-image:
         url("ministry-logo.png");
 
     background-size: cover;
+
     background-position: center top;
+
     background-repeat: no-repeat;
+
     background-attachment: fixed;
+
 }
 
 
@@ -54,6 +60,7 @@ body {
 ===================================== */
 
 .header {
+
     background:
         linear-gradient(
             135deg,
@@ -62,43 +69,70 @@ body {
         );
 
     color: white;
+
     text-align: center;
+
     padding: 22px 15px 28px;
-    border-bottom: 5px solid #c6a65b;
+
+    border-bottom:
+        5px solid #c6a65b;
 }
 
 .logos {
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     gap: 18px;
+
     margin-bottom: 10px;
 }
 
 .logo {
+
     width: 72px;
+
     height: 72px;
+
     object-fit: contain;
+
     background: white;
+
     padding: 5px;
+
     border-radius: 14px;
-    border: 1px solid #c6a65b;
+
+    border:
+        1px solid #c6a65b;
 }
 
 .school-name {
-    font-size: clamp(26px,5vw,40px);
+
+    font-size:
+        clamp(26px,5vw,40px);
+
     font-weight: bold;
 }
 
 .page-title {
+
     color: #f0d995;
-    font-size: clamp(38px,7vw,54px);
+
+    font-size:
+        clamp(38px,7vw,54px);
+
     font-weight: bold;
+
     line-height: 1.1;
 }
 
 .motto {
+
     font-size: 21px;
+
     margin-top: 4px;
 }
 
@@ -108,15 +142,22 @@ body {
 ===================================== */
 
 .welcome {
+
     width: 92%;
+
     max-width: 1100px;
+
     margin: 45px auto 30px;
+
     padding: 38px 30px;
+
     text-align: center;
 
-    background: rgba(255,255,255,0.93);
+    background:
+        rgba(255,255,255,0.93);
 
-    border: 1px solid
+    border:
+        1px solid
         rgba(198,166,91,0.70);
 
     border-radius: 25px;
@@ -127,18 +168,30 @@ body {
 }
 
 .welcome h2 {
+
     color: #126b4f;
-    font-size: clamp(38px,7vw,56px);
+
+    font-size:
+        clamp(38px,7vw,56px);
+
     font-weight: bold;
+
     margin-bottom: 15px;
 }
 
 .welcome p {
+
     max-width: 1000px;
+
     margin: auto;
+
     color: #403b35;
-    font-size: clamp(26px,4vw,35px);
+
+    font-size:
+        clamp(26px,4vw,35px);
+
     font-weight: bold;
+
     line-height: 1.75;
 }
 
@@ -148,30 +201,45 @@ body {
 ===================================== */
 
 .section-heading {
+
     width: 92%;
+
     max-width: 1100px;
+
     margin: 25px auto;
+
     padding: 18px;
+
     text-align: center;
 
-    background: rgba(255,255,255,0.92);
+    background:
+        rgba(255,255,255,0.92);
 
     border-radius: 20px;
 
-    border: 1px solid
+    border:
+        1px solid
         rgba(198,166,91,0.65);
 }
 
 .section-heading h2 {
+
     color: #7a2837;
-    font-size: clamp(32px,5vw,42px);
+
+    font-size:
+        clamp(32px,5vw,42px);
 }
 
 .section-heading span {
+
     display: block;
+
     width: 110px;
+
     height: 3px;
+
     background: #c6a65b;
+
     margin: 8px auto;
 }
 
@@ -181,9 +249,13 @@ body {
 ===================================== */
 
 .cards {
+
     width: 92%;
+
     max-width: 1150px;
-    margin: 0 auto 60px;
+
+    margin:
+        0 auto 60px;
 
     display: grid;
 
@@ -202,14 +274,21 @@ body {
 ===================================== */
 
 .card {
+
     display: block;
+
     text-decoration: none;
+
     color: inherit;
 
-    background: rgba(255,255,255,0.95);
+    background:
+        rgba(255,255,255,0.95);
 
-    border: 1px solid #e0d6c3;
-    border-top: 5px solid #126b4f;
+    border:
+        1px solid #e0d6c3;
+
+    border-top:
+        5px solid #126b4f;
 
     border-radius: 18px;
 
@@ -222,16 +301,18 @@ body {
         rgba(0,0,0,0.12);
 
     transition:
-        all
-        0.3s
-        ease;
+        all 0.3s ease;
 
     cursor: pointer;
 }
 
 .card:hover {
-    transform: translateY(-7px);
-    border-top-color: #7a2837;
+
+    transform:
+        translateY(-7px);
+
+    border-top-color:
+        #7a2837;
 
     box-shadow:
         0 14px 30px
@@ -239,215 +320,28 @@ body {
 }
 
 .icon {
+
     font-size: 43px;
+
     margin-bottom: 8px;
 }
 
 .card h3 {
+
     color: #7a2837;
+
     font-size: 27px;
+
     margin-bottom: 4px;
 }
 
 .card p {
+
     color: #5b554e;
+
     font-size: 19px;
+
     line-height: 1.45;
-}
-
-
-/* =====================================
-   الأقسام الداخلية
-===================================== */
-
-.preparation-section {
-    width: 92%;
-    max-width: 1100px;
-
-    margin: 0 auto 60px;
-
-    padding: 30px 25px 35px;
-
-    background: rgba(255,255,255,0.96);
-
-    border: 1px solid #d7c59e;
-
-    border-radius: 25px;
-
-    box-shadow:
-        0 8px 28px
-        rgba(0,0,0,0.13);
-
-    text-align: center;
-
-    scroll-margin-top: 25px;
-}
-
-.preparation-section h2 {
-    color: #126b4f;
-    font-size: clamp(34px,6vw,46px);
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.preparation-section .gold-line {
-    width: 110px;
-    height: 3px;
-    background: #c6a65b;
-    margin: 8px auto 15px;
-}
-
-.preparation-section p {
-    color: #5b554e;
-    font-size: 23px;
-    margin-bottom: 22px;
-}
-
-.guidelines-image {
-    display: block;
-
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-
-    margin: 0 auto;
-
-    border: 2px solid #c6a65b;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 8px 25px
-        rgba(0,0,0,0.15);
-}
-
-
-/* =====================================
-   عناوين الصور داخل الأقسام
-===================================== */
-
-.image-title {
-    color: #7a2837;
-
-    font-size: 30px;
-
-    font-weight: bold;
-
-    margin: 30px 0 15px;
-}
-
-.image-title.second {
-    margin-top: 45px;
-}
-
-
-/* =====================================
-   العداد
-===================================== */
-
-.countdown-section {
-    width: 92%;
-    max-width: 1000px;
-
-    margin: 10px auto 50px;
-
-    background: rgba(255,255,255,0.95);
-
-    text-align: center;
-
-    padding: 35px 20px;
-
-    border: 1px solid #d7c59e;
-
-    border-radius: 25px;
-
-    box-shadow:
-        0 8px 25px
-        rgba(0,0,0,0.12);
-}
-
-.countdown-title {
-    color: #7a2837;
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.countdown-subtitle {
-    color: #625b52;
-    font-size: 21px;
-}
-
-.countdown {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 18px;
-}
-
-.time-box {
-    width: 105px;
-
-    background: white;
-
-    border: 2px solid #c6a65b;
-
-    border-radius: 17px;
-
-    padding: 13px;
-
-    box-shadow:
-        0 5px 18px
-        rgba(0,0,0,0.08);
-}
-
-.number {
-    display: block;
-    color: #126b4f;
-    font-size: 42px;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.label {
-    color: #6d655c;
-    font-size: 18px;
-}
-
-
-/* =====================================
-   الرسالة الختامية
-===================================== */
-
-.closing {
-    width: 92%;
-    max-width: 900px;
-
-    margin: 0 auto 50px;
-
-    text-align: center;
-
-    background: rgba(255,255,255,0.95);
-
-    border: 1px solid #dfd2b9;
-
-    border-radius: 22px;
-
-    padding: 30px 20px;
-
-    box-shadow:
-        0 7px 22px
-        rgba(0,0,0,0.10);
-}
-
-.closing h2 {
-    color: #126b4f;
-    font-size: 35px;
-}
-
-.closing p {
-    color: #5b544b;
-    font-size: 21px;
 }
 
 
@@ -456,6 +350,7 @@ body {
 ===================================== */
 
 .footer {
+
     background:
         rgba(18,107,79,0.97);
 
@@ -465,7 +360,8 @@ body {
 
     padding: 20px;
 
-    border-top: 4px solid #c6a65b;
+    border-top:
+        4px solid #c6a65b;
 
     font-size: 19px;
 }
@@ -477,10 +373,7 @@ body {
 
 .welcome,
 .section-heading,
-.card,
-.countdown-section,
-.closing,
-.preparation-section {
+.card {
 
     animation:
         fadeIn
@@ -492,15 +385,20 @@ body {
 @keyframes fadeIn {
 
     from {
+
         opacity: 0;
-        transform: translateY(20px);
+
+        transform:
+            translateY(20px);
     }
 
     to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
 }
 
 
@@ -511,57 +409,34 @@ body {
 @media (max-width:600px) {
 
     body {
-        background-attachment: scroll;
+
+        background-attachment:
+            scroll;
     }
 
     .logo {
+
         width: 62px;
+
         height: 62px;
     }
 
     .welcome {
+
         margin-top: 25px;
-        padding: 28px 15px;
+
+        padding:
+            28px 15px;
     }
 
     .welcome h2 {
+
         font-size: 35px;
     }
 
     .welcome p {
+
         font-size: 23px;
-    }
-
-    .preparation-section {
-        padding: 25px 12px 30px;
-    }
-
-    .preparation-section h2 {
-        font-size: 34px;
-    }
-
-    .preparation-section p {
-        font-size: 20px;
-    }
-
-    .guidelines-image {
-        border-radius: 12px;
-    }
-
-    .image-title {
-        font-size: 25px;
-    }
-
-    .time-box {
-        width: 76px;
-    }
-
-    .number {
-        font-size: 30px;
-    }
-
-    .label {
-        font-size: 14px;
     }
 
 }
@@ -598,17 +473,20 @@ body {
 
     </div>
 
+
     <div class="school-name">
 
         مدرسة مربح الحلقة الثانية بنات
 
     </div>
 
+
     <div class="page-title">
 
         مَرْجِعُ أَوْلِيَاءِ الأُمُورِ
 
     </div>
+
 
     <div class="motto">
 
@@ -631,6 +509,7 @@ body {
         أَهْلًا وَسَهْلًا بِأَوْلِيَاءِ أُمُورِ طَالِبَاتِنَا 🌷
 
     </h2>
+
 
     <p>
 
@@ -675,7 +554,7 @@ body {
     <!-- من نحن -->
 
     <a
-        href="./about.html"
+        href="about.html"
         class="card"
     >
 
@@ -699,7 +578,7 @@ body {
     <!-- الاستعداد -->
 
     <a
-        href="#preparation"
+        href="preparation.html"
         class="card"
     >
 
@@ -724,7 +603,7 @@ body {
     <!-- المواعيد -->
 
     <a
-        href="#dates"
+        href="dates.html"
         class="card"
     >
 
@@ -749,7 +628,7 @@ body {
     <!-- الزي -->
 
     <a
-        href="#uniform"
+        href="uniform.html"
         class="card"
     >
 
@@ -774,7 +653,7 @@ body {
     <!-- الحضور -->
 
     <a
-        href="#attendance"
+        href="attendance.html"
         class="card"
     >
 
@@ -799,7 +678,7 @@ body {
     <!-- المواصلات -->
 
     <a
-        href="#transport"
+        href="transport.html"
         class="card"
     >
 
@@ -824,7 +703,7 @@ body {
     <!-- التعليم -->
 
     <a
-        href="#learning"
+        href="learning.html"
         class="card"
     >
 
@@ -850,7 +729,7 @@ body {
     <!-- التواصل -->
 
     <a
-        href="#communication"
+        href="communication.html"
         class="card"
     >
 
@@ -875,7 +754,7 @@ body {
     <!-- الأسئلة -->
 
     <a
-        href="#faq"
+        href="faq.html"
         class="card"
     >
 
@@ -901,303 +780,6 @@ body {
 
 
 <!-- =====================================
-     الاستعداد للعام الدراسي
-===================================== -->
-
-<section
-    id="preparation"
-    class="preparation-section"
->
-
-    <h2>
-
-        إِرْشَادَاتُ اسْتِقْبَالِ الْعَامِ الدِّرَاسِيِّ
-
-    </h2>
-
-    <div class="gold-line"></div>
-
-    <p>
-
-        دَلِيلٌ مُبَسَّطٌ لِاسْتِعْدَادِ طَالِبَاتِنَا
-        لِبِدَايَةِ عَامٍ دِرَاسِيٍّ مُوَفَّقٍ.
-
-    </p>
-
-    <img
-        src="family-back-to-school.jpg.png"
-        class="guidelines-image"
-        alt="كيف تستعد الأسرة لعام دراسي جديد"
-    >
-
-</section>
-
-
-
-<!-- =====================================
-     المواعيد المهمة
-===================================== -->
-
-<section
-    id="dates"
-    class="preparation-section"
->
-
-    <h2>
-
-        📅 الْمَوَاعِيدُ الْمُهِمَّةُ
-
-    </h2>
-
-    <div class="gold-line"></div>
-
-    <p>
-
-        أَهَمُّ الْمَحَطَّاتِ وَالْمَوَاعِيدِ
-        خِلَالَ الْعَامِ الدِّرَاسِيِّ
-        ٢٠٢٦ – ٢٠٢٧.
-
-    </p>
-
-
-    <!-- التقويم الأكاديمي -->
-
-    <h3 class="image-title">
-
-        🗓️ التَّقْوِيمُ الْأَكَادِيمِيُّ
-        لِلْعَامِ الدِّرَاسِيِّ ٢٠٢٦ – ٢٠٢٧
-
-    </h3>
-
-    <img
-        src="academic-calendar-2026-2027.png"
-        class="guidelines-image"
-        alt="التقويم الأكاديمي للعام الدراسي 2026-2027"
-    >
-
-
-    <!-- الفصل الدراسي الأول -->
-
-    <h3 class="image-title second">
-
-        📌 مَوَاعِيدُ الْفَصْلِ الدِّرَاسِيِّ الْأَوَّلِ
-
-    </h3>
-
-    <img
-        src="term1-dates-2026-2027.png"
-        class="guidelines-image"
-        alt="مواعيد الفصل الدراسي الأول 2026-2027"
-    >
-
-</section>
-```html
-<!-- =====================================
-     الزي المدرسي
-===================================== -->
-
-<section
-    id="uniform"
-    class="preparation-section"
->
-
-    <h2>
-        👗 الزِّيُّ الْمَدْرَسِيُّ
-    </h2>
-
-    <div class="gold-line"></div>
-
-    <p>
-        الزِّيُّ الْمَدْرَسِيُّ الْمُعْتَمَدُ
-        وَإِرْشَادَاتُ الْمَظْهَرِ الْعَامِّ
-        لِطَالِبَاتِنَا فِي الْعَامِ الدِّرَاسِيِّ
-        ٢٠٢٦ – ٢٠٢٧.
-    </p>
-
-
-    <!-- صورة الزي المدرسي -->
-
-    <h3 class="image-title">
-
-        👗 الزِّيُّ الْمَدْرَسِيُّ الْمُعْتَمَدُ
-
-    </h3>
-
-    <img
-        src="school-uniform-2026-2027.png"
-        class="guidelines-image"
-        alt="الزي المدرسي المعتمد للعام الدراسي 2026-2027"
-    >
-
-
-    <!-- إرشادات الزي -->
-
-    <h3 class="image-title second">
-
-        ✨ إِرْشَادَاتُ الزِّيِّ وَالْمَظْهَرِ الْعَامِّ
-
-    </h3>
-
-    <div style="
-        max-width:900px;
-        margin:0 auto;
-        text-align:right;
-        background:#fffdf8;
-        border:1px solid #e0d6c3;
-        border-right:5px solid #126b4f;
-        border-radius:18px;
-        padding:25px 30px;
-        box-shadow:0 5px 18px rgba(0,0,0,0.08);
-    ">
-
-        <p style="
-            margin-bottom:12px;
-            font-size:22px;
-            color:#403b35;
-        ">
-            🌷 الالتزام بالزي المدرسي المعتمد طوال أيام الدوام المدرسي.
-        </p>
-
-        <p style="
-            margin-bottom:12px;
-            font-size:22px;
-            color:#403b35;
-        ">
-            ✨ المحافظة على نظافة الزي وترتيبه بما يعكس صورة الطالبة المشرقة.
-        </p>
-
-        <p style="
-            margin-bottom:12px;
-            font-size:22px;
-            color:#403b35;
-        ">
-            🎀 الالتزام بالتعليمات الخاصة بالمظهر العام للطالبة.
-        </p>
-
-        <p style="
-            margin-bottom:0;
-            font-size:22px;
-            color:#403b35;
-        ">
-            🤍 نعتز بمظهر طالباتنا الأنيق والملتزم بهوية المدرسة.
-        </p>
-
-    </div>
-
-</section>
-```
-<!-- =====================================
-     العداد
-===================================== -->
-
-<section class="countdown-section">
-
-    <div class="countdown-title">
-
-        ⏳ الْعَدُّ التَّنَازُلِيُّ
-
-    </div>
-
-    <div class="countdown-subtitle">
-
-        مُتَبَقٍّ عَلَى بَدْءِ الْعَامِ الدِّرَاسِيِّ
-        ٢٠٢٦ – ٢٠٢٧
-
-    </div>
-
-    <div class="countdown">
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="days">
-                00
-            </span>
-
-            <span class="label">
-                يَوْم
-            </span>
-
-        </div>
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="hours">
-                00
-            </span>
-
-            <span class="label">
-                سَاعَة
-            </span>
-
-        </div>
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="minutes">
-                00
-            </span>
-
-            <span class="label">
-                دَقِيقَة
-            </span>
-
-        </div>
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="seconds">
-                00
-            </span>
-
-            <span class="label">
-                ثَانِيَة
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================
-     الرسالة الختامية
-===================================== -->
-
-<section class="closing">
-
-    <h2>
-
-        مَعًا نَبْدَأُ عَامًا دِرَاسِيًّا مُلْهِمًا 🤍
-
-    </h2>
-
-    <p>
-
-        شَكَرًا لِثِقَتِكُمْ،
-        وَنَتَطَلَّعُ إِلَى شَرَاكَةٍ
-        فَاعِلَةٍ بَيْنَ الْبَيْتِ
-        وَالْمَدْرَسَةِ.
-
-    </p>
-
-</section>
-
-
-
-<!-- =====================================
      التذييل
 ===================================== -->
 
@@ -1210,110 +792,6 @@ body {
     بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
 
 </footer>
-
-
-
-<script>
-
-/* =====================================
-   العداد حتى 31 أغسطس 2026
-===================================== */
-
-const targetDate =
-    new Date(
-        "2026-08-31T00:00:00+04:00"
-    ).getTime();
-
-
-function updateCountdown() {
-
-    const now =
-        new Date().getTime();
-
-    const difference =
-        targetDate - now;
-
-
-    if (difference <= 0) {
-
-        document.getElementById("days")
-            .textContent = "00";
-
-        document.getElementById("hours")
-            .textContent = "00";
-
-        document.getElementById("minutes")
-            .textContent = "00";
-
-        document.getElementById("seconds")
-            .textContent = "00";
-
-        return;
-
-    }
-
-
-    const days =
-        Math.floor(
-            difference /
-            (1000 * 60 * 60 * 24)
-        );
-
-
-    const hours =
-        Math.floor(
-            (difference %
-            (1000 * 60 * 60 * 24)) /
-            (1000 * 60 * 60)
-        );
-
-
-    const minutes =
-        Math.floor(
-            (difference %
-            (1000 * 60 * 60)) /
-            (1000 * 60)
-        );
-
-
-    const seconds =
-        Math.floor(
-            (difference %
-            (1000 * 60)) /
-            1000
-        );
-
-
-    document.getElementById("days")
-        .textContent =
-        String(days).padStart(2,"0");
-
-
-    document.getElementById("hours")
-        .textContent =
-        String(hours).padStart(2,"0");
-
-
-    document.getElementById("minutes")
-        .textContent =
-        String(minutes).padStart(2,"0");
-
-
-    document.getElementById("seconds")
-        .textContent =
-        String(seconds).padStart(2,"0");
-
-}
-
-
-updateCountdown();
-
-setInterval(
-    updateCountdown,
-    1000
-);
-
-</script>
 
 
 </body>
