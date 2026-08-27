@@ -2,15 +2,10 @@
 <html lang="ar" dir="rtl">
 
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-  <title>
-    مدرسة مربح الحلقة الثانية بنات
-  </title>
+  <title>مدرسة مربح الحلقة الثانية بنات</title>
 
   <style>
 
@@ -19,10 +14,24 @@
       src: local("Sakkal Majalla");
     }
 
+    :root {
+      --green: #126b4f;
+      --dark-green: #073f2f;
+      --gold: #c6a65b;
+      --maroon: #7a2837;
+      --white: #ffffff;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
     }
 
     body {
@@ -53,8 +62,8 @@
 
       background-image:
         linear-gradient(
-          rgba(255,255,255,0.28),
-          rgba(255,255,255,0.40)
+          rgba(255,255,255,0.22),
+          rgba(255,255,255,0.30)
         ),
         url("opening-bg.jpg");
 
@@ -62,10 +71,11 @@
 
       background-position: center;
 
+      background-repeat: no-repeat;
     }
 
 
-    /* طبقة ناعمة فوق الصورة */
+    /* طبقة خفيفة لتحسين وضوح الكتابة */
 
     .overlay {
 
@@ -76,12 +86,13 @@
       background:
         linear-gradient(
           to bottom,
-          rgba(255,255,255,0.12),
-          rgba(255,255,255,0.35)
+          rgba(255,255,255,0.08),
+          rgba(255,255,255,0.28)
         );
 
       z-index: 1;
 
+      pointer-events: none;
     }
 
 
@@ -95,12 +106,12 @@
 
       z-index: 2;
 
-      width: 90%;
+      width: 92%;
 
-      max-width: 900px;
+      max-width: 1000px;
 
       padding:
-        35px 20px 110px;
+        30px 20px 105px;
 
     }
 
@@ -115,43 +126,36 @@
 
       justify-content: center;
 
-      gap: 18px;
+      align-items: center;
 
-      margin-bottom: 15px;
+      gap: 25px;
+
+      margin-bottom: 12px;
 
     }
 
 
     .logo {
 
-      width: 80px;
+      width: 92px;
 
-      height: 80px;
+      height: 92px;
 
-      background: rgba(255,255,255,0.88);
+      object-fit: contain;
 
-      border:
-        1px solid #c6a65b;
+      background: rgba(255,255,255,0.92);
+
+      padding: 7px;
 
       border-radius: 14px;
 
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      text-align: center;
-
-      color: #126b4f;
-
-      font-size: 14px;
-
-      line-height: 1.2;
+      border:
+        1px solid
+        var(--gold);
 
       box-shadow:
         0 5px 20px
-        rgba(0,0,0,0.12);
+        rgba(0,0,0,0.15);
 
     }
 
@@ -162,7 +166,7 @@
 
     .school {
 
-      color: #126b4f;
+      color: var(--green);
 
       font-size:
         clamp(25px, 5vw, 38px);
@@ -170,18 +174,24 @@
       font-weight: bold;
 
       text-shadow:
-        0 1px 2px white;
+        0 2px 4px
+        rgba(255,255,255,0.9);
 
     }
 
 
     .ministry {
 
-      color: #6d5a45;
+      color: #594f43;
 
       font-size: 18px;
 
-      margin-bottom: 15px;
+      font-weight: bold;
+
+      margin-bottom: 10px;
+
+      text-shadow:
+        0 1px 3px white;
 
     }
 
@@ -192,14 +202,14 @@
 
     .welcome {
 
-      color: #7a2837;
+      color: var(--maroon);
 
       font-size:
-        clamp(25px, 5vw, 38px);
+        clamp(25px, 5vw, 37px);
 
       font-weight: bold;
 
-      margin-top: 5px;
+      margin-top: 3px;
 
     }
 
@@ -210,12 +220,13 @@
 
     .title {
 
-      line-height: 1.05;
+      line-height: 1;
 
-      margin-top: 5px;
+      margin-top: 2px;
 
       text-shadow:
-        0 2px 4px rgba(255,255,255,0.9);
+        0 3px 6px
+        rgba(255,255,255,0.9);
 
     }
 
@@ -224,10 +235,10 @@
 
       display: block;
 
-      color: #7a2837;
+      color: var(--maroon);
 
       font-size:
-        clamp(55px, 10vw, 95px);
+        clamp(52px, 10vw, 92px);
 
       font-weight: bold;
 
@@ -238,10 +249,10 @@
 
       display: block;
 
-      color: #126b4f;
+      color: var(--green);
 
       font-size:
-        clamp(48px, 9vw, 85px);
+        clamp(48px, 9vw, 84px);
 
       font-weight: bold;
 
@@ -258,15 +269,39 @@
 
       height: 3px;
 
-      background: #c6a65b;
+      background: var(--gold);
 
-      margin: 18px auto;
+      margin: 17px auto;
+
+      position: relative;
+
+    }
+
+
+    .gold-line::before {
+
+      content: "✦";
+
+      position: absolute;
+
+      left: 50%;
+
+      top: -18px;
+
+      transform:
+        translateX(-50%);
+
+      color: var(--gold);
+
+      background: transparent;
+
+      font-size: 20px;
 
     }
 
 
     /* =================================
-       النص
+       المقدمة
     ================================= */
 
     .intro {
@@ -275,30 +310,31 @@
 
       margin: auto;
 
-      color: #303c35;
+      color: #27362f;
 
       font-size:
         clamp(18px, 3vw, 23px);
 
       font-weight: bold;
 
-      line-height: 1.7;
+      line-height: 1.6;
 
       text-shadow:
-        0 1px 3px white;
+        0 2px 4px
+        rgba(255,255,255,0.95);
 
     }
 
 
     .year {
 
-      color: #7a2837;
+      color: var(--maroon);
 
       font-size: 29px;
 
       font-weight: bold;
 
-      margin-top: 5px;
+      margin-top: 3px;
 
     }
 
@@ -311,19 +347,20 @@
 
       display: inline-block;
 
-      margin-top: 20px;
+      margin-top: 17px;
 
       padding:
-        10px 42px;
+        9px 45px;
 
-      background: #126b4f;
+      background: var(--green);
 
       color: white;
 
       text-decoration: none;
 
       border:
-        2px solid #c6a65b;
+        2px solid
+        var(--gold);
 
       border-radius: 40px;
 
@@ -332,20 +369,21 @@
       font-weight: bold;
 
       box-shadow:
-        0 8px 22px
-        rgba(0,0,0,0.18);
+        0 9px 25px
+        rgba(0,0,0,0.20);
 
-      transition: 0.3s;
+      transition:
+        all 0.3s ease;
 
     }
 
 
     .enter:hover {
 
-      background: #7a2837;
+      background: var(--maroon);
 
       transform:
-        translateY(-3px);
+        translateY(-4px);
 
     }
 
@@ -356,13 +394,16 @@
 
     .countdown-title {
 
-      margin-top: 22px;
+      margin-top: 20px;
 
-      color: #554b40;
+      color: #4d453b;
 
-      font-size: 18px;
+      font-size: 19px;
 
       font-weight: bold;
+
+      text-shadow:
+        0 1px 3px white;
 
     }
 
@@ -375,9 +416,9 @@
 
       align-items: center;
 
-      gap: 10px;
+      gap: 9px;
 
-      margin-top: 10px;
+      margin-top: 8px;
 
       flex-wrap: wrap;
 
@@ -388,19 +429,20 @@
 
       min-width: 75px;
 
-      padding: 8px;
+      padding: 7px 9px;
 
       background:
-        rgba(255,255,255,0.90);
+        rgba(255,255,255,0.92);
 
       border:
-        1px solid #c6a65b;
+        1px solid
+        var(--gold);
 
       border-radius: 12px;
 
       box-shadow:
         0 4px 15px
-        rgba(0,0,0,0.10);
+        rgba(0,0,0,0.12);
 
     }
 
@@ -409,9 +451,9 @@
 
       display: block;
 
-      color: #126b4f;
+      color: var(--green);
 
-      font-size: 30px;
+      font-size: 29px;
 
       font-weight: bold;
 
@@ -422,7 +464,7 @@
 
     .label {
 
-      color: #766d62;
+      color: #6e675d;
 
       font-size: 15px;
 
@@ -445,11 +487,14 @@
 
       z-index: 3;
 
-      color: #554b40;
+      color: #514a40;
 
-      font-size: 15px;
+      font-size: 16px;
 
       font-weight: bold;
+
+      text-shadow:
+        0 1px 3px white;
 
     }
 
@@ -461,13 +506,21 @@
     @media (max-width: 600px) {
 
       .content {
-        padding-bottom: 100px;
+        padding:
+          25px 10px 100px;
+      }
+
+      .logos {
+        gap: 14px;
       }
 
       .logo {
-        width: 65px;
-        height: 65px;
-        font-size: 11px;
+        width: 70px;
+        height: 70px;
+      }
+
+      .school {
+        font-size: 24px;
       }
 
       .ministry {
@@ -490,6 +543,12 @@
         font-size: 13px;
       }
 
+      .enter {
+        font-size: 20px;
+        padding:
+          8px 35px;
+      }
+
     }
 
   </style>
@@ -508,26 +567,30 @@
     <div class="content">
 
 
-      <!-- الشعارات -->
+      <!-- =========================
+           الشعارات الحقيقية
+      ========================== -->
 
       <div class="logos">
 
-        <div class="logo">
-          شعار<br>
-          وزارة التربية<br>
-          والتعليم
-        </div>
+        <img
+          src="moe.png.jfif"
+          alt="شعار وزارة التربية والتعليم"
+          class="logo"
+        >
 
-        <div class="logo">
-          شعار<br>
-          مدرسة مربح<br>
-          الحلقة الثانية بنات
-        </div>
+        <img
+          src="school-logo.png"
+          alt="شعار مدرسة مربح الحلقة الثانية بنات"
+          class="logo"
+        >
 
       </div>
 
 
-      <!-- اسم المدرسة -->
+      <!-- =========================
+           اسم المدرسة
+      ========================== -->
 
       <div class="school">
 
@@ -543,7 +606,9 @@
       </div>
 
 
-      <!-- الترحيب -->
+      <!-- =========================
+           الترحيب
+      ========================== -->
 
       <div class="welcome">
 
@@ -552,7 +617,9 @@
       </div>
 
 
-      <!-- الشعار -->
+      <!-- =========================
+           الهوية
+      ========================== -->
 
       <h1 class="title">
 
@@ -570,7 +637,9 @@
       <div class="gold-line"></div>
 
 
-      <!-- المقدمة -->
+      <!-- =========================
+           المقدمة
+      ========================== -->
 
       <p class="intro">
 
@@ -581,8 +650,6 @@
       </p>
 
 
-      <!-- السنة -->
-
       <div class="year">
 
         ٢٠٢٦ – ٢٠٢٧
@@ -590,7 +657,9 @@
       </div>
 
 
-      <!-- زر الدخول -->
+      <!-- =========================
+           الدخول
+      ========================== -->
 
       <a
         href="home.html"
@@ -602,7 +671,9 @@
       </a>
 
 
-      <!-- العدّاد -->
+      <!-- =========================
+           العدّاد
+      ========================== -->
 
       <div class="countdown-title">
 
@@ -683,7 +754,9 @@
     </div>
 
 
-    <!-- التذييل -->
+    <!-- =========================
+         التذييل
+    ========================== -->
 
     <div class="footer">
 
@@ -696,6 +769,10 @@
 
   </main>
 
+
+  <!-- =========================
+       العدّاد
+  ========================== -->
 
   <script>
 
@@ -787,6 +864,7 @@
 
 
     updateCountdown();
+
 
     setInterval(
       updateCountdown,
