@@ -257,7 +257,7 @@ body {
 
 
 /* =====================================
-   قسم الاستعداد للعام
+   الأقسام الداخلية
 ===================================== */
 
 .preparation-section {
@@ -319,6 +319,25 @@ body {
     box-shadow:
         0 8px 25px
         rgba(0,0,0,0.15);
+}
+
+
+/* =====================================
+   عناوين الصور داخل الأقسام
+===================================== */
+
+.image-title {
+    color: #7a2837;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    margin: 30px 0 15px;
+}
+
+.image-title.second {
+    margin-top: 45px;
 }
 
 
@@ -462,6 +481,7 @@ body {
 .countdown-section,
 .closing,
 .preparation-section {
+
     animation:
         fadeIn
         0.9s
@@ -526,6 +546,10 @@ body {
 
     .guidelines-image {
         border-radius: 12px;
+    }
+
+    .image-title {
+        font-size: 25px;
     }
 
     .time-box {
@@ -714,8 +738,8 @@ body {
 
         <p>
             أَهَمُّ التَّوَارِيخِ
-            وَالْفَعَالِيَّاتِ
-            وَالْمُنَاسَبَاتِ.
+            وَالْمَحَطَّاتِ
+            خِلَالَ الْعَامِ الدِّرَاسِيِّ.
         </p>
 
     </a>
@@ -900,13 +924,72 @@ body {
 
     </p>
 
-    <!-- الصورة الصحيحة الموجودة في مجلد الموقع -->
+    <img
+        src="family-back-to-school.jpg.png"
+        class="guidelines-image"
+        alt="كيف تستعد الأسرة لعام دراسي جديد"
+    >
 
-   <img
-    src="family-back-to-school.jpg.png"
-    class="guidelines-image"
-    alt="كيف تستعد الأسرة لعام دراسي جديد"
+</section>
+
+
+
+<!-- =====================================
+     المواعيد المهمة
+===================================== -->
+
+<section
+    id="dates"
+    class="preparation-section"
 >
+
+    <h2>
+
+        📅 الْمَوَاعِيدُ الْمُهِمَّةُ
+
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p>
+
+        أَهَمُّ الْمَحَطَّاتِ وَالْمَوَاعِيدِ
+        خِلَالَ الْعَامِ الدِّرَاسِيِّ
+        ٢٠٢٦ – ٢٠٢٧.
+
+    </p>
+
+
+    <!-- التقويم الأكاديمي -->
+
+    <h3 class="image-title">
+
+        🗓️ التَّقْوِيمُ الْأَكَادِيمِيُّ
+        لِلْعَامِ الدِّرَاسِيِّ ٢٠٢٦ – ٢٠٢٧
+
+    </h3>
+
+    <img
+        src="academic-calendar-2026-2027.png"
+        class="guidelines-image"
+        alt="التقويم الأكاديمي للعام الدراسي 2026-2027"
+    >
+
+
+    <!-- الفصل الدراسي الأول -->
+
+    <h3 class="image-title second">
+
+        📌 مَوَاعِيدُ الْفَصْلِ الدِّرَاسِيِّ الْأَوَّلِ
+
+    </h3>
+
+    <img
+        src="term1-dates-2026-2027.png"
+        class="guidelines-image"
+        alt="مواعيد الفصل الدراسي الأول 2026-2027"
+    >
+
 </section>
 
 
