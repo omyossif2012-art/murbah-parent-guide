@@ -1,6 +1,7 @@
 ```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <title>مرجع أولياء الأمور | مدرسة مربح الحلقة الثانية بنات</title>
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -21,7 +23,10 @@
       line-height: 1.8;
     }
 
-    /* الشريط العلوي */
+    /* =========================
+       الشريط العلوي
+    ========================= */
+
     header {
       background: linear-gradient(135deg, #4b245f, #6f4382);
       color: white;
@@ -30,7 +35,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 20px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
     }
 
     .school-name {
@@ -43,17 +48,38 @@
       opacity: 0.9;
     }
 
-    /* القسم الرئيسي */
+    .platform-name {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       الواجهة الرئيسية
+    ========================= */
+
     .hero {
       min-height: 540px;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       text-align: center;
+
       padding: 70px 20px;
+
       background:
-        radial-gradient(circle at top right, rgba(185,157,82,0.15), transparent 35%),
-        radial-gradient(circle at bottom left, rgba(111,67,130,0.12), transparent 35%),
+        radial-gradient(
+          circle at top right,
+          rgba(185, 157, 82, 0.15),
+          transparent 35%
+        ),
+        radial-gradient(
+          circle at bottom left,
+          rgba(111, 67, 130, 0.12),
+          transparent 35%
+        ),
         #ffffff;
     }
 
@@ -76,13 +102,6 @@
       line-height: 1.35;
     }
 
-    .hero p {
-      max-width: 720px;
-      margin: auto;
-      color: #665b6b;
-      font-size: 18px;
-    }
-
     .gold-line {
       width: 90px;
       height: 3px;
@@ -91,18 +110,39 @@
       border-radius: 10px;
     }
 
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      color: #665b6b;
+      font-size: 18px;
+    }
+
+
+    /* =========================
+       زر البداية
+    ========================= */
+
     .start-button {
       display: inline-block;
+
       margin-top: 30px;
+
       padding: 13px 34px;
+
       background: #4b245f;
       color: white;
+
       text-decoration: none;
+
       border-radius: 30px;
+
       font-size: 16px;
       font-weight: bold;
+
       transition: 0.3s;
-      box-shadow: 0 8px 20px rgba(75,36,95,0.2);
+
+      box-shadow:
+        0 8px 20px rgba(75, 36, 95, 0.2);
     }
 
     .start-button:hover {
@@ -110,7 +150,11 @@
       transform: translateY(-3px);
     }
 
-    /* الأقسام */
+
+    /* =========================
+       قسم البطاقات
+    ========================= */
+
     .section {
       padding: 65px 7%;
       background: #faf8fb;
@@ -132,53 +176,110 @@
       font-size: 15px;
     }
 
+
+    /* =========================
+       شبكة البطاقات
+    ========================= */
+
     .cards {
       max-width: 1100px;
+
       margin: auto;
+
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
       gap: 22px;
     }
 
+
+    /* =========================
+       البطاقة
+    ========================= */
+
     .card {
       background: white;
+
       border-radius: 18px;
+
       padding: 30px 22px;
+
       text-align: center;
+
       border: 1px solid #eee7f0;
-      box-shadow: 0 8px 25px rgba(50,30,60,0.06);
+
+      box-shadow:
+        0 8px 25px rgba(50, 30, 60, 0.06);
+
       transition: 0.3s;
+
+      height: 100%;
     }
 
     .card:hover {
       transform: translateY(-7px);
-      box-shadow: 0 14px 30px rgba(50,30,60,0.12);
+
+      box-shadow:
+        0 14px 30px rgba(50, 30, 60, 0.12);
     }
+
+
+    /* =========================
+       رابط البطاقة
+    ========================= */
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+    }
+
+
+    /* =========================
+       الأيقونة
+    ========================= */
 
     .icon {
       width: 65px;
       height: 65px;
+
       margin: 0 auto 18px;
+
       border-radius: 50%;
+
       background: #f1eaf4;
+
       display: flex;
+
       align-items: center;
       justify-content: center;
+
       font-size: 28px;
     }
 
+
     .card h3 {
       color: #4b245f;
+
       margin-bottom: 10px;
+
       font-size: 19px;
     }
 
     .card p {
       color: #777;
+
       font-size: 14px;
     }
 
-    /* رسالة الترحيب */
+
+    /* =========================
+       رسالة الترحيب
+    ========================= */
+
     .message {
       padding: 70px 7%;
       background: white;
@@ -187,10 +288,15 @@
 
     .message-box {
       max-width: 900px;
+
       margin: auto;
+
       padding: 45px 35px;
+
       border-radius: 24px;
+
       background: #fffdf8;
+
       border: 1px solid #eadfca;
     }
 
@@ -204,11 +310,18 @@
       font-size: 17px;
     }
 
-    /* التذييل */
+
+    /* =========================
+       التذييل
+    ========================= */
+
     footer {
       background: #392044;
+
       color: white;
+
       text-align: center;
+
       padding: 30px 20px;
     }
 
@@ -218,13 +331,22 @@
 
     footer p {
       font-size: 13px;
+
       margin-top: 8px;
+
       opacity: 0.85;
     }
 
+
+    /* =========================
+       الهواتف
+    ========================= */
+
     @media (max-width: 600px) {
+
       header {
         flex-direction: column;
+
         text-align: center;
       }
 
@@ -244,24 +366,46 @@
       .message-box {
         padding: 30px 20px;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-  <!-- الشريط العلوي -->
+
+  <!-- =========================
+       الشريط العلوي
+  ========================= -->
+
   <header>
+
     <div>
-      <div class="school-name">مدرسة مربح الحلقة الثانية بنات</div>
-      <div class="ministry">وزارة التربية والتعليم – الإمارات العربية المتحدة</div>
+
+      <div class="school-name">
+        مدرسة مربح الحلقة الثانية بنات
+      </div>
+
+      <div class="ministry">
+        وزارة التربية والتعليم – الإمارات العربية المتحدة
+      </div>
+
     </div>
 
-    <div>📚 مرجع أولياء الأمور</div>
+    <div class="platform-name">
+      📚 مرجع أولياء الأمور
+    </div>
+
   </header>
 
 
-  <!-- الواجهة الرئيسية -->
+  <!-- =========================
+       الواجهة الرئيسية
+  ========================= -->
+
   <section class="hero">
 
     <div class="hero-content">
@@ -292,80 +436,186 @@
   </section>
 
 
-  <!-- الأقسام الرئيسية -->
+  <!-- =========================
+       الأقسام الرئيسية
+  ========================= -->
+
   <section class="section" id="sections">
 
     <div class="section-title">
-      <h2>دَلِيلُكُمْ فِي بَدَايَةِ الْعَامِ</h2>
-      <p>أهم المعلومات التي يحتاج إليها ولي الأمر</p>
+
+      <h2>
+        دَلِيلُكُمْ فِي بَدَايَةِ الْعَامِ
+      </h2>
+
+      <p>
+        أَهَمُّ الْمَعْلُومَاتِ الَّتِي يَحْتَاجُ إِلَيْهَا وَلِيُّ الأَمْرِ
+      </p>
+
     </div>
+
 
     <div class="cards">
 
-      <div class="card">
-        <div class="icon">🏫</div>
-        <h3>عن المدرسة</h3>
-        <p>
-          تعرّفوا إلى المدرسة ورسالتها ورؤيتها وأهم المعلومات عنها.
-        </p>
-      </div>
+
+      <!-- =====================
+           عن المدرسة
+      ====================== -->
+
+      <a href="about.html" class="card-link">
+
+        <div class="card">
+
+          <div class="icon">
+            🏫
+          </div>
+
+          <h3>
+            عن المدرسة
+          </h3>
+
+          <p>
+            تَعَرَّفُوا إِلَى الْمَدْرَسَةِ وَرُؤْيَتِهَا
+            وَرِسَالَتِهَا وَأَهَمِّ الْمَعْلُومَاتِ عَنْهَا.
+          </p>
+
+        </div>
+
+      </a>
+
+
+      <!-- =====================
+           التقويم الدراسي
+      ====================== -->
 
       <div class="card">
-        <div class="icon">📅</div>
-        <h3>التقويم الدراسي</h3>
+
+        <div class="icon">
+          📅
+        </div>
+
+        <h3>
+          التقويم الدراسي
+        </h3>
+
         <p>
-          أهم مواعيد العام الدراسي والإجازات والمحطات التعليمية.
+          أَهَمُّ مَوَاعِيدِ الْعَامِ الدِّرَاسِيِّ
+          وَالإِجَازَاتِ وَالْمَحَطَّاتِ التَّعْلِيمِيَّةِ.
         </p>
+
       </div>
 
-      <div class="card">
-        <div class="icon">📋</div>
-        <h3>التعليمات المدرسية</h3>
-        <p>
-          مجموعة من التعليمات والإرشادات المهمة للطالبات وأولياء الأمور.
-        </p>
-      </div>
+
+      <!-- =====================
+           التعليمات المدرسية
+      ====================== -->
 
       <div class="card">
-        <div class="icon">🎒</div>
-        <h3>الاستعداد للعام الدراسي</h3>
+
+        <div class="icon">
+          📋
+        </div>
+
+        <h3>
+          التعليمات المدرسية
+        </h3>
+
         <p>
-          كل ما تحتاج إليه الطالبة للاستعداد لبداية عام دراسي ناجح.
+          مَجْمُوعَةٌ مِنَ التَّعْلِيمَاتِ وَالإِرْشَادَاتِ
+          الْمُهِمَّةِ لِلطَّالِبَاتِ وَأَوْلِيَاءِ الأُمُورِ.
         </p>
+
       </div>
 
-      <div class="card">
-        <div class="icon">💻</div>
-        <h3>المنصات التعليمية</h3>
-        <p>
-          الوصول إلى أهم المنصات والخدمات الإلكترونية التعليمية.
-        </p>
-      </div>
+
+      <!-- =====================
+           الاستعداد للعام الدراسي
+      ====================== -->
 
       <div class="card">
-        <div class="icon">☎️</div>
-        <h3>التواصل مع المدرسة</h3>
+
+        <div class="icon">
+          🎒
+        </div>
+
+        <h3>
+          الاستعداد للعام الدراسي
+        </h3>
+
         <p>
-          معلومات ووسائل التواصل مع المدرسة والإدارات المختصة.
+          كُلُّ مَا تَحْتَاجُ إِلَيْهِ الطَّالِبَةُ
+          لِلاسْتِعْدَادِ لِبِدَايَةِ عَامٍ دِرَاسِيٍّ نَاجِحٍ.
         </p>
+
       </div>
+
+
+      <!-- =====================
+           المنصات التعليمية
+      ====================== -->
+
+      <div class="card">
+
+        <div class="icon">
+          💻
+        </div>
+
+        <h3>
+          المنصات التعليمية
+        </h3>
+
+        <p>
+          الْوُصُولُ إِلَى أَهَمِّ الْمَنَصَّاتِ
+          وَالْخَدَمَاتِ الإِلِكْتُرُونِيَّةِ التَّعْلِيمِيَّةِ.
+        </p>
+
+      </div>
+
+
+      <!-- =====================
+           التواصل مع المدرسة
+      ====================== -->
+
+      <div class="card">
+
+        <div class="icon">
+          ☎️
+        </div>
+
+        <h3>
+          التواصل مع المدرسة
+        </h3>
+
+        <p>
+          مَعْلُومَاتٌ وَوَسَائِلُ التَّوَاصُلِ مَعَ
+          الْمَدْرَسَةِ وَالإِدَارَاتِ الْمُخْتَصَّةِ.
+        </p>
+
+      </div>
+
 
     </div>
 
   </section>
 
 
-  <!-- رسالة ترحيبية -->
+  <!-- =========================
+       رسالة الترحيب
+  ========================= -->
+
   <section class="message">
 
     <div class="message-box">
 
-      <h2>رِسَالَتُنَا لِأَوْلِيَاءِ الأُمُورِ</h2>
+      <h2>
+        رِسَالَتُنَا لِأَوْلِيَاءِ الأُمُورِ
+      </h2>
 
       <p>
         شَرَاكَتُنَا مَعَكُمْ أَسَاسُ نَجَاحِ بَنَاتِنَا.
-        وَبِالتَّعَاوُنِ وَالتَّوَاصُلِ نَصْنَعُ بِيئَةً تَعْلِيمِيَّةً
-        دَاعِمَةً تُسْهِمُ فِي تَقَدُّمِ طَالِبَاتِنَا وَتَمَيُّزِهِنَّ.
+        وَبِالتَّعَاوُنِ وَالتَّوَاصُلِ نَصْنَعُ بِيئَةً
+        تَعْلِيمِيَّةً دَاعِمَةً تُسْهِمُ فِي تَقَدُّمِ
+        طَالِبَاتِنَا وَتَمَيُّزِهِنَّ.
       </p>
 
     </div>
@@ -373,10 +623,15 @@
   </section>
 
 
-  <!-- التذييل -->
+  <!-- =========================
+       التذييل
+  ========================= -->
+
   <footer>
 
-    <strong>مدرسة مربح الحلقة الثانية بنات</strong>
+    <strong>
+      مدرسة مربح الحلقة الثانية بنات
+    </strong>
 
     <p>
       مرجع أولياء الأمور | العام الدراسي 2026–2027
@@ -388,6 +643,8 @@
 
   </footer>
 
+
 </body>
+
 </html>
 ```
