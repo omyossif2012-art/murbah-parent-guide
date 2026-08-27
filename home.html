@@ -2,18 +2,12 @@
 <html lang="ar" dir="rtl">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>مرجع أولياء الأمور | مدرسة مربح الحلقة الثانية بنات</title>
+<title>مَرْجِعُ أَوْلِيَاءِ الأُمُورِ | مدرسة مربح الحلقة الثانية بنات</title>
 
 <style>
-
-/* =====================================
-   الخط
-===================================== */
 
 @font-face {
     font-family: "Sakkal Majalla";
@@ -41,25 +35,23 @@ body {
 
     line-height: 1.6;
 
+    /* الخلفية الأساسية */
     background-image:
-        url("opening-bg.jpg");
+        url("ministry-logo.png");
 
     background-size: cover;
 
     background-position:
         center top;
 
-    background-attachment: fixed;
-
     background-repeat: no-repeat;
+
+    background-attachment: fixed;
 
 }
 
 
-/* =====================================
-   طبقة خفيفة جدًا فوق الخلفية
-   للمحافظة على وضوح النص
-===================================== */
+/* طبقة خفيفة جدًا للمحافظة على وضوح النص */
 
 body::before {
 
@@ -70,7 +62,7 @@ body::before {
     inset: 0;
 
     background:
-        rgba(255,255,255,0.08);
+        rgba(255,255,255,0.10);
 
     pointer-events: none;
 
@@ -79,9 +71,9 @@ body::before {
 }
 
 
-/* =====================================
-   الهيدر
-===================================== */
+/* ================================
+   رأس الموقع
+================================ */
 
 .header {
 
@@ -155,7 +147,7 @@ body::before {
     color: #f0d995;
 
     font-size:
-        clamp(30px,6vw,48px);
+        clamp(32px,6vw,50px);
 
     font-weight: bold;
 
@@ -166,42 +158,42 @@ body::before {
 
 .motto {
 
-    font-size: 20px;
+    font-size: 21px;
 
-    margin-top: 3px;
+    margin-top: 4px;
 
 }
 
 
-/* =====================================
+/* ================================
    الترحيب
-===================================== */
+================================ */
 
 .welcome {
 
     width: 92%;
 
-    max-width: 1050px;
+    max-width: 1100px;
 
     margin:
         45px auto 30px;
 
     padding:
-        35px 30px;
+        38px 30px;
 
     text-align: center;
 
     background:
-        rgba(255,255,255,0.91);
+        rgba(255,255,255,0.92);
 
     border:
-        1px solid rgba(198,166,91,0.65);
+        1px solid rgba(198,166,91,0.70);
 
-    border-radius: 24px;
+    border-radius: 25px;
 
     box-shadow:
         0 8px 28px
-        rgba(0,0,0,0.10);
+        rgba(0,0,0,0.12);
 
 }
 
@@ -211,7 +203,7 @@ body::before {
     color: #126b4f;
 
     font-size:
-        clamp(36px,7vw,54px);
+        clamp(38px,7vw,56px);
 
     font-weight: bold;
 
@@ -229,7 +221,7 @@ body::before {
     color: #403b35;
 
     font-size:
-        clamp(25px,4vw,34px);
+        clamp(26px,4vw,35px);
 
     font-weight: bold;
 
@@ -238,18 +230,18 @@ body::before {
 }
 
 
-/* =====================================
+/* ================================
    عنوان الأقسام
-===================================== */
+================================ */
 
 .section-heading {
 
     width: 92%;
 
-    max-width: 1050px;
+    max-width: 1100px;
 
     margin:
-        25px auto 25px;
+        25px auto;
 
     padding:
         18px;
@@ -257,12 +249,12 @@ body::before {
     text-align: center;
 
     background:
-        rgba(255,255,255,0.90);
+        rgba(255,255,255,0.91);
 
     border-radius: 20px;
 
     border:
-        1px solid rgba(198,166,91,0.60);
+        1px solid rgba(198,166,91,0.65);
 
 }
 
@@ -272,7 +264,7 @@ body::before {
     color: #7a2837;
 
     font-size:
-        clamp(30px,5vw,40px);
+        clamp(32px,5vw,42px);
 
 }
 
@@ -281,7 +273,7 @@ body::before {
 
     display: block;
 
-    width: 100px;
+    width: 110px;
 
     height: 3px;
 
@@ -293,9 +285,9 @@ body::before {
 }
 
 
-/* =====================================
+/* ================================
    البطاقات
-===================================== */
+================================ */
 
 .cards {
 
@@ -304,7 +296,7 @@ body::before {
     max-width: 1150px;
 
     margin:
-        0 auto 55px;
+        0 auto 60px;
 
     display: grid;
 
@@ -322,7 +314,7 @@ body::before {
 .card {
 
     background:
-        rgba(255,255,255,0.94);
+        rgba(255,255,255,0.95);
 
     border:
         1px solid #e0d6c3;
@@ -339,7 +331,7 @@ body::before {
 
     box-shadow:
         0 7px 22px
-        rgba(0,0,0,0.10);
+        rgba(0,0,0,0.12);
 
     transition:
         0.3s ease;
@@ -352,21 +344,21 @@ body::before {
 .card:hover {
 
     transform:
-        translateY(-6px);
+        translateY(-7px);
 
     border-top-color:
         #7a2837;
 
     box-shadow:
-        0 12px 30px
-        rgba(0,0,0,0.15);
+        0 14px 30px
+        rgba(0,0,0,0.16);
 
 }
 
 
 .icon {
 
-    font-size: 42px;
+    font-size: 43px;
 
     margin-bottom: 8px;
 
@@ -377,7 +369,7 @@ body::before {
 
     color: #7a2837;
 
-    font-size: 26px;
+    font-size: 27px;
 
 }
 
@@ -386,16 +378,16 @@ body::before {
 
     color: #5b554e;
 
-    font-size: 18px;
+    font-size: 19px;
 
     line-height: 1.45;
 
 }
 
 
-/* =====================================
-   العدّاد في نهاية الصفحة
-===================================== */
+/* ================================
+   العداد في نهاية الصفحة
+================================ */
 
 .countdown-section {
 
@@ -404,10 +396,10 @@ body::before {
     max-width: 1000px;
 
     margin:
-        10px auto 45px;
+        10px auto 50px;
 
     background:
-        rgba(255,255,255,0.94);
+        rgba(255,255,255,0.95);
 
     text-align: center;
 
@@ -417,11 +409,11 @@ body::before {
     border:
         1px solid #d7c59e;
 
-    border-radius: 24px;
+    border-radius: 25px;
 
     box-shadow:
         0 8px 25px
-        rgba(0,0,0,0.10);
+        rgba(0,0,0,0.12);
 
 }
 
@@ -430,7 +422,7 @@ body::before {
 
     color: #7a2837;
 
-    font-size: 34px;
+    font-size: 36px;
 
     font-weight: bold;
 
@@ -463,16 +455,16 @@ body::before {
 
 .time-box {
 
-    width: 100px;
+    width: 105px;
 
     background: white;
 
     border:
         2px solid #c6a65b;
 
-    border-radius: 16px;
+    border-radius: 17px;
 
-    padding: 12px;
+    padding: 13px;
 
     box-shadow:
         0 5px 18px
@@ -487,7 +479,7 @@ body::before {
 
     color: #126b4f;
 
-    font-size: 40px;
+    font-size: 42px;
 
     font-weight: bold;
 
@@ -500,14 +492,14 @@ body::before {
 
     color: #6d655c;
 
-    font-size: 17px;
+    font-size: 18px;
 
 }
 
 
-/* =====================================
+/* ================================
    الرسالة الختامية
-===================================== */
+================================ */
 
 .closing {
 
@@ -521,19 +513,19 @@ body::before {
     text-align: center;
 
     background:
-        rgba(255,255,255,0.94);
+        rgba(255,255,255,0.95);
 
     border:
         1px solid #dfd2b9;
 
-    border-radius: 20px;
+    border-radius: 22px;
 
     padding:
         30px 20px;
 
     box-shadow:
         0 7px 22px
-        rgba(0,0,0,0.09);
+        rgba(0,0,0,0.10);
 
 }
 
@@ -542,7 +534,7 @@ body::before {
 
     color: #126b4f;
 
-    font-size: 34px;
+    font-size: 35px;
 
 }
 
@@ -551,14 +543,14 @@ body::before {
 
     color: #5b544b;
 
-    font-size: 20px;
+    font-size: 21px;
 
 }
 
 
-/* =====================================
+/* ================================
    التذييل
-===================================== */
+================================ */
 
 .footer {
 
@@ -574,93 +566,14 @@ body::before {
     border-top:
         4px solid #c6a65b;
 
-    font-size: 18px;
+    font-size: 19px;
 
 }
 
 
-/* =====================================
-   الجوال
-===================================== */
-
-@media (max-width:600px) {
-
-    body {
-
-        background-attachment:
-            scroll;
-
-    }
-
-    .logo {
-
-        width: 65px;
-
-        height: 65px;
-
-    }
-
-    .welcome {
-
-        padding:
-            28px 15px;
-
-        margin-top:
-            25px;
-
-    }
-
-    .welcome h2 {
-
-        font-size: 34px;
-
-    }
-
-    .welcome p {
-
-        font-size: 22px;
-
-        line-height: 1.65;
-
-    }
-
-    .countdown {
-
-        gap: 7px;
-
-    }
-
-    .time-box {
-
-        width: 75px;
-
-    }
-
-    .number {
-
-        font-size: 29px;
-
-    }
-
-    .label {
-
-        font-size: 14px;
-
-    }
-
-    .card {
-
-        padding:
-            20px 15px;
-
-    }
-
-}
-
-
-/* =====================================
-   حركة ظهور ناعمة
-===================================== */
+/* ================================
+   ظهور العناصر
+================================ */
 
 .welcome,
 .section-heading,
@@ -669,7 +582,7 @@ body::before {
 .closing {
 
     animation:
-        fadeIn 0.9s ease both;
+        fadeIn 1s ease both;
 
 }
 
@@ -681,7 +594,7 @@ body::before {
         opacity: 0;
 
         transform:
-            translateY(18px);
+            translateY(20px);
 
     }
 
@@ -696,6 +609,72 @@ body::before {
 
 }
 
+
+/* ================================
+   الجوال
+================================ */
+
+@media (max-width:600px) {
+
+    body {
+
+        background-attachment:
+            scroll;
+
+        background-position:
+            center top;
+
+    }
+
+    .logo {
+
+        width: 65px;
+
+        height: 65px;
+
+    }
+
+    .welcome {
+
+        margin-top: 25px;
+
+        padding:
+            28px 15px;
+
+    }
+
+    .welcome h2 {
+
+        font-size: 35px;
+
+    }
+
+    .welcome p {
+
+        font-size: 23px;
+
+    }
+
+    .time-box {
+
+        width: 76px;
+
+    }
+
+    .number {
+
+        font-size: 30px;
+
+    }
+
+    .label {
+
+        font-size: 14px;
+
+    }
+
+}
+
 </style>
 
 </head>
@@ -704,14 +683,15 @@ body::before {
 <body>
 
 
-<!-- =====================================
+<!-- ================================
      رأس الموقع
-===================================== -->
+================================ -->
 
 <header class="header">
 
 
     <div class="logos">
+
 
         <img
             src="moe.png.jfif"
@@ -725,6 +705,7 @@ body::before {
             class="logo"
             alt="مدرسة مربح الحلقة الثانية بنات"
         >
+
 
     </div>
 
@@ -754,9 +735,9 @@ body::before {
 
 
 
-<!-- =====================================
+<!-- ================================
      الترحيب
-===================================== -->
+================================ -->
 
 <section class="welcome">
 
@@ -784,9 +765,9 @@ body::before {
 
 
 
-<!-- =====================================
-     عنوان الأقسام
-===================================== -->
+<!-- ================================
+     دليل أولياء الأمور
+================================ -->
 
 <div class="section-heading">
 
@@ -802,9 +783,9 @@ body::before {
 
 
 
-<!-- =====================================
-     البطاقات
-===================================== -->
+<!-- ================================
+     الأقسام
+================================ -->
 
 <section class="cards">
 
@@ -813,9 +794,7 @@ body::before {
 
         <div class="icon">🏫</div>
 
-        <h3>
-            مَنْ نَحْنُ؟
-        </h3>
+        <h3>مَنْ نَحْنُ؟</h3>
 
         <p>
             تَعَرَّفُوا عَلَى الْمَدْرَسَةِ
@@ -825,14 +804,11 @@ body::before {
     </div>
 
 
-
     <div class="card">
 
         <div class="icon">🎒</div>
 
-        <h3>
-            الاسْتِعْدَادُ لِلْعَامِ
-        </h3>
+        <h3>الاسْتِعْدَادُ لِلْعَامِ</h3>
 
         <p>
             كُلُّ مَا تَحْتَاجُهُ
@@ -843,14 +819,11 @@ body::before {
     </div>
 
 
-
     <div class="card">
 
         <div class="icon">📅</div>
 
-        <h3>
-            الْمَوَاعِيدُ الْمُهِمَّةُ
-        </h3>
+        <h3>الْمَوَاعِيدُ الْمُهِمَّةُ</h3>
 
         <p>
             أَهَمُّ التَّوَارِيخِ
@@ -861,14 +834,11 @@ body::before {
     </div>
 
 
-
     <div class="card">
 
         <div class="icon">👗</div>
 
-        <h3>
-            الزِّيُّ الْمَدْرَسِيُّ
-        </h3>
+        <h3>الزِّيُّ الْمَدْرَسِيُّ</h3>
 
         <p>
             التَّعْلِيمَاتُ الْخَاصَّةُ
@@ -879,14 +849,11 @@ body::before {
     </div>
 
 
-
     <div class="card">
 
         <div class="icon">⏰</div>
 
-        <h3>
-            الْحُضُورُ وَالانْصِرَافُ
-        </h3>
+        <h3>الْحُضُورُ وَالانْصِرَافُ</h3>
 
         <p>
             مَوَاعِيدُ الدَّوَامِ
@@ -897,14 +864,11 @@ body::before {
     </div>
 
 
-
     <div class="card">
 
         <div class="icon">🚌</div>
 
-        <h3>
-            الْمُوَاصَلَاتُ
-        </h3>
+        <h3>الْمُوَاصَلَاتُ</h3>
 
         <p>
             إِرْشَادَاتٌ وَمَعْلُومَاتٌ
@@ -915,14 +879,11 @@ body::before {
     </div>
 
 
-
     <div class="card">
 
         <div class="icon">📚</div>
 
-        <h3>
-            التَّعْلِيمُ وَالتَّعَلُّمُ
-        </h3>
+        <h3>التَّعْلِيمُ وَالتَّعَلُّمُ</h3>
 
         <p>
             مَعْلُومَاتٌ تُسَاعِدُ
@@ -934,14 +895,11 @@ body::before {
     </div>
 
 
-
     <div class="card">
 
         <div class="icon">📱</div>
 
-        <h3>
-            التَّوَاصُلُ مَعَ الْمَدْرَسَةِ
-        </h3>
+        <h3>التَّوَاصُلُ مَعَ الْمَدْرَسَةِ</h3>
 
         <p>
             قَنَوَاتُ التَّوَاصُلِ
@@ -952,14 +910,11 @@ body::before {
     </div>
 
 
-
     <div class="card">
 
         <div class="icon">❓</div>
 
-        <h3>
-            أَسْئِلَةٌ شَائِعَةٌ
-        </h3>
+        <h3>أَسْئِلَةٌ شَائِعَةٌ</h3>
 
         <p>
             إِجَابَاتٌ مُخْتَصَرَةٌ
@@ -974,9 +929,9 @@ body::before {
 
 
 
-<!-- =====================================
-     العدّاد في نهاية الصفحة
-===================================== -->
+<!-- ================================
+     العداد في نهاية الصفحة
+================================ -->
 
 <section class="countdown-section">
 
@@ -1066,9 +1021,9 @@ body::before {
 
 
 
-<!-- =====================================
+<!-- ================================
      الرسالة الختامية
-===================================== -->
+================================ -->
 
 <section class="closing">
 
@@ -1094,9 +1049,9 @@ body::before {
 
 
 
-<!-- =====================================
+<!-- ================================
      التذييل
-===================================== -->
+================================ -->
 
 <footer class="footer">
 
@@ -1110,11 +1065,11 @@ body::before {
 
 
 
-<!-- =====================================
-     العداد
-===================================== -->
-
 <script>
+
+/* ================================
+   العداد حتى 31 أغسطس 2026
+================================ */
 
 const targetDate =
     new Date(
@@ -1146,7 +1101,6 @@ function updateCountdown() {
             .textContent = "00";
 
         return;
-
     }
 
 
@@ -1204,7 +1158,6 @@ function updateCountdown() {
 
 
 updateCountdown();
-
 
 setInterval(
     updateCountdown,
