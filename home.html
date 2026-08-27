@@ -2,27 +2,55 @@
 <html lang="ar" dir="rtl">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>مَرْجِعُ أَوْلِيَاءِ الأُمُورِ | مدرسة مربح الحلقة الثانية بنات</title>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+مَرْجِعُ أَوْلِيَاءِ الأُمُورِ | مدرسة مربح الحلقة الثانية بنات
+</title>
+
 
 <style>
 
+/* =====================================
+   الخط
+===================================== */
+
 @font-face {
-    font-family: "Sakkal Majalla";
-    src: local("Sakkal Majalla");
+
+    font-family:
+        "Sakkal Majalla";
+
+    src:
+        local("Sakkal Majalla");
+
 }
+
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+    box-sizing:
+        border-box;
+
+    margin:
+        0;
+
+    padding:
+        0;
+
 }
 
+
 html {
-    scroll-behavior: smooth;
+
+    scroll-behavior:
+        smooth;
+
 }
+
 
 body {
 
@@ -31,49 +59,33 @@ body {
         Arial,
         sans-serif;
 
-    color: #26352f;
+    color:
+        #26352f;
 
-    line-height: 1.6;
+    line-height:
+        1.7;
 
-    /* الخلفية الأساسية */
     background-image:
         url("ministry-logo.png");
 
-    background-size: cover;
+    background-size:
+        cover;
 
     background-position:
         center top;
 
-    background-repeat: no-repeat;
+    background-repeat:
+        no-repeat;
 
-    background-attachment: fixed;
-
-}
-
-
-/* طبقة خفيفة جدًا للمحافظة على وضوح النص */
-
-body::before {
-
-    content: "";
-
-    position: fixed;
-
-    inset: 0;
-
-    background:
-        rgba(255,255,255,0.10);
-
-    pointer-events: none;
-
-    z-index: -1;
+    background-attachment:
+        fixed;
 
 }
 
 
-/* ================================
-   رأس الموقع
-================================ */
+/* =====================================
+   الرأس
+===================================== */
 
 .header {
 
@@ -84,12 +96,14 @@ body::before {
             rgba(11,81,60,0.96)
         );
 
-    color: white;
+    color:
+        white;
 
-    text-align: center;
+    text-align:
+        center;
 
     padding:
-        25px 15px 30px;
+        22px 15px 28px;
 
     border-bottom:
         5px solid #c6a65b;
@@ -99,32 +113,43 @@ body::before {
 
 .logos {
 
-    display: flex;
+    display:
+        flex;
 
-    justify-content: center;
+    justify-content:
+        center;
 
-    align-items: center;
+    align-items:
+        center;
 
-    gap: 18px;
+    gap:
+        18px;
 
-    margin-bottom: 10px;
+    margin-bottom:
+        10px;
 
 }
 
 
 .logo {
 
-    width: 78px;
+    width:
+        72px;
 
-    height: 78px;
+    height:
+        72px;
 
-    object-fit: contain;
+    object-fit:
+        contain;
 
-    background: white;
+    background:
+        white;
 
-    padding: 5px;
+    padding:
+        5px;
 
-    border-radius: 13px;
+    border-radius:
+        14px;
 
     border:
         1px solid #c6a65b;
@@ -137,43 +162,51 @@ body::before {
     font-size:
         clamp(26px,5vw,40px);
 
-    font-weight: bold;
+    font-weight:
+        bold;
 
 }
 
 
 .page-title {
 
-    color: #f0d995;
+    color:
+        #f0d995;
 
     font-size:
-        clamp(32px,6vw,50px);
+        clamp(38px,7vw,54px);
 
-    font-weight: bold;
+    font-weight:
+        bold;
 
-    line-height: 1.1;
+    line-height:
+        1.1;
 
 }
 
 
 .motto {
 
-    font-size: 21px;
+    font-size:
+        21px;
 
-    margin-top: 4px;
+    margin-top:
+        4px;
 
 }
 
 
-/* ================================
+/* =====================================
    الترحيب
-================================ */
+===================================== */
 
 .welcome {
 
-    width: 92%;
+    width:
+        92%;
 
-    max-width: 1100px;
+    max-width:
+        1100px;
 
     margin:
         45px auto 30px;
@@ -181,15 +214,18 @@ body::before {
     padding:
         38px 30px;
 
-    text-align: center;
+    text-align:
+        center;
 
     background:
-        rgba(255,255,255,0.92);
+        rgba(255,255,255,0.93);
 
     border:
-        1px solid rgba(198,166,91,0.70);
+        1px solid
+        rgba(198,166,91,0.70);
 
-    border-radius: 25px;
+    border-radius:
+        25px;
 
     box-shadow:
         0 8px 28px
@@ -200,45 +236,55 @@ body::before {
 
 .welcome h2 {
 
-    color: #126b4f;
+    color:
+        #126b4f;
 
     font-size:
         clamp(38px,7vw,56px);
 
-    font-weight: bold;
+    font-weight:
+        bold;
 
-    margin-bottom: 15px;
+    margin-bottom:
+        15px;
 
 }
 
 
 .welcome p {
 
-    max-width: 1000px;
+    max-width:
+        1000px;
 
-    margin: auto;
+    margin:
+        auto;
 
-    color: #403b35;
+    color:
+        #403b35;
 
     font-size:
         clamp(26px,4vw,35px);
 
-    font-weight: bold;
+    font-weight:
+        bold;
 
-    line-height: 1.75;
+    line-height:
+        1.75;
 
 }
 
 
-/* ================================
+/* =====================================
    عنوان الأقسام
-================================ */
+===================================== */
 
 .section-heading {
 
-    width: 92%;
+    width:
+        92%;
 
-    max-width: 1100px;
+    max-width:
+        1100px;
 
     margin:
         25px auto;
@@ -246,22 +292,26 @@ body::before {
     padding:
         18px;
 
-    text-align: center;
+    text-align:
+        center;
 
     background:
-        rgba(255,255,255,0.91);
+        rgba(255,255,255,0.92);
 
-    border-radius: 20px;
+    border-radius:
+        20px;
 
     border:
-        1px solid rgba(198,166,91,0.65);
+        1px solid
+        rgba(198,166,91,0.65);
 
 }
 
 
 .section-heading h2 {
 
-    color: #7a2837;
+    color:
+        #7a2837;
 
     font-size:
         clamp(32px,5vw,42px);
@@ -271,13 +321,17 @@ body::before {
 
 .section-heading span {
 
-    display: block;
+    display:
+        block;
 
-    width: 110px;
+    width:
+        110px;
 
-    height: 3px;
+    height:
+        3px;
 
-    background: #c6a65b;
+    background:
+        #c6a65b;
 
     margin:
         8px auto;
@@ -285,20 +339,23 @@ body::before {
 }
 
 
-/* ================================
+/* =====================================
    البطاقات
-================================ */
+===================================== */
 
 .cards {
 
-    width: 92%;
+    width:
+        92%;
 
-    max-width: 1150px;
+    max-width:
+        1150px;
 
     margin:
         0 auto 60px;
 
-    display: grid;
+    display:
+        grid;
 
     grid-template-columns:
         repeat(
@@ -306,12 +363,26 @@ body::before {
             minmax(230px,1fr)
         );
 
-    gap: 20px;
+    gap:
+        20px;
 
 }
 
 
+/* =====================================
+   البطاقة
+===================================== */
+
 .card {
+
+    display:
+        block;
+
+    text-decoration:
+        none;
+
+    color:
+        inherit;
 
     background:
         rgba(255,255,255,0.95);
@@ -322,21 +393,26 @@ body::before {
     border-top:
         5px solid #126b4f;
 
-    border-radius: 18px;
+    border-radius:
+        18px;
 
     padding:
         25px 20px;
 
-    text-align: center;
+    text-align:
+        center;
 
     box-shadow:
         0 7px 22px
         rgba(0,0,0,0.12);
 
     transition:
-        0.3s ease;
+        all
+        0.3s
+        ease;
 
-    cursor: pointer;
+    cursor:
+        pointer;
 
 }
 
@@ -358,42 +434,54 @@ body::before {
 
 .icon {
 
-    font-size: 43px;
+    font-size:
+        43px;
 
-    margin-bottom: 8px;
+    margin-bottom:
+        8px;
 
 }
 
 
 .card h3 {
 
-    color: #7a2837;
+    color:
+        #7a2837;
 
-    font-size: 27px;
+    font-size:
+        27px;
+
+    margin-bottom:
+        4px;
 
 }
 
 
 .card p {
 
-    color: #5b554e;
+    color:
+        #5b554e;
 
-    font-size: 19px;
+    font-size:
+        19px;
 
-    line-height: 1.45;
+    line-height:
+        1.45;
 
 }
 
 
-/* ================================
-   العداد في نهاية الصفحة
-================================ */
+/* =====================================
+   العداد
+===================================== */
 
 .countdown-section {
 
-    width: 92%;
+    width:
+        92%;
 
-    max-width: 1000px;
+    max-width:
+        1000px;
 
     margin:
         10px auto 50px;
@@ -401,7 +489,8 @@ body::before {
     background:
         rgba(255,255,255,0.95);
 
-    text-align: center;
+    text-align:
+        center;
 
     padding:
         35px 20px;
@@ -409,7 +498,8 @@ body::before {
     border:
         1px solid #d7c59e;
 
-    border-radius: 25px;
+    border-radius:
+        25px;
 
     box-shadow:
         0 8px 25px
@@ -420,51 +510,65 @@ body::before {
 
 .countdown-title {
 
-    color: #7a2837;
+    color:
+        #7a2837;
 
-    font-size: 36px;
+    font-size:
+        36px;
 
-    font-weight: bold;
+    font-weight:
+        bold;
 
 }
 
 
 .countdown-subtitle {
 
-    color: #625b52;
+    color:
+        #625b52;
 
-    font-size: 21px;
+    font-size:
+        21px;
 
 }
 
 
 .countdown {
 
-    display: flex;
+    display:
+        flex;
 
-    justify-content: center;
+    justify-content:
+        center;
 
-    flex-wrap: wrap;
+    flex-wrap:
+        wrap;
 
-    gap: 12px;
+    gap:
+        12px;
 
-    margin-top: 18px;
+    margin-top:
+        18px;
 
 }
 
 
 .time-box {
 
-    width: 105px;
+    width:
+        105px;
 
-    background: white;
+    background:
+        white;
 
     border:
         2px solid #c6a65b;
 
-    border-radius: 17px;
+    border-radius:
+        17px;
 
-    padding: 13px;
+    padding:
+        13px;
 
     box-shadow:
         0 5px 18px
@@ -475,42 +579,52 @@ body::before {
 
 .number {
 
-    display: block;
+    display:
+        block;
 
-    color: #126b4f;
+    color:
+        #126b4f;
 
-    font-size: 42px;
+    font-size:
+        42px;
 
-    font-weight: bold;
+    font-weight:
+        bold;
 
-    line-height: 1;
+    line-height:
+        1;
 
 }
 
 
 .label {
 
-    color: #6d655c;
+    color:
+        #6d655c;
 
-    font-size: 18px;
+    font-size:
+        18px;
 
 }
 
 
-/* ================================
+/* =====================================
    الرسالة الختامية
-================================ */
+===================================== */
 
 .closing {
 
-    width: 92%;
+    width:
+        92%;
 
-    max-width: 900px;
+    max-width:
+        900px;
 
     margin:
         0 auto 50px;
 
-    text-align: center;
+    text-align:
+        center;
 
     background:
         rgba(255,255,255,0.95);
@@ -518,7 +632,8 @@ body::before {
     border:
         1px solid #dfd2b9;
 
-    border-radius: 22px;
+    border-radius:
+        22px;
 
     padding:
         30px 20px;
@@ -532,48 +647,56 @@ body::before {
 
 .closing h2 {
 
-    color: #126b4f;
+    color:
+        #126b4f;
 
-    font-size: 35px;
+    font-size:
+        35px;
 
 }
 
 
 .closing p {
 
-    color: #5b544b;
+    color:
+        #5b544b;
 
-    font-size: 21px;
+    font-size:
+        21px;
 
 }
 
 
-/* ================================
+/* =====================================
    التذييل
-================================ */
+===================================== */
 
 .footer {
 
     background:
         rgba(18,107,79,0.97);
 
-    color: white;
+    color:
+        white;
 
-    text-align: center;
+    text-align:
+        center;
 
-    padding: 20px;
+    padding:
+        20px;
 
     border-top:
         4px solid #c6a65b;
 
-    font-size: 19px;
+    font-size:
+        19px;
 
 }
 
 
-/* ================================
-   ظهور العناصر
-================================ */
+/* =====================================
+   الحركة
+===================================== */
 
 .welcome,
 .section-heading,
@@ -582,7 +705,10 @@ body::before {
 .closing {
 
     animation:
-        fadeIn 1s ease both;
+        fadeIn
+        0.9s
+        ease
+        both;
 
 }
 
@@ -591,7 +717,8 @@ body::before {
 
     from {
 
-        opacity: 0;
+        opacity:
+            0;
 
         transform:
             translateY(20px);
@@ -600,7 +727,8 @@ body::before {
 
     to {
 
-        opacity: 1;
+        opacity:
+            1;
 
         transform:
             translateY(0);
@@ -610,9 +738,9 @@ body::before {
 }
 
 
-/* ================================
+/* =====================================
    الجوال
-================================ */
+===================================== */
 
 @media (max-width:600px) {
 
@@ -621,55 +749,67 @@ body::before {
         background-attachment:
             scroll;
 
-        background-position:
-            center top;
-
     }
+
 
     .logo {
 
-        width: 65px;
+        width:
+            62px;
 
-        height: 65px;
+        height:
+            62px;
 
     }
 
+
     .welcome {
 
-        margin-top: 25px;
+        margin-top:
+            25px;
 
         padding:
             28px 15px;
 
     }
 
+
     .welcome h2 {
 
-        font-size: 35px;
+        font-size:
+            35px;
 
     }
+
 
     .welcome p {
 
-        font-size: 23px;
+        font-size:
+            23px;
 
     }
+
 
     .time-box {
 
-        width: 76px;
+        width:
+            76px;
 
     }
+
 
     .number {
 
-        font-size: 30px;
+        font-size:
+            30px;
 
     }
 
+
     .label {
 
-        font-size: 14px;
+        font-size:
+            14px;
 
     }
 
@@ -683,9 +823,9 @@ body::before {
 <body>
 
 
-<!-- ================================
-     رأس الموقع
-================================ -->
+<!-- =====================================
+     الرأس
+===================================== -->
 
 <header class="header">
 
@@ -735,9 +875,9 @@ body::before {
 
 
 
-<!-- ================================
+<!-- =====================================
      الترحيب
-================================ -->
+===================================== -->
 
 <section class="welcome">
 
@@ -765,9 +905,9 @@ body::before {
 
 
 
-<!-- ================================
+<!-- =====================================
      دليل أولياء الأمور
-================================ -->
+===================================== -->
 
 <div class="section-heading">
 
@@ -783,32 +923,51 @@ body::before {
 
 
 
-<!-- ================================
+<!-- =====================================
      الأقسام
-================================ -->
+===================================== -->
 
 <section class="cards">
 
 
-    <div class="card">
+    <!-- من نحن -->
 
-        <div class="icon">🏫</div>
+    <a
+        href="./about.html"
+        class="card"
+    >
 
-        <h3>مَنْ نَحْنُ؟</h3>
+        <div class="icon">
+            🏫
+        </div>
+
+        <h3>
+            مَنْ نَحْنُ؟
+        </h3>
 
         <p>
             تَعَرَّفُوا عَلَى الْمَدْرَسَةِ
             وَرُؤْيَتِهَا وَرِسَالَتِهَا.
         </p>
 
-    </div>
+    </a>
 
 
-    <div class="card">
 
-        <div class="icon">🎒</div>
+    <!-- الاستعداد -->
 
-        <h3>الاسْتِعْدَادُ لِلْعَامِ</h3>
+    <a
+        href="#preparation"
+        class="card"
+    >
+
+        <div class="icon">
+            🎒
+        </div>
+
+        <h3>
+            الاسْتِعْدَادُ لِلْعَامِ
+        </h3>
 
         <p>
             كُلُّ مَا تَحْتَاجُهُ
@@ -816,14 +975,24 @@ body::before {
             الدِّرَاسَةِ.
         </p>
 
-    </div>
+    </a>
 
 
-    <div class="card">
 
-        <div class="icon">📅</div>
+    <!-- المواعيد -->
 
-        <h3>الْمَوَاعِيدُ الْمُهِمَّةُ</h3>
+    <a
+        href="#dates"
+        class="card"
+    >
+
+        <div class="icon">
+            📅
+        </div>
+
+        <h3>
+            الْمَوَاعِيدُ الْمُهِمَّةُ
+        </h3>
 
         <p>
             أَهَمُّ التَّوَارِيخِ
@@ -831,14 +1000,24 @@ body::before {
             وَالْمُنَاسَبَاتِ.
         </p>
 
-    </div>
+    </a>
 
 
-    <div class="card">
 
-        <div class="icon">👗</div>
+    <!-- الزي -->
 
-        <h3>الزِّيُّ الْمَدْرَسِيُّ</h3>
+    <a
+        href="#uniform"
+        class="card"
+    >
+
+        <div class="icon">
+            👗
+        </div>
+
+        <h3>
+            الزِّيُّ الْمَدْرَسِيُّ
+        </h3>
 
         <p>
             التَّعْلِيمَاتُ الْخَاصَّةُ
@@ -846,14 +1025,24 @@ body::before {
             وَالْمَظْهَرِ الْعَامِّ.
         </p>
 
-    </div>
+    </a>
 
 
-    <div class="card">
 
-        <div class="icon">⏰</div>
+    <!-- الحضور -->
 
-        <h3>الْحُضُورُ وَالانْصِرَافُ</h3>
+    <a
+        href="#attendance"
+        class="card"
+    >
+
+        <div class="icon">
+            ⏰
+        </div>
+
+        <h3>
+            الْحُضُورُ وَالانْصِرَافُ
+        </h3>
 
         <p>
             مَوَاعِيدُ الدَّوَامِ
@@ -861,14 +1050,24 @@ body::before {
             وَالانْصِرَافِ.
         </p>
 
-    </div>
+    </a>
 
 
-    <div class="card">
 
-        <div class="icon">🚌</div>
+    <!-- المواصلات -->
 
-        <h3>الْمُوَاصَلَاتُ</h3>
+    <a
+        href="#transport"
+        class="card"
+    >
+
+        <div class="icon">
+            🚌
+        </div>
+
+        <h3>
+            الْمُوَاصَلَاتُ
+        </h3>
 
         <p>
             إِرْشَادَاتٌ وَمَعْلُومَاتٌ
@@ -876,14 +1075,24 @@ body::before {
             الْمَدْرَسِيَّةِ.
         </p>
 
-    </div>
+    </a>
 
 
-    <div class="card">
 
-        <div class="icon">📚</div>
+    <!-- التعليم -->
 
-        <h3>التَّعْلِيمُ وَالتَّعَلُّمُ</h3>
+    <a
+        href="#learning"
+        class="card"
+    >
+
+        <div class="icon">
+            📚
+        </div>
+
+        <h3>
+            التَّعْلِيمُ وَالتَّعَلُّمُ
+        </h3>
 
         <p>
             مَعْلُومَاتٌ تُسَاعِدُ
@@ -892,14 +1101,24 @@ body::before {
             بَنَاتِنَا.
         </p>
 
-    </div>
+    </a>
 
 
-    <div class="card">
 
-        <div class="icon">📱</div>
+    <!-- التواصل -->
 
-        <h3>التَّوَاصُلُ مَعَ الْمَدْرَسَةِ</h3>
+    <a
+        href="#communication"
+        class="card"
+    >
+
+        <div class="icon">
+            📱
+        </div>
+
+        <h3>
+            التَّوَاصُلُ مَعَ الْمَدْرَسَةِ
+        </h3>
 
         <p>
             قَنَوَاتُ التَّوَاصُلِ
@@ -907,14 +1126,24 @@ body::before {
             لِلتَّوَاصُلِ.
         </p>
 
-    </div>
+    </a>
 
 
-    <div class="card">
 
-        <div class="icon">❓</div>
+    <!-- الأسئلة -->
 
-        <h3>أَسْئِلَةٌ شَائِعَةٌ</h3>
+    <a
+        href="#faq"
+        class="card"
+    >
+
+        <div class="icon">
+            ❓
+        </div>
+
+        <h3>
+            أَسْئِلَةٌ شَائِعَةٌ
+        </h3>
 
         <p>
             إِجَابَاتٌ مُخْتَصَرَةٌ
@@ -922,16 +1151,16 @@ body::before {
             أَوْلِيَاءِ الأُمُورِ.
         </p>
 
-    </div>
+    </a>
 
 
 </section>
 
 
 
-<!-- ================================
+<!-- =====================================
      العداد في نهاية الصفحة
-================================ -->
+===================================== -->
 
 <section class="countdown-section">
 
@@ -1021,9 +1250,9 @@ body::before {
 
 
 
-<!-- ================================
+<!-- =====================================
      الرسالة الختامية
-================================ -->
+===================================== -->
 
 <section class="closing">
 
@@ -1049,9 +1278,9 @@ body::before {
 
 
 
-<!-- ================================
+<!-- =====================================
      التذييل
-================================ -->
+===================================== -->
 
 <footer class="footer">
 
@@ -1067,9 +1296,9 @@ body::before {
 
 <script>
 
-/* ================================
+/* =====================================
    العداد حتى 31 أغسطس 2026
-================================ */
+===================================== */
 
 const targetDate =
     new Date(
@@ -1101,6 +1330,7 @@ function updateCountdown() {
             .textContent = "00";
 
         return;
+
     }
 
 
