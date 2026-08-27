@@ -20,15 +20,18 @@
     src: local("Sakkal Majalla");
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
+
 
 body {
 
@@ -139,103 +142,6 @@ body {
 
 
 /* =====================================
-   العدّاد
-===================================== */
-
-.countdown-section {
-
-    background: #faf8f3;
-
-    text-align: center;
-
-    padding: 30px 15px;
-
-    border-bottom:
-        1px solid #e0d5bd;
-
-}
-
-
-.countdown-title {
-
-    color: #7a2837;
-
-    font-size: 30px;
-
-    font-weight: bold;
-
-}
-
-
-.countdown-subtitle {
-
-    color: #625b52;
-
-    font-size: 19px;
-
-}
-
-
-.countdown {
-
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 12px;
-
-    margin-top: 18px;
-
-}
-
-
-.time-box {
-
-    width: 95px;
-
-    background: white;
-
-    border:
-        2px solid #c6a65b;
-
-    border-radius: 16px;
-
-    padding: 10px;
-
-    box-shadow:
-        0 5px 18px
-        rgba(0,0,0,0.08);
-
-}
-
-
-.number {
-
-    display: block;
-
-    color: #126b4f;
-
-    font-size: 38px;
-
-    font-weight: bold;
-
-    line-height: 1;
-
-}
-
-
-.label {
-
-    color: #6d655c;
-
-    font-size: 17px;
-
-}
-
-
-/* =====================================
    الترحيب
 ===================================== */
 
@@ -244,7 +150,7 @@ body {
     text-align: center;
 
     padding:
-        45px 20px 30px;
+        50px 20px 35px;
 
 }
 
@@ -254,29 +160,35 @@ body {
     color: #126b4f;
 
     font-size:
-        clamp(30px,6vw,44px);
+        clamp(34px,7vw,52px);
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
 
 }
 
 
 .welcome p {
 
-    max-width: 850px;
+    max-width: 1000px;
 
-    margin:
-        10px auto;
+    margin: 0 auto;
 
     color: #514a40;
 
-    font-size: 21px;
+    font-size:
+        clamp(24px,4vw,32px);
 
-    line-height: 1.7;
+    font-weight: bold;
+
+    line-height: 1.75;
 
 }
 
 
 /* =====================================
-   العنوان الرئيسي للأقسام
+   عنوان الأقسام
 ===================================== */
 
 .section-heading {
@@ -413,7 +325,114 @@ body {
 
 
 /* =====================================
-   رسالة ختامية
+   العداد - في نهاية الصفحة
+===================================== */
+
+.countdown-section {
+
+    width: 92%;
+
+    max-width: 1000px;
+
+    margin:
+        10px auto 45px;
+
+    background:
+        #faf8f3;
+
+    text-align: center;
+
+    padding: 32px 20px;
+
+    border:
+        1px solid #e0d5bd;
+
+    border-radius: 22px;
+
+}
+
+
+.countdown-title {
+
+    color: #7a2837;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+}
+
+
+.countdown-subtitle {
+
+    color: #625b52;
+
+    font-size: 20px;
+
+}
+
+
+.countdown {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 18px;
+
+}
+
+
+.time-box {
+
+    width: 100px;
+
+    background: white;
+
+    border:
+        2px solid #c6a65b;
+
+    border-radius: 16px;
+
+    padding: 12px;
+
+    box-shadow:
+        0 5px 18px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.number {
+
+    display: block;
+
+    color: #126b4f;
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+}
+
+
+.label {
+
+    color: #6d655c;
+
+    font-size: 17px;
+
+}
+
+
+/* =====================================
+   الرسالة الختامية
 ===================================== */
 
 .closing {
@@ -494,11 +513,37 @@ body {
 
     }
 
+
+    .welcome {
+
+        padding:
+            35px 15px 25px;
+
+    }
+
+
+    .welcome h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .welcome p {
+
+        font-size: 22px;
+
+        line-height: 1.65;
+
+    }
+
+
     .countdown {
 
         gap: 7px;
 
     }
+
 
     .time-box {
 
@@ -506,11 +551,13 @@ body {
 
     }
 
+
     .number {
 
         font-size: 29px;
 
     }
+
 
     .label {
 
@@ -518,15 +565,11 @@ body {
 
     }
 
-    .welcome p {
-
-        font-size: 18px;
-
-    }
 
     .card {
 
-        padding: 20px 15px;
+        padding:
+            20px 15px;
 
     }
 
@@ -549,17 +592,20 @@ body {
 
     <div class="logos">
 
+
         <img
             src="moe.png.jfif"
             class="logo"
             alt="وزارة التربية والتعليم"
         >
 
+
         <img
             src="school-logo.png"
             class="logo"
             alt="مدرسة مربح الحلقة الثانية بنات"
         >
+
 
     </div>
 
@@ -586,98 +632,6 @@ body {
 
 
 </header>
-
-
-
-<!-- =====================================
-     العدّاد
-===================================== -->
-
-<section class="countdown-section">
-
-
-    <div class="countdown-title">
-
-        ⏳ الْعَدُّ التَّنَازُلِيُّ
-
-    </div>
-
-
-    <div class="countdown-subtitle">
-
-        مُتَبَقٍّ عَلَى بَدْءِ الْعَامِ الدِّرَاسِيِّ
-        ٢٠٢٦ – ٢٠٢٧
-
-    </div>
-
-
-    <div class="countdown">
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="days">
-                00
-            </span>
-
-            <span class="label">
-                يَوْم
-            </span>
-
-        </div>
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="hours">
-                00
-            </span>
-
-            <span class="label">
-                سَاعَة
-            </span>
-
-        </div>
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="minutes">
-                00
-            </span>
-
-            <span class="label">
-                دَقِيقَة
-            </span>
-
-        </div>
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="seconds">
-                00
-            </span>
-
-            <span class="label">
-                ثَانِيَة
-            </span>
-
-        </div>
-
-
-    </div>
-
-
-</section>
 
 
 
@@ -718,7 +672,9 @@ body {
 <div class="section-heading">
 
     <h2>
+
         دَلِيلُ أَوْلِيَاءِ الأُمُورِ
+
     </h2>
 
     <span></span>
@@ -918,6 +874,98 @@ body {
 
 
 <!-- =====================================
+     العدّاد في نهاية الصفحة
+===================================== -->
+
+<section class="countdown-section">
+
+
+    <div class="countdown-title">
+
+        ⏳ الْعَدُّ التَّنَازُلِيُّ
+
+    </div>
+
+
+    <div class="countdown-subtitle">
+
+        مُتَبَقٍّ عَلَى بَدْءِ الْعَامِ الدِّرَاسِيِّ
+        ٢٠٢٦ – ٢٠٢٧
+
+    </div>
+
+
+    <div class="countdown">
+
+
+        <div class="time-box">
+
+            <span
+                class="number"
+                id="days">
+                00
+            </span>
+
+            <span class="label">
+                يَوْم
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <span
+                class="number"
+                id="hours">
+                00
+            </span>
+
+            <span class="label">
+                سَاعَة
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <span
+                class="number"
+                id="minutes">
+                00
+            </span>
+
+            <span class="label">
+                دَقِيقَة
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <span
+                class="number"
+                id="seconds">
+                00
+            </span>
+
+            <span class="label">
+                ثَانِيَة
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================
      الرسالة الختامية
 ===================================== -->
 
@@ -963,7 +1011,6 @@ body {
 
 <!-- =====================================
      JavaScript
-     العداد إلى 31 أغسطس 2026
 ===================================== -->
 
 <script>
@@ -998,6 +1045,7 @@ function updateCountdown() {
             .textContent = "00";
 
         return;
+
     }
 
 
