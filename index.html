@@ -1,14 +1,24 @@
-```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>مرجع أولياء الأمور | مدرسة مربح الحلقة الثانية بنات</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
+  <title>
+    مرجع أولياء الأمور | مدرسة مربح الحلقة الثانية بنات
+  </title>
+
+  <!-- خط Sakkal Majalla -->
   <style>
+
+    @font-face {
+      font-family: "Sakkal Majalla";
+      src: local("Sakkal Majalla");
+    }
 
     * {
       box-sizing: border-box;
@@ -17,354 +27,768 @@
     }
 
     body {
-      font-family: "Tahoma", "Arial", sans-serif;
+      font-family: "Sakkal Majalla", "Arial", sans-serif;
       background: #ffffff;
-      color: #33243f;
+      color: #26372f;
       line-height: 1.8;
     }
 
-    /* =========================
+
+    /* ==========================
+       الألوان
+    ========================== */
+
+    :root {
+      --green: #126b4f;
+      --dark-green: #084936;
+      --gold: #c5a45b;
+      --maroon: #7a2634;
+      --cream: #faf8f1;
+      --light-green: #eef5f1;
+      --text: #35423b;
+    }
+
+
+    /* ==========================
        الشريط العلوي
-    ========================= */
+    ========================== */
 
     header {
-      background: linear-gradient(135deg, #4b245f, #6f4382);
-      color: white;
-      padding: 18px 7%;
+      background: #ffffff;
+
+      padding: 14px 6%;
+
       display: flex;
-      align-items: center;
+
       justify-content: space-between;
+
+      align-items: center;
+
       gap: 20px;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
-    }
 
-    .school-name {
-      font-size: 20px;
-      font-weight: bold;
-    }
+      border-bottom:
+        2px solid var(--gold);
 
-    .ministry {
-      font-size: 13px;
-      opacity: 0.9;
-    }
-
-    .platform-name {
-      font-size: 15px;
-      font-weight: bold;
+      position: relative;
     }
 
 
-    /* =========================
-       الواجهة الرئيسية
-    ========================= */
+    header::after {
+      content: "";
 
-    .hero {
-      min-height: 540px;
+      position: absolute;
+
+      bottom: -5px;
+
+      right: 0;
+
+      width: 38%;
+
+      height: 3px;
+
+      background: var(--green);
+    }
+
+
+    /* ==========================
+       منطقة الشعارات
+    ========================== */
+
+    .logos {
+      display: flex;
+
+      align-items: center;
+
+      gap: 15px;
+    }
+
+
+    .logo-box {
+
+      width: 78px;
+      height: 78px;
+
+      border:
+        1px dashed #c8b77d;
+
+      border-radius: 12px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       text-align: center;
 
-      padding: 70px 20px;
+      color: var(--green);
 
-      background:
-        radial-gradient(
-          circle at top right,
-          rgba(185, 157, 82, 0.15),
-          transparent 35%
-        ),
-        radial-gradient(
-          circle at bottom left,
-          rgba(111, 67, 130, 0.12),
-          transparent 35%
-        ),
-        #ffffff;
+      background: #fff;
+
+      font-size: 13px;
+
+      line-height: 1.3;
+
     }
 
-    .hero-content {
-      max-width: 900px;
+
+    .school-info {
+      text-align: right;
     }
 
-    .welcome {
-      color: #a68a45;
-      font-size: 18px;
+
+    .school-info h2 {
+      color: var(--green);
+
+      font-size: 24px;
+
       font-weight: bold;
-      letter-spacing: 1px;
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      font-size: clamp(32px, 5vw, 58px);
-      color: #4b245f;
-      margin-bottom: 18px;
-      line-height: 1.35;
-    }
-
-    .gold-line {
-      width: 90px;
-      height: 3px;
-      background: #b79b55;
-      margin: 25px auto;
-      border-radius: 10px;
-    }
-
-    .hero p {
-      max-width: 720px;
-      margin: auto;
-      color: #665b6b;
-      font-size: 18px;
     }
 
 
-    /* =========================
-       زر البداية
-    ========================= */
-
-    .start-button {
-      display: inline-block;
-
-      margin-top: 30px;
-
-      padding: 13px 34px;
-
-      background: #4b245f;
-      color: white;
-
-      text-decoration: none;
-
-      border-radius: 30px;
-
-      font-size: 16px;
-      font-weight: bold;
-
-      transition: 0.3s;
-
-      box-shadow:
-        0 8px 20px rgba(75, 36, 95, 0.2);
-    }
-
-    .start-button:hover {
-      background: #b79b55;
-      transform: translateY(-3px);
-    }
-
-
-    /* =========================
-       قسم البطاقات
-    ========================= */
-
-    .section {
-      padding: 65px 7%;
-      background: #faf8fb;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .section-title h2 {
-      color: #4b245f;
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
-
-    .section-title p {
+    .school-info p {
       color: #777;
+
       font-size: 15px;
     }
 
 
-    /* =========================
-       شبكة البطاقات
-    ========================= */
+    .platform {
+      color: var(--maroon);
+
+      font-size: 21px;
+
+      font-weight: bold;
+    }
+
+
+    /* ==========================
+       البطل الرئيسي
+    ========================== */
+
+    .hero {
+
+      position: relative;
+
+      overflow: hidden;
+
+      min-height: 610px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 80px 20px;
+
+      background:
+
+        radial-gradient(
+          circle at 15% 25%,
+          rgba(18,107,79,0.12),
+          transparent 28%
+        ),
+
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(197,164,91,0.18),
+          transparent 28%
+        ),
+
+        linear-gradient(
+          to bottom,
+          #ffffff,
+          #faf8f1
+        );
+
+    }
+
+
+    /* الزخارف */
+
+    .decoration {
+      position: absolute;
+
+      width: 180px;
+      height: 180px;
+
+      border:
+        1px solid rgba(197,164,91,0.45);
+
+      border-radius: 50%;
+
+      opacity: 0.5;
+    }
+
+
+    .decoration.one {
+      top: -80px;
+      right: -60px;
+    }
+
+
+    .decoration.two {
+      bottom: -90px;
+      left: -60px;
+    }
+
+
+    .hero-content {
+
+      max-width: 900px;
+
+      position: relative;
+
+      z-index: 2;
+
+    }
+
+
+    .welcome {
+
+      color: var(--green);
+
+      font-size: 25px;
+
+      font-weight: bold;
+
+      margin-bottom: 5px;
+
+    }
+
+
+    .hero h1 {
+
+      font-size: clamp(
+        42px,
+        7vw,
+        76px
+      );
+
+      line-height: 1.1;
+
+      margin: 8px 0;
+
+      font-weight: bold;
+
+    }
+
+
+    .hero h1 .maroon {
+      color: var(--maroon);
+    }
+
+
+    .hero h1 .green {
+      color: var(--green);
+    }
+
+
+    .gold-line {
+
+      width: 130px;
+
+      height: 3px;
+
+      background: var(--gold);
+
+      margin: 22px auto;
+
+      position: relative;
+
+    }
+
+
+    .gold-line::before {
+
+      content: "✦";
+
+      position: absolute;
+
+      top: -17px;
+
+      left: 50%;
+
+      transform:
+        translateX(-50%);
+
+      color: var(--gold);
+
+      font-size: 18px;
+
+      background: #fff;
+
+      padding: 0 8px;
+
+    }
+
+
+    .hero-text {
+
+      max-width: 720px;
+
+      margin: auto;
+
+      color: var(--text);
+
+      font-size: 21px;
+
+    }
+
+
+    .year {
+
+      margin-top: 25px;
+
+      color: var(--maroon);
+
+      font-size: 27px;
+
+      font-weight: bold;
+
+    }
+
+
+    .tagline {
+
+      display: inline-block;
+
+      margin-top: 25px;
+
+      padding: 10px 35px;
+
+      background: var(--green);
+
+      color: #ffffff;
+
+      border:
+
+        2px solid var(--gold);
+
+      border-radius: 40px;
+
+      font-size: 21px;
+
+      box-shadow:
+        0 8px 25px rgba(18,107,79,0.15);
+
+    }
+
+
+    /* ==========================
+       قسم الدليل
+    ========================== */
+
+    .section {
+
+      padding: 75px 6%;
+
+      background: #ffffff;
+
+    }
+
+
+    .section-title {
+
+      text-align: center;
+
+      margin-bottom: 45px;
+
+    }
+
+
+    .section-title h2 {
+
+      color: var(--green);
+
+      font-size: 35px;
+
+      margin-bottom: 5px;
+
+    }
+
+
+    .section-title p {
+
+      color: #777;
+
+      font-size: 18px;
+
+    }
+
+
+    .section-title .line {
+
+      width: 70px;
+
+      height: 3px;
+
+      background: var(--gold);
+
+      margin: 12px auto;
+
+    }
+
+
+    /* ==========================
+       البطاقات
+    ========================== */
 
     .cards {
-      max-width: 1100px;
+
+      max-width: 1150px;
 
       margin: auto;
 
       display: grid;
 
       grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
+        repeat(
+          auto-fit,
+          minmax(250px, 1fr)
+        );
 
-      gap: 22px;
+      gap: 25px;
+
     }
 
 
-    /* =========================
-       البطاقة
-    ========================= */
+    .card-link {
+
+      text-decoration: none;
+
+      color: inherit;
+
+      display: block;
+
+    }
+
 
     .card {
-      background: white;
 
-      border-radius: 18px;
+      height: 100%;
 
-      padding: 30px 22px;
+      background: #ffffff;
+
+      border-radius: 20px;
+
+      border:
+        1px solid #e7dfca;
+
+      padding: 32px 24px;
 
       text-align: center;
 
-      border: 1px solid #eee7f0;
+      position: relative;
 
-      box-shadow:
-        0 8px 25px rgba(50, 30, 60, 0.06);
+      overflow: hidden;
 
       transition: 0.3s;
 
-      height: 100%;
+      box-shadow:
+        0 7px 25px
+        rgba(35,65,50,0.07);
+
     }
+
+
+    .card::before {
+
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+
+      right: 0;
+
+      width: 100%;
+
+      height: 5px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--green),
+          var(--gold),
+          var(--maroon)
+        );
+
+    }
+
 
     .card:hover {
-      transform: translateY(-7px);
+
+      transform:
+        translateY(-8px);
 
       box-shadow:
-        0 14px 30px rgba(50, 30, 60, 0.12);
+        0 15px 35px
+        rgba(35,65,50,0.14);
+
     }
 
-
-    /* =========================
-       رابط البطاقة
-    ========================= */
-
-    .card-link {
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      height: 100%;
-    }
-
-
-    /* =========================
-       الأيقونة
-    ========================= */
 
     .icon {
-      width: 65px;
-      height: 65px;
 
-      margin: 0 auto 18px;
+      width: 70px;
 
-      border-radius: 50%;
+      height: 70px;
 
-      background: #f1eaf4;
+      margin: 0 auto 17px;
 
       display: flex;
 
       align-items: center;
+
       justify-content: center;
 
-      font-size: 28px;
+      border-radius: 50%;
+
+      background:
+        var(--light-green);
+
+      border:
+        1px solid #d5c48d;
+
+      font-size: 31px;
+
     }
 
 
     .card h3 {
-      color: #4b245f;
 
-      margin-bottom: 10px;
+      color: var(--green);
 
-      font-size: 19px;
+      font-size: 23px;
+
+      margin-bottom: 8px;
+
     }
+
 
     .card p {
-      color: #777;
 
-      font-size: 14px;
+      color: #706f6b;
+
+      font-size: 17px;
+
     }
 
 
-    /* =========================
-       رسالة الترحيب
-    ========================= */
+    /* ==========================
+       الرسالة
+    ========================== */
 
     .message {
-      padding: 70px 7%;
-      background: white;
+
+      padding: 75px 6%;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f8f6ed,
+          #ffffff
+        );
+
       text-align: center;
+
     }
 
+
     .message-box {
+
       max-width: 900px;
 
       margin: auto;
 
-      padding: 45px 35px;
+      padding: 50px 35px;
 
-      border-radius: 24px;
+      border-radius: 25px;
 
-      background: #fffdf8;
+      border:
+        1px solid #ddcf9e;
 
-      border: 1px solid #eadfca;
+      background: #ffffff;
+
+      position: relative;
+
     }
+
+
+    .message-box::before {
+
+      content: "✦";
+
+      color: var(--gold);
+
+      font-size: 28px;
+
+      position: absolute;
+
+      top: 15px;
+
+      right: 25px;
+
+    }
+
+
+    .message-box::after {
+
+      content: "✦";
+
+      color: var(--gold);
+
+      font-size: 28px;
+
+      position: absolute;
+
+      bottom: 15px;
+
+      left: 25px;
+
+    }
+
 
     .message-box h2 {
-      color: #4b245f;
+
+      color: var(--maroon);
+
+      font-size: 32px;
+
       margin-bottom: 18px;
+
     }
+
 
     .message-box p {
-      color: #625968;
-      font-size: 17px;
+
+      color: var(--text);
+
+      font-size: 20px;
+
     }
 
 
-    /* =========================
+    /* ==========================
        التذييل
-    ========================= */
+    ========================== */
 
     footer {
-      background: #392044;
 
-      color: white;
+      background: var(--dark-green);
+
+      color: #ffffff;
 
       text-align: center;
 
-      padding: 30px 20px;
+      padding: 35px 20px;
+
+      border-top:
+        4px solid var(--gold);
+
     }
+
 
     footer strong {
-      color: #d5bc7b;
+
+      color: #e0c77f;
+
+      font-size: 21px;
+
     }
+
 
     footer p {
-      font-size: 13px;
 
-      margin-top: 8px;
+      margin-top: 5px;
 
-      opacity: 0.85;
+      font-size: 16px;
+
+      opacity: 0.9;
+
     }
 
 
-    /* =========================
-       الهواتف
-    ========================= */
+    /* ==========================
+       الجوال
+    ========================== */
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
 
       header {
+
         flex-direction: column;
 
         text-align: center;
+
       }
+
+
+      .school-info {
+
+        text-align: center;
+
+      }
+
+
+      .platform {
+
+        margin-top: 5px;
+
+      }
+
 
       .hero {
-        min-height: 480px;
+
+        min-height: 560px;
+
+        padding: 65px 18px;
+
       }
 
-      .hero p {
-        font-size: 16px;
+
+      .hero-text {
+
+        font-size: 18px;
+
       }
 
-      .section,
+
+      .tagline {
+
+        font-size: 18px;
+
+        padding:
+          9px 22px;
+
+      }
+
+
+      .section {
+
+        padding:
+          55px 5%;
+
+      }
+
+
       .message {
-        padding: 50px 5%;
+
+        padding:
+          55px 5%;
+
       }
+
 
       .message-box {
-        padding: 30px 20px;
+
+        padding:
+          40px 22px;
+
       }
 
     }
@@ -377,36 +801,60 @@
 <body>
 
 
-  <!-- =========================
-       الشريط العلوي
-  ========================= -->
+  <!-- ==========================
+       رأس الموقع
+  ========================== -->
 
   <header>
 
-    <div>
+    <div class="logos">
 
-      <div class="school-name">
-        مدرسة مربح الحلقة الثانية بنات
+      <!-- شعار وزارة التربية والتعليم -->
+      <div class="logo-box">
+        شعار<br>
+        وزارة التربية<br>
+        والتعليم
       </div>
 
-      <div class="ministry">
-        وزارة التربية والتعليم – الإمارات العربية المتحدة
+      <!-- شعار المدرسة -->
+      <div class="logo-box">
+        شعار<br>
+        المدرسة
       </div>
 
     </div>
 
-    <div class="platform-name">
+
+    <div class="school-info">
+
+      <h2>
+        مدرسة مربح الحلقة الثانية بنات
+      </h2>
+
+      <p>
+        وزارة التربية والتعليم – الإمارات العربية المتحدة
+      </p>
+
+    </div>
+
+
+    <div class="platform">
       📚 مرجع أولياء الأمور
     </div>
 
   </header>
 
 
-  <!-- =========================
+  <!-- ==========================
        الواجهة الرئيسية
-  ========================= -->
+  ========================== -->
 
   <section class="hero">
+
+    <div class="decoration one"></div>
+
+    <div class="decoration two"></div>
+
 
     <div class="hero-content">
 
@@ -414,42 +862,71 @@
         أَهْلًا وَسَهْلًا بِكُمْ
       </div>
 
+
       <h1>
-        مَرْجِعُ أَوْلِيَاءِ الأُمُورِ
+
+        <span class="maroon">
+          بِالْمِيثَاقِ
+        </span>
+
+        <br>
+
+        <span class="green">
+          نَبْلُغُ الْآفَاقَ
+        </span>
+
       </h1>
+
 
       <div class="gold-line"></div>
 
-      <p>
-        نُرَحِّبُ بِكُمْ فِي بَدَايَةِ عَامٍ دِرَاسِيٍّ جَدِيدٍ،
-        وَنَضَعُ بَيْنَ أَيْدِيكُمْ هَذَا الْمَرْجِعَ لِيَكُونَ
-        دَلِيلَكُمْ لِلتَّعَرُّفِ إِلَى أَهَمِّ الْمَعْلُومَاتِ
-        وَالتَّعْلِيمَاتِ وَالْخَدَمَاتِ الْمَدْرَسِيَّةِ.
+
+      <p class="hero-text">
+
+        مَرْحَبًا بِكُمْ فِي مَرْجِعِ أَوْلِيَاءِ
+        الأُمُورِ لِلْعَامِ الدِّرَاسِيِّ الْجَدِيدِ،
+        حَيْثُ نَضَعُ بَيْنَ أَيْدِيكُمْ أَهَمَّ
+        الْمَعْلُومَاتِ وَالإِرْشَادَاتِ الَّتِي
+        تُسَاعِدُكُمْ عَلَى بَدْءِ عَامٍ دِرَاسِيٍّ
+        مُنَظَّمٍ وَمُثْمِرٍ.
+
       </p>
 
-      <a href="#sections" class="start-button">
-        ابدأ التعرّف إلى المنصة
-      </a>
+
+      <div class="year">
+        ٢٠٢٦ – ٢٠٢٧
+      </div>
+
+
+      <div class="tagline">
+
+        مَعًا نَصْنَعُ أَثَرًا...
+        وَبِالْمِيثَاقِ نَبْلُغُ الآفَاقَ
+
+      </div>
 
     </div>
 
   </section>
 
 
-  <!-- =========================
-       الأقسام الرئيسية
-  ========================= -->
+  <!-- ==========================
+       دليل أولياء الأمور
+  ========================== -->
 
   <section class="section" id="sections">
+
 
     <div class="section-title">
 
       <h2>
-        دَلِيلُكُمْ فِي بَدَايَةِ الْعَامِ
+        دَلِيلُ أَوْلِيَاءِ الأُمُورِ
       </h2>
 
+      <div class="line"></div>
+
       <p>
-        أَهَمُّ الْمَعْلُومَاتِ الَّتِي يَحْتَاجُ إِلَيْهَا وَلِيُّ الأَمْرِ
+        كُلُّ مَا تَحْتَاجُونَ إِلَيْهِ فِي بَدَايَةِ الْعَامِ الدِّرَاسِيِّ
       </p>
 
     </div>
@@ -458,11 +935,12 @@
     <div class="cards">
 
 
-      <!-- =====================
-           عن المدرسة
-      ====================== -->
+      <!-- عن المدرسة -->
 
-      <a href="about.html" class="card-link">
+      <a
+        href="about.html"
+        class="card-link"
+      >
 
         <div class="card">
 
@@ -471,12 +949,13 @@
           </div>
 
           <h3>
-            عن المدرسة
+            عَنْ مَدْرَسَتِنَا
           </h3>
 
           <p>
-            تَعَرَّفُوا إِلَى الْمَدْرَسَةِ وَرُؤْيَتِهَا
-            وَرِسَالَتِهَا وَأَهَمِّ الْمَعْلُومَاتِ عَنْهَا.
+            تَعَرَّفُوا إِلَى مَدْرَسَةِ
+            مُرَبَّحَ وَرُؤْيَتِهَا
+            وَرِسَالَتِهَا وَقِيَمِهَا.
           </p>
 
         </div>
@@ -484,9 +963,7 @@
       </a>
 
 
-      <!-- =====================
-           التقويم الدراسي
-      ====================== -->
+      <!-- التقويم الدراسي -->
 
       <div class="card">
 
@@ -495,20 +972,19 @@
         </div>
 
         <h3>
-          التقويم الدراسي
+          التَّقْوِيمُ الدِّرَاسِيُّ
         </h3>
 
         <p>
-          أَهَمُّ مَوَاعِيدِ الْعَامِ الدِّرَاسِيِّ
-          وَالإِجَازَاتِ وَالْمَحَطَّاتِ التَّعْلِيمِيَّةِ.
+          أَهَمُّ مَوَاعِيدِ الْعَامِ
+          الدِّرَاسِيِّ وَالإِجَازَاتِ
+          وَالْمَحَطَّاتِ التَّعْلِيمِيَّةِ.
         </p>
 
       </div>
 
 
-      <!-- =====================
-           التعليمات المدرسية
-      ====================== -->
+      <!-- التعليمات -->
 
       <div class="card">
 
@@ -517,20 +993,19 @@
         </div>
 
         <h3>
-          التعليمات المدرسية
+          التَّعْلِيمَاتُ الْمَدْرَسِيَّةُ
         </h3>
 
         <p>
-          مَجْمُوعَةٌ مِنَ التَّعْلِيمَاتِ وَالإِرْشَادَاتِ
-          الْمُهِمَّةِ لِلطَّالِبَاتِ وَأَوْلِيَاءِ الأُمُورِ.
+          أَهَمُّ التَّعْلِيمَاتِ
+          وَالإِرْشَادَاتِ لِلطَّالِبَاتِ
+          وَأَوْلِيَاءِ الأُمُورِ.
         </p>
 
       </div>
 
 
-      <!-- =====================
-           الاستعداد للعام الدراسي
-      ====================== -->
+      <!-- الاستعداد -->
 
       <div class="card">
 
@@ -539,20 +1014,18 @@
         </div>
 
         <h3>
-          الاستعداد للعام الدراسي
+          الاسْتِعْدَادُ لِلْعَامِ
         </h3>
 
         <p>
-          كُلُّ مَا تَحْتَاجُ إِلَيْهِ الطَّالِبَةُ
-          لِلاسْتِعْدَادِ لِبِدَايَةِ عَامٍ دِرَاسِيٍّ نَاجِحٍ.
+          مَا تَحْتَاجُ إِلَيْهِ الطَّالِبَةُ
+          لِبِدَايَةٍ مُنَظَّمَةٍ وَمُوَفَّقَةٍ.
         </p>
 
       </div>
 
 
-      <!-- =====================
-           المنصات التعليمية
-      ====================== -->
+      <!-- المنصات -->
 
       <div class="card">
 
@@ -561,20 +1034,19 @@
         </div>
 
         <h3>
-          المنصات التعليمية
+          الْمَنَصَّاتُ التَّعْلِيمِيَّةُ
         </h3>
 
         <p>
-          الْوُصُولُ إِلَى أَهَمِّ الْمَنَصَّاتِ
-          وَالْخَدَمَاتِ الإِلِكْتُرُونِيَّةِ التَّعْلِيمِيَّةِ.
+          رَوَابِطُ وَخَدَمَاتُ
+          الْمَنَصَّاتِ الإِلِكْتُرُونِيَّةِ
+          الَّتَعْلِيمِيَّةِ.
         </p>
 
       </div>
 
 
-      <!-- =====================
-           التواصل مع المدرسة
-      ====================== -->
+      <!-- التواصل -->
 
       <div class="card">
 
@@ -583,12 +1055,13 @@
         </div>
 
         <h3>
-          التواصل مع المدرسة
+          التَّوَاصُلُ مَعَ الْمَدْرَسَةِ
         </h3>
 
         <p>
-          مَعْلُومَاتٌ وَوَسَائِلُ التَّوَاصُلِ مَعَ
-          الْمَدْرَسَةِ وَالإِدَارَاتِ الْمُخْتَصَّةِ.
+          مَعْلُومَاتُ التَّوَاصُلِ
+          وَقَنَوَاتُ الْخِدْمَةِ
+          وَالدَّعْمِ.
         </p>
 
       </div>
@@ -599,9 +1072,9 @@
   </section>
 
 
-  <!-- =========================
-       رسالة الترحيب
-  ========================= -->
+  <!-- ==========================
+       رسالة لأولياء الأمور
+  ========================== -->
 
   <section class="message">
 
@@ -612,10 +1085,14 @@
       </h2>
 
       <p>
-        شَرَاكَتُنَا مَعَكُمْ أَسَاسُ نَجَاحِ بَنَاتِنَا.
-        وَبِالتَّعَاوُنِ وَالتَّوَاصُلِ نَصْنَعُ بِيئَةً
-        تَعْلِيمِيَّةً دَاعِمَةً تُسْهِمُ فِي تَقَدُّمِ
-        طَالِبَاتِنَا وَتَمَيُّزِهِنَّ.
+
+        شَرَاكَتُنَا مَعَكُمْ أَسَاسُ نَجَاحِ
+        بَنَاتِنَا، وَبِالتَّعَاوُنِ وَالتَّوَاصُلِ
+        نُسَاهِمُ مَعًا فِي بِنَاءِ بِيئَةٍ
+        تَعْلِيمِيَّةٍ آمِنَةٍ وَمُلْهِمَةٍ،
+        تَفْتَحُ لِطَالِبَاتِنَا آفَاقَ النَّجَاحِ
+        وَالإِبْدَاعِ.
+
       </p>
 
     </div>
@@ -623,22 +1100,23 @@
   </section>
 
 
-  <!-- =========================
+  <!-- ==========================
        التذييل
-  ========================= -->
+  ========================== -->
 
   <footer>
 
     <strong>
-      مدرسة مربح الحلقة الثانية بنات
+      مَدْرَسَةُ مُرَبَّحَ الْحَلْقَةُ الثَّانِيَةُ بَنَات
     </strong>
 
     <p>
-      مرجع أولياء الأمور | العام الدراسي 2026–2027
+      مَرْجِعُ أَوْلِيَاءِ الأُمُورِ
+      | الْعَامُ الدِّرَاسِيُّ ٢٠٢٦ – ٢٠٢٧
     </p>
 
     <p>
-      نُعَلِّمُ بِأَثَرٍ... وَنَبْنِي مُسْتَقْبَلًا بِإِبْدَاعٍ
+      تَعْلِيمٌ نَوْعِيٌّ لِبِنَاءِ جِيلٍ مُتَمَيِّزٍ
     </p>
 
   </footer>
@@ -647,4 +1125,3 @@
 </body>
 
 </html>
-```
