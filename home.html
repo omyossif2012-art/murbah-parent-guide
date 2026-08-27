@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
@@ -14,6 +13,10 @@
 </title>
 
 <style>
+
+/* =========================================
+   الإعدادات العامة
+========================================= */
 
 @font-face {
     font-family: "Sakkal Majalla";
@@ -39,7 +42,11 @@ body {
     color: #26352f;
     line-height: 1.7;
 
-    background-image:
+    background:
+        linear-gradient(
+            rgba(250,248,243,0.94),
+            rgba(250,248,243,0.94)
+        ),
         url("ministry-logo.png");
 
     background-size: cover;
@@ -49,141 +56,216 @@ body {
 }
 
 
-/* =====================================
+/* =========================================
    الرأس
-===================================== */
+========================================= */
 
 .header {
+
     background:
         linear-gradient(
             135deg,
-            rgba(18,107,79,0.96),
-            rgba(11,81,60,0.96)
+            rgba(18,107,79,0.98),
+            rgba(11,81,60,0.98)
         );
 
     color: white;
+
     text-align: center;
-    padding: 22px 15px 28px;
-    border-bottom: 5px solid #c6a65b;
+
+    padding: 25px 15px 30px;
+
+    border-bottom:
+        5px solid #c6a65b;
+
 }
 
 .logos {
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     gap: 18px;
-    margin-bottom: 10px;
+
+    margin-bottom: 12px;
+
 }
 
 .logo {
-    width: 72px;
-    height: 72px;
+
+    width: 78px;
+
+    height: 78px;
+
     object-fit: contain;
+
     background: white;
+
     padding: 5px;
-    border-radius: 14px;
-    border: 1px solid #c6a65b;
+
+    border-radius: 15px;
+
+    border:
+        1px solid #c6a65b;
+
 }
 
 .school-name {
-    font-size: clamp(26px,5vw,40px);
+
+    font-size:
+        clamp(27px,5vw,42px);
+
     font-weight: bold;
+
 }
 
 .page-title {
+
     color: #f0d995;
-    font-size: clamp(38px,7vw,54px);
+
+    font-size:
+        clamp(38px,7vw,56px);
+
     font-weight: bold;
-    line-height: 1.1;
+
+    line-height: 1.15;
+
 }
 
 .motto {
-    font-size: 21px;
-    margin-top: 4px;
+
+    font-size: 22px;
+
+    margin-top: 5px;
+
 }
 
 
-/* =====================================
+/* =========================================
    الترحيب
-===================================== */
+========================================= */
 
 .welcome {
+
     width: 92%;
+
     max-width: 1100px;
+
     margin: 45px auto 30px;
+
     padding: 38px 30px;
+
     text-align: center;
 
-    background: rgba(255,255,255,0.93);
+    background:
+        rgba(255,255,255,0.96);
 
-    border: 1px solid
-        rgba(198,166,91,0.70);
+    border:
+        1px solid rgba(198,166,91,0.70);
 
     border-radius: 25px;
 
     box-shadow:
-        0 8px 28px
-        rgba(0,0,0,0.12);
+        0 8px 28px rgba(0,0,0,0.12);
+
 }
 
 .welcome h2 {
+
     color: #126b4f;
-    font-size: clamp(38px,7vw,56px);
+
+    font-size:
+        clamp(35px,7vw,54px);
+
     font-weight: bold;
+
     margin-bottom: 15px;
+
 }
 
 .welcome p {
+
     max-width: 1000px;
+
     margin: auto;
+
     color: #403b35;
-    font-size: clamp(26px,4vw,35px);
+
+    font-size:
+        clamp(24px,4vw,34px);
+
     font-weight: bold;
+
     line-height: 1.75;
+
 }
 
 
-/* =====================================
-   عنوان الأقسام
-===================================== */
+/* =========================================
+   عناوين الأقسام
+========================================= */
 
 .section-heading {
+
     width: 92%;
+
     max-width: 1100px;
-    margin: 25px auto;
+
+    margin: 30px auto 25px;
+
     padding: 18px;
+
     text-align: center;
 
-    background: rgba(255,255,255,0.92);
+    background:
+        rgba(255,255,255,0.96);
 
     border-radius: 20px;
 
-    border: 1px solid
-        rgba(198,166,91,0.65);
+    border:
+        1px solid rgba(198,166,91,0.65);
+
 }
 
 .section-heading h2 {
+
     color: #7a2837;
-    font-size: clamp(32px,5vw,42px);
+
+    font-size:
+        clamp(32px,5vw,44px);
+
 }
 
 .section-heading span {
+
     display: block;
+
     width: 110px;
+
     height: 3px;
+
     background: #c6a65b;
+
     margin: 8px auto;
+
 }
 
 
-/* =====================================
+/* =========================================
    البطاقات
-===================================== */
+========================================= */
 
 .cards {
+
     width: 92%;
+
     max-width: 1150px;
-    margin: 0 auto 60px;
+
+    margin:
+        0 auto 60px;
 
     display: grid;
 
@@ -194,22 +276,25 @@ body {
         );
 
     gap: 20px;
+
 }
 
-
-/* =====================================
-   البطاقة
-===================================== */
-
 .card {
+
     display: block;
+
     text-decoration: none;
+
     color: inherit;
 
-    background: rgba(255,255,255,0.95);
+    background:
+        rgba(255,255,255,0.97);
 
-    border: 1px solid #e0d6c3;
-    border-top: 5px solid #126b4f;
+    border:
+        1px solid #e0d6c3;
+
+    border-top:
+        5px solid #126b4f;
 
     border-radius: 18px;
 
@@ -218,227 +303,360 @@ body {
     text-align: center;
 
     box-shadow:
-        0 7px 22px
-        rgba(0,0,0,0.12);
+        0 7px 22px rgba(0,0,0,0.12);
 
     transition:
-        all
-        0.3s
-        ease;
+        all 0.3s ease;
 
     cursor: pointer;
+
 }
 
 .card:hover {
-    transform: translateY(-7px);
-    border-top-color: #7a2837;
+
+    transform:
+        translateY(-7px);
+
+    border-top-color:
+        #7a2837;
 
     box-shadow:
-        0 14px 30px
-        rgba(0,0,0,0.16);
+        0 14px 30px rgba(0,0,0,0.16);
+
 }
 
 .icon {
+
     font-size: 43px;
+
     margin-bottom: 8px;
+
 }
 
 .card h3 {
+
     color: #7a2837;
+
     font-size: 27px;
+
     margin-bottom: 4px;
+
 }
 
 .card p {
+
     color: #5b554e;
+
     font-size: 19px;
+
     line-height: 1.45;
+
 }
 
 
-/* =====================================
-   قسم الاستعداد للعام
-===================================== */
+/* =========================================
+   الأقسام الداخلية
+========================================= */
 
-.preparation-section {
+.content-section {
+
     width: 92%;
+
     max-width: 1100px;
 
-    margin: 0 auto 60px;
+    margin:
+        0 auto 60px;
 
-    padding: 30px 25px 35px;
+    padding:
+        35px 25px;
 
-    background: rgba(255,255,255,0.96);
+    background:
+        rgba(255,255,255,0.97);
 
-    border: 1px solid #d7c59e;
+    border:
+        1px solid #d7c59e;
 
     border-radius: 25px;
 
     box-shadow:
-        0 8px 28px
-        rgba(0,0,0,0.13);
+        0 8px 28px rgba(0,0,0,0.13);
 
     text-align: center;
 
     scroll-margin-top: 25px;
+
 }
 
-.preparation-section h2 {
+.content-section h2 {
+
     color: #126b4f;
-    font-size: clamp(34px,6vw,46px);
+
+    font-size:
+        clamp(34px,6vw,46px);
+
     font-weight: bold;
+
     margin-bottom: 5px;
+
 }
 
-.preparation-section .gold-line {
+.gold-line {
+
     width: 110px;
+
     height: 3px;
+
     background: #c6a65b;
-    margin: 8px auto 15px;
+
+    margin: 8px auto 18px;
+
 }
 
-.preparation-section p {
+.content-section p {
+
     color: #5b554e;
+
     font-size: 23px;
+
     margin-bottom: 22px;
+
 }
 
-.guidelines-image {
+
+/* =========================================
+   الصور الداخلية
+========================================= */
+
+.section-image {
+
     display: block;
 
     width: 100%;
+
     max-width: 900px;
+
     height: auto;
 
-    margin: 0 auto;
+    margin: 20px auto;
 
-    border: 2px solid #c6a65b;
+    border:
+        2px solid #c6a65b;
 
     border-radius: 18px;
 
     box-shadow:
-        0 8px 25px
-        rgba(0,0,0,0.15);
+        0 8px 25px rgba(0,0,0,0.15);
+
 }
 
 
-/* =====================================
+/* =========================================
+   قائمة المعلومات
+========================================= */
+
+.info-list {
+
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    display: grid;
+
+    gap: 14px;
+
+}
+
+.info-item {
+
+    background:
+        #faf8f3;
+
+    border-right:
+        5px solid #126b4f;
+
+    border-radius: 12px;
+
+    padding:
+        15px 20px;
+
+    text-align: right;
+
+    color: #403b35;
+
+    font-size: 21px;
+
+}
+
+
+/* =========================================
+   الاستعداد للعام الدراسي
+========================================= */
+
+#preparation {
+
+    scroll-margin-top: 25px;
+
+}
+
+
+/* =========================================
    العداد
-===================================== */
+========================================= */
 
 .countdown-section {
+
     width: 92%;
+
     max-width: 1000px;
 
-    margin: 10px auto 50px;
+    margin:
+        10px auto 50px;
 
-    background: rgba(255,255,255,0.95);
+    background:
+        rgba(255,255,255,0.97);
 
     text-align: center;
 
     padding: 35px 20px;
 
-    border: 1px solid #d7c59e;
+    border:
+        1px solid #d7c59e;
 
     border-radius: 25px;
 
     box-shadow:
-        0 8px 25px
-        rgba(0,0,0,0.12);
+        0 8px 25px rgba(0,0,0,0.12);
+
 }
 
 .countdown-title {
+
     color: #7a2837;
+
     font-size: 36px;
+
     font-weight: bold;
+
 }
 
 .countdown-subtitle {
+
     color: #625b52;
+
     font-size: 21px;
+
 }
 
 .countdown {
+
     display: flex;
+
     justify-content: center;
+
     flex-wrap: wrap;
+
     gap: 12px;
+
     margin-top: 18px;
+
 }
 
 .time-box {
+
     width: 105px;
 
     background: white;
 
-    border: 2px solid #c6a65b;
+    border:
+        2px solid #c6a65b;
 
     border-radius: 17px;
 
     padding: 13px;
 
     box-shadow:
-        0 5px 18px
-        rgba(0,0,0,0.08);
+        0 5px 18px rgba(0,0,0,0.08);
+
 }
 
 .number {
+
     display: block;
+
     color: #126b4f;
+
     font-size: 42px;
+
     font-weight: bold;
+
     line-height: 1;
+
 }
 
 .label {
+
     color: #6d655c;
+
     font-size: 18px;
+
 }
 
 
-/* =====================================
+/* =========================================
    الرسالة الختامية
-===================================== */
+========================================= */
 
 .closing {
+
     width: 92%;
+
     max-width: 900px;
 
-    margin: 0 auto 50px;
+    margin:
+        0 auto 50px;
 
     text-align: center;
 
-    background: rgba(255,255,255,0.95);
+    background:
+        rgba(255,255,255,0.97);
 
-    border: 1px solid #dfd2b9;
+    border:
+        1px solid #dfd2b9;
 
     border-radius: 22px;
 
     padding: 30px 20px;
 
     box-shadow:
-        0 7px 22px
-        rgba(0,0,0,0.10);
+        0 7px 22px rgba(0,0,0,0.10);
+
 }
 
 .closing h2 {
+
     color: #126b4f;
+
     font-size: 35px;
+
 }
 
 .closing p {
+
     color: #5b544b;
+
     font-size: 21px;
+
 }
 
 
-/* =====================================
+/* =========================================
    التذييل
-===================================== */
+========================================= */
 
 .footer {
+
     background:
-        rgba(18,107,79,0.97);
+        rgba(18,107,79,0.98);
 
     color: white;
 
@@ -446,99 +664,192 @@ body {
 
     padding: 20px;
 
-    border-top: 4px solid #c6a65b;
+    border-top:
+        4px solid #c6a65b;
 
     font-size: 19px;
+
 }
 
 
-/* =====================================
+/* =========================================
    الحركة
-===================================== */
+========================================= */
 
 .welcome,
 .section-heading,
 .card,
+.content-section,
 .countdown-section,
-.closing,
-.preparation-section {
+.closing {
+
     animation:
-        fadeIn
-        0.9s
-        ease
-        both;
+        fadeIn 0.9s ease both;
+
 }
 
 @keyframes fadeIn {
 
     from {
+
         opacity: 0;
-        transform: translateY(20px);
+
+        transform:
+            translateY(20px);
+
     }
 
     to {
+
         opacity: 1;
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
+
     }
 
 }
 
 
-/* =====================================
+/* =========================================
    الجوال
-===================================== */
+========================================= */
 
 @media (max-width:600px) {
 
     body {
-        background-attachment: scroll;
+
+        background-attachment:
+            scroll;
+
     }
 
     .logo {
+
         width: 62px;
+
         height: 62px;
+
+    }
+
+    .logos {
+
+        gap: 10px;
+
     }
 
     .welcome {
+
         margin-top: 25px;
-        padding: 28px 15px;
+
+        padding:
+            28px 15px;
+
     }
 
     .welcome h2 {
-        font-size: 35px;
+
+        font-size: 34px;
+
     }
 
     .welcome p {
-        font-size: 23px;
+
+        font-size: 22px;
+
     }
 
-    .preparation-section {
-        padding: 25px 12px 30px;
+    .content-section {
+
+        padding:
+            25px 12px 30px;
+
     }
 
-    .preparation-section h2 {
+    .content-section h2 {
+
         font-size: 34px;
+
     }
 
-    .preparation-section p {
+    .content-section p {
+
         font-size: 20px;
+
     }
 
-    .guidelines-image {
+    .section-image {
+
         border-radius: 12px;
+
     }
 
     .time-box {
+
         width: 76px;
+
     }
 
     .number {
+
         font-size: 30px;
+
     }
 
     .label {
+
         font-size: 14px;
+
     }
+
+    .info-item {
+
+        font-size: 18px;
+
+    }
+
+}
+
+
+/* =========================================
+   زر العودة للأعلى
+========================================= */
+
+.top-button {
+
+    position: fixed;
+
+    bottom: 20px;
+
+    left: 20px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #126b4f;
+
+    color: white;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+    border:
+        2px solid #c6a65b;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.20);
+
+    z-index: 1000;
 
 }
 
@@ -547,18 +858,16 @@ body {
 </head>
 
 
-<body>
+<body id="top">
 
 
-<!-- =====================================
+<!-- =========================================
      الرأس
-===================================== -->
+========================================= -->
 
 <header class="header">
 
     <div class="logos">
-
-        <!-- شعار وزارة التربية والتعليم - لم يتم تغييره -->
 
         <img
             src="moe.png.jfif"
@@ -574,17 +883,20 @@ body {
 
     </div>
 
+
     <div class="school-name">
 
         مدرسة مربح الحلقة الثانية بنات
 
     </div>
 
+
     <div class="page-title">
 
         مَرْجِعُ أَوْلِيَاءِ الأُمُورِ
 
     </div>
+
 
     <div class="motto">
 
@@ -596,9 +908,9 @@ body {
 
 
 
-<!-- =====================================
+<!-- =========================================
      الترحيب
-===================================== -->
+========================================= -->
 
 <section class="welcome">
 
@@ -607,6 +919,7 @@ body {
         أَهْلًا وَسَهْلًا بِأَوْلِيَاءِ أُمُورِ طَالِبَاتِنَا 🌷
 
     </h2>
+
 
     <p>
 
@@ -623,9 +936,9 @@ body {
 
 
 
-<!-- =====================================
-     دليل أولياء الأمور
-===================================== -->
+<!-- =========================================
+     عنوان الدليل
+========================================= -->
 
 <div class="section-heading">
 
@@ -641,9 +954,9 @@ body {
 
 
 
-<!-- =====================================
-     الأقسام
-===================================== -->
+<!-- =========================================
+     البطاقات
+========================================= -->
 
 <section class="cards">
 
@@ -871,18 +1184,17 @@ body {
 
     </a>
 
-
 </section>
 
 
 
-<!-- =====================================
+<!-- =========================================
      الاستعداد للعام الدراسي
-===================================== -->
+========================================= -->
 
 <section
     id="preparation"
-    class="preparation-section"
+    class="content-section"
 >
 
     <h2>
@@ -900,21 +1212,351 @@ body {
 
     </p>
 
-    <!-- الصورة الصحيحة الموجودة في مجلد الموقع -->
+
+    <!-- الاسم الصحيح للصورة الموجودة في المستودع -->
 
     <img
-        src="family-back-to-school.png"
-        class="guidelines-image"
-        alt="كيف تستعد الأسرة لعام دراسي جديد"
+        src="family-back-to-school.jpg.png"
+        class="section-image"
+        alt="إرشادات استقبال العام الدراسي"
     >
 
 </section>
 
 
 
-<!-- =====================================
+<!-- =========================================
+     المواعيد المهمة
+========================================= -->
+
+<section
+    id="dates"
+    class="content-section"
+>
+
+    <h2>
+
+        الْمَوَاعِيدُ الْمُهِمَّةُ
+
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p>
+
+        أَهَمُّ التَّوَارِيخِ وَالْمَوَاعِيدِ
+        لِلْعَامِ الدِّرَاسِيِّ ٢٠٢٦ – ٢٠٢٧.
+
+    </p>
+
+
+    <img
+        src="academic-calendar-2026-2027.png"
+        class="section-image"
+        alt="التقويم الأكاديمي 2026-2027"
+    >
+
+
+    <img
+        src="term1-dates-2026-2027.png"
+        class="section-image"
+        alt="مواعيد الفصل الدراسي الأول 2026-2027"
+    >
+
+</section>
+
+
+
+<!-- =========================================
+     الزي المدرسي
+========================================= -->
+
+<section
+    id="uniform"
+    class="content-section"
+>
+
+    <h2>
+
+        الزِّيُّ الْمَدْرَسِيُّ
+
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p>
+
+        التَّعْلِيمَاتُ وَالْمَعْلُومَاتُ
+        الْخَاصَّةُ بِالزِّيِّ الْمَدْرَسِيِّ.
+
+    </p>
+
+
+    <img
+        src="school-uniform-2026-2027.png"
+        class="section-image"
+        alt="الزي المدرسي 2026-2027"
+    >
+
+</section>
+
+
+
+<!-- =========================================
+     الحضور والانصراف
+========================================= -->
+
+<section
+    id="attendance"
+    class="content-section"
+>
+
+    <h2>
+
+        الْحُضُورُ وَالانْصِرَافُ
+
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p>
+
+        حُضُورُ الطَّالِبَةِ فِي الْوَقْتِ
+        الْمُحَدَّدِ وَالِالْتِزَامُ
+        بِتَعْلِيمَاتِ الْحُضُورِ وَالانْصِرَافِ
+        يُسَاهِمَانِ فِي بَدَايَةٍ مُنَظَّمَةٍ
+        وَمُوَفَّقَةٍ لِلْيَوْمِ الدِّرَاسِيِّ.
+
+    </p>
+
+
+    <div class="info-list">
+
+        <div class="info-item">
+            ⏰ يُرْجَى الِالْتِزَامُ بِمَوَاعِيدِ الْحُضُورِ.
+        </div>
+
+        <div class="info-item">
+            🏫 الْحِرْصُ عَلَى الْوُصُولِ إِلَى الْمَدْرَسَةِ مُبَكِّرًا.
+        </div>
+
+        <div class="info-item">
+            📋 مُتَابَعَةُ تَعْلِيمَاتِ الْمَدْرَسَةِ بِشَأْنِ الانْصِرَافِ.
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     المواصلات
+========================================= -->
+
+<section
+    id="transport"
+    class="content-section"
+>
+
+    <h2>
+
+        الْمُوَاصَلَاتُ الْمَدْرَسِيَّةُ
+
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p>
+
+        نَحْرِصُ عَلَى سَلَامَةِ طَالِبَاتِنَا
+        وَانْتِظَامِ رِحْلَتِهِنَّ مِنَ الْمَنْزِلِ
+        إِلَى الْمَدْرَسَةِ وَبِالْعَكْسِ.
+
+    </p>
+
+
+    <div class="info-list">
+
+        <div class="info-item">
+            🚌 الِالْتِزَامُ بِمَوْعِدِ الْحَافِلَةِ الْمُحَدَّدِ.
+        </div>
+
+        <div class="info-item">
+            👧 الِالْتِزَامُ بِتَعْلِيمَاتِ السَّلَامَةِ دَاخِلَ الْحَافِلَةِ.
+        </div>
+
+        <div class="info-item">
+            📞 التَّوَاصُلُ مَعَ الْمَدْرَسَةِ عِنْدَ الْحَاجَةِ إِلَى الِاسْتِفْسَارِ.
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     التعليم والتعلم
+========================================= -->
+
+<section
+    id="learning"
+    class="content-section"
+>
+
+    <h2>
+
+        التَّعْلِيمُ وَالتَّعَلُّمُ
+
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p>
+
+        شَرَاكَةُ الْبَيْتِ وَالْمَدْرَسَةِ
+        أَسَاسٌ لِدَعْمِ تَقَدُّمِ طَالِبَاتِنَا
+        وَتَعْزِيزِ تَعَلُّمِهِنَّ.
+
+    </p>
+
+
+    <div class="info-list">
+
+        <div class="info-item">
+            📚 مُتَابَعَةُ الْوَاجِبَاتِ وَالْمَهَامِّ الدِّرَاسِيَّةِ.
+        </div>
+
+        <div class="info-item">
+            💡 تَشْجِيعُ الطَّالِبَةِ عَلَى التَّعَلُّمِ وَالِاسْتِكْشَافِ.
+        </div>
+
+        <div class="info-item">
+            📝 مُتَابَعَةُ النَّتَائِجِ وَالْمُسْتَوَى الدِّرَاسِيِّ.
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     التواصل
+========================================= -->
+
+<section
+    id="communication"
+    class="content-section"
+>
+
+    <h2>
+
+        التَّوَاصُلُ مَعَ الْمَدْرَسَةِ
+
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p>
+
+        نُرَحِّبُ بِتَوَاصُلِ أَوْلِيَاءِ الأُمُورِ
+        مَعَ الْمَدْرَسَةِ عَبْرَ الْقَنَوَاتِ
+        وَالطُّرُقِ الرَّسْمِيَّةِ الْمُعْتَمَدَةِ.
+
+    </p>
+
+
+    <div class="info-list">
+
+        <div class="info-item">
+            📱 يُرْجَى مُتَابَعَةُ قَنَوَاتِ التَّوَاصُلِ الرَّسْمِيَّةِ.
+        </div>
+
+        <div class="info-item">
+            🏫 يُمْكِنُ التَّوَاصُلُ مَعَ إِدَارَةِ الْمَدْرَسَةِ عِنْدَ الْحَاجَةِ.
+        </div>
+
+        <div class="info-item">
+            🤝 نُؤْمِنُ بِأَهَمِّيَّةِ الشَّرَاكَةِ بَيْنَ الْبَيْتِ وَالْمَدْرَسَةِ.
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     الأسئلة الشائعة
+========================================= -->
+
+<section
+    id="faq"
+    class="content-section"
+>
+
+    <h2>
+
+        أَسْئِلَةٌ شَائِعَةٌ
+
+    </h2>
+
+    <div class="gold-line"></div>
+
+
+    <div class="info-list">
+
+        <div class="info-item">
+
+            <strong>
+                س: مَا أَهَمُّ مَا تَحْتَاجُهُ الطَّالِبَةُ فِي بَدَايَةِ الْعَامِ؟
+            </strong>
+
+            <br>
+
+            ج: يُرْجَى مُتَابَعَةُ إِرْشَادَاتِ اسْتِقْبَالِ
+            الْعَامِ الدِّرَاسِيِّ الْمَوْجُودَةِ فِي هَذَا الْمَرْجِعِ.
+
+        </div>
+
+
+        <div class="info-item">
+
+            <strong>
+                س: أَيْنَ أَجِدُ التَّقْوِيمَ وَالْمَوَاعِيدَ الْمُهِمَّةَ؟
+            </strong>
+
+            <br>
+
+            ج: فِي قِسْمِ «الْمَوَاعِيدِ الْمُهِمَّةِ»
+            أَعْلَاهُ.
+
+        </div>
+
+
+        <div class="info-item">
+
+            <strong>
+                س: أَيْنَ أَجِدُ مَعْلُومَاتِ الزِّيِّ الْمَدْرَسِيِّ؟
+            </strong>
+
+            <br>
+
+            ج: فِي قِسْمِ «الزِّيِّ الْمَدْرَسِيِّ».
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
      العداد
-===================================== -->
+========================================= -->
 
 <section class="countdown-section">
 
@@ -924,6 +1566,7 @@ body {
 
     </div>
 
+
     <div class="countdown-subtitle">
 
         مُتَبَقٍّ عَلَى بَدْءِ الْعَامِ الدِّرَاسِيِّ
@@ -931,7 +1574,9 @@ body {
 
     </div>
 
+
     <div class="countdown">
+
 
         <div class="time-box">
 
@@ -992,15 +1637,16 @@ body {
 
         </div>
 
+
     </div>
 
 </section>
 
 
 
-<!-- =====================================
+<!-- =========================================
      الرسالة الختامية
-===================================== -->
+========================================= -->
 
 <section class="closing">
 
@@ -1009,6 +1655,7 @@ body {
         مَعًا نَبْدَأُ عَامًا دِرَاسِيًّا مُلْهِمًا 🤍
 
     </h2>
+
 
     <p>
 
@@ -1023,9 +1670,9 @@ body {
 
 
 
-<!-- =====================================
+<!-- =========================================
      التذييل
-===================================== -->
+========================================= -->
 
 <footer class="footer">
 
@@ -1039,11 +1686,25 @@ body {
 
 
 
-<script>
+<!-- =========================================
+     زر العودة للأعلى
+========================================= -->
 
-/* =====================================
-   العداد حتى 31 أغسطس 2026
-===================================== */
+<a
+    href="#top"
+    class="top-button"
+    aria-label="العودة إلى الأعلى"
+>
+    ↑
+</a>
+
+
+
+<!-- =========================================
+     العداد
+========================================= -->
+
+<script>
 
 const targetDate =
     new Date(
@@ -1055,6 +1716,7 @@ function updateCountdown() {
 
     const now =
         new Date().getTime();
+
 
     const difference =
         targetDate - now;
@@ -1134,6 +1796,7 @@ function updateCountdown() {
 
 updateCountdown();
 
+
 setInterval(
     updateCountdown,
     1000
@@ -1145,4 +1808,3 @@ setInterval(
 </body>
 
 </html>
-```
