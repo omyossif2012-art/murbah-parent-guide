@@ -1,0 +1,1125 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+الأسئلة الشائعة | مدرسة مربح الحلقة الثانية بنات
+</title>
+
+<style>
+
+@font-face {
+    font-family: "Sakkal Majalla";
+    src: local("Sakkal Majalla");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        "Sakkal Majalla",
+        Arial,
+        sans-serif;
+
+    color: #26352f;
+
+    line-height: 1.7;
+
+    background:
+        linear-gradient(
+            rgba(250,248,243,0.94),
+            rgba(250,248,243,0.94)
+        ),
+        url("ministry-logo.png");
+
+    background-size: cover;
+
+    background-position: center top;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+}
+
+
+/* =========================================
+   الرأس
+========================================= */
+
+.header {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(18,107,79,0.98),
+            rgba(11,81,60,0.98)
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 15px 30px;
+
+    border-bottom:
+        5px solid #c6a65b;
+
+}
+
+.logos {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 12px;
+
+}
+
+.logo {
+
+    width: 75px;
+
+    height: 75px;
+
+    object-fit: contain;
+
+    background: white;
+
+    padding: 5px;
+
+    border-radius: 15px;
+
+    border:
+        1px solid #c6a65b;
+
+}
+
+.school-name {
+
+    font-size:
+        clamp(25px,5vw,40px);
+
+    font-weight: bold;
+
+}
+
+.page-title {
+
+    color: #f0d995;
+
+    font-size:
+        clamp(34px,7vw,52px);
+
+    font-weight: bold;
+
+    line-height: 1.2;
+
+}
+
+.motto {
+
+    font-size: 21px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================
+   المحتوى الرئيسي
+========================================= */
+
+.content {
+
+    width: 92%;
+
+    max-width: 1050px;
+
+    margin: 45px auto 50px;
+
+    padding: 35px 25px;
+
+    background:
+        rgba(255,255,255,0.97);
+
+    border:
+        1px solid #d7c59e;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 8px 28px rgba(0,0,0,0.13);
+
+}
+
+.content-title {
+
+    text-align: center;
+
+    color: #126b4f;
+
+    font-size:
+        clamp(34px,6vw,48px);
+
+    font-weight: bold;
+
+}
+
+.gold-line {
+
+    width: 110px;
+
+    height: 3px;
+
+    background: #c6a65b;
+
+    margin: 8px auto 18px;
+
+}
+
+.intro {
+
+    text-align: center;
+
+    color: #5b554e;
+
+    font-size:
+        clamp(21px,4vw,26px);
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   الأسئلة
+========================================= */
+
+.faq-container {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    gap: 14px;
+
+}
+
+.faq-item {
+
+    background: #faf8f3;
+
+    border:
+        1px solid #dfd2b9;
+
+    border-right:
+        5px solid #126b4f;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 14px rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+
+}
+
+.faq-item:hover {
+
+    border-right-color: #7a2837;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,0.10);
+
+}
+
+
+/* السؤال */
+
+.faq-question {
+
+    width: 100%;
+
+    border: none;
+
+    background: transparent;
+
+    padding:
+        18px 20px;
+
+    text-align: right;
+
+    font-family:
+        "Sakkal Majalla",
+        Arial,
+        sans-serif;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    color: #7a2837;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+}
+
+.faq-question:hover {
+
+    background:
+        rgba(198,166,91,0.10);
+
+}
+
+.question-text {
+
+    flex: 1;
+
+}
+
+.plus {
+
+    width: 32px;
+
+    height: 32px;
+
+    min-width: 32px;
+
+    border-radius: 50%;
+
+    background: #126b4f;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+    line-height: 1;
+
+    transition: 0.3s;
+
+}
+
+.faq-item.active .plus {
+
+    transform: rotate(45deg);
+
+    background: #7a2837;
+
+}
+
+
+/* الإجابة */
+
+.faq-answer {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.35s ease;
+
+}
+
+.faq-answer p {
+
+    padding:
+        0 25px 20px;
+
+    color: #5b554e;
+
+    font-size: 21px;
+
+    line-height: 1.8;
+
+}
+
+.faq-item.active .faq-answer {
+
+    max-height: 300px;
+
+}
+
+
+/* =========================================
+   بطاقة التواصل
+========================================= */
+
+.contact-box {
+
+    max-width: 800px;
+
+    margin:
+        35px auto 10px;
+
+    padding:
+        25px 20px;
+
+    text-align: center;
+
+    background:
+        rgba(240,217,149,0.15);
+
+    border:
+        1px solid #c6a65b;
+
+    border-radius: 18px;
+
+}
+
+.contact-box h2 {
+
+    color: #126b4f;
+
+    font-size: 32px;
+
+    margin-bottom: 5px;
+
+}
+
+.contact-box p {
+
+    color: #5b554e;
+
+    font-size: 20px;
+
+    margin-bottom: 18px;
+
+}
+
+.contact-button {
+
+    display: inline-block;
+
+    padding:
+        11px 30px;
+
+    background: #126b4f;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    border:
+        2px solid #c6a65b;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.contact-button:hover {
+
+    background: #7a2837;
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =========================================
+   العودة
+========================================= */
+
+.back-button {
+
+    display: block;
+
+    width: fit-content;
+
+    margin:
+        30px auto 0;
+
+    padding:
+        12px 35px;
+
+    background: #126b4f;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    border:
+        2px solid #c6a65b;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.back-button:hover {
+
+    background: #7a2837;
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =========================================
+   التذييل
+========================================= */
+
+.footer {
+
+    background:
+        rgba(18,107,79,0.98);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-top:
+        4px solid #c6a65b;
+
+    font-size: 19px;
+
+}
+
+
+/* =========================================
+   الجوال
+========================================= */
+
+@media (max-width:600px) {
+
+    body {
+
+        background-attachment:
+            scroll;
+
+    }
+
+    .logo {
+
+        width: 62px;
+
+        height: 62px;
+
+    }
+
+    .logos {
+
+        gap: 10px;
+
+    }
+
+    .content {
+
+        width: 94%;
+
+        padding:
+            25px 12px 30px;
+
+        margin-top: 25px;
+
+    }
+
+    .content-title {
+
+        font-size: 34px;
+
+    }
+
+    .intro {
+
+        font-size: 20px;
+
+    }
+
+    .faq-question {
+
+        font-size: 20px;
+
+        padding:
+            16px 15px;
+
+    }
+
+    .faq-answer p {
+
+        font-size: 18px;
+
+        padding:
+            0 18px 18px;
+
+    }
+
+    .plus {
+
+        width: 29px;
+
+        height: 29px;
+
+        min-width: 29px;
+
+        font-size: 20px;
+
+    }
+
+    .contact-box h2 {
+
+        font-size: 28px;
+
+    }
+
+    .contact-box p {
+
+        font-size: 18px;
+
+    }
+
+    .contact-button,
+    .back-button {
+
+        font-size: 20px;
+
+        padding:
+            10px 27px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     الرأس
+========================================= -->
+
+<header class="header">
+
+    <div class="logos">
+
+        <img
+            src="moe.png.jfif"
+            class="logo"
+            alt="وزارة التربية والتعليم"
+        >
+
+        <img
+            src="school-logo.png"
+            class="logo"
+            alt="مدرسة مربح الحلقة الثانية بنات"
+        >
+
+    </div>
+
+
+    <div class="school-name">
+
+        مدرسة مربح الحلقة الثانية بنات
+
+    </div>
+
+
+    <div class="page-title">
+
+        أَسْئِلَةٌ شَائِعَةٌ
+
+    </div>
+
+
+    <div class="motto">
+
+        بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     المحتوى
+========================================= -->
+
+<main class="content">
+
+    <h1 class="content-title">
+
+        أَهَمُّ الْأَسْئِلَةِ لِأَوْلِيَاءِ الْأُمُورِ
+
+    </h1>
+
+    <div class="gold-line"></div>
+
+
+    <p class="intro">
+
+        أَجْوِبَةٌ مُخْتَصَرَةٌ عَنْ أَبْرَزِ
+        الاسْتِفْسَارَاتِ الَّتِي قَدْ تَهُمُّ
+        أَوْلِيَاءَ الْأُمُورِ مَعَ بَدَايَةِ
+        الْعَامِ الدِّرَاسِيِّ.
+
+    </p>
+
+
+
+    <!-- =========================================
+         الأسئلة
+    ========================================= -->
+
+    <div class="faq-container">
+
+
+        <!-- السؤال 1 -->
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)"
+            >
+
+                <span class="question-text">
+
+                    📅 مَتَى يَبْدَأُ الْعَامُ الدِّرَاسِيُّ؟
+
+                </span>
+
+                <span class="plus">+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    يُرْجَى الرُّجُوعُ إِلَى قِسْمِ
+                    «الْمَوَاعِيدِ الْمُهِمَّةِ»
+                    لِلاطِّلَاعِ عَلَى التَّقْوِيمِ
+                    وَأَهَمِّ مَوَاعِيدِ الْعَامِ
+                    الدِّرَاسِيِّ.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- السؤال 2 -->
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)"
+            >
+
+                <span class="question-text">
+
+                    ⏰ أَيْنَ أَجِدُ مَوَاعِيدَ الْحُضُورِ وَالانْصِرَافِ؟
+
+                </span>
+
+                <span class="plus">+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    يُمْكِنُ الاطِّلَاعُ عَلَى مَوَاعِيدِ
+                    الْحُضُورِ وَالانْصِرَافِ وَالتَّوْقِيتِ
+                    الدِّرَاسِيِّ مِنْ خِلَالِ قِسْمِ
+                    «الْحُضُورِ وَالانْصِرَافِ».
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- السؤال 3 -->
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)"
+            >
+
+                <span class="question-text">
+
+                    👗 أَيْنَ أَجِدُ مَعْلُومَاتِ الزِّيِّ الْمَدْرَسِيِّ؟
+
+                </span>
+
+                <span class="plus">+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    جَمِيعُ التَّعْلِيمَاتِ وَالْمَعْلُومَاتِ
+                    الْخَاصَّةِ بِالزِّيِّ الْمَدْرَسِيِّ
+                    مَوْجُودَةٌ فِي قِسْمِ
+                    «الزِّيِّ الْمَدْرَسِيِّ».
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- السؤال 4 -->
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)"
+            >
+
+                <span class="question-text">
+
+                    🚌 كَيْفَ أَعْرِفُ مَعْلُومَاتِ الْمُوَاصَلَاتِ؟
+
+                </span>
+
+                <span class="plus">+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    يُرْجَى الدُّخُولُ إِلَى قِسْمِ
+                    «الْمُوَاصَلَاتِ الْمَدْرَسِيَّةِ»
+                    لِلاطِّلَاعِ عَلَى الْمَعْلُومَاتِ
+                    وَالإِرْشَادَاتِ الْخَاصَّةِ بِالْحَافِلَاتِ.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- السؤال 5 -->
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)"
+            >
+
+                <span class="question-text">
+
+                    📚 كَيْفَ أَتَابِعُ قَنَوَاتِ الْمَدْرَسَةِ الرَّسْمِيَّةَ؟
+
+                </span>
+
+                <span class="plus">+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    تَجِدُونَ قَنَوَاتِ الْمَدْرَسَةِ
+                    الرَّسْمِيَّةَ وَطُرُقَ مُتَابَعَتِهَا
+                    فِي قِسْمِ «التَّعْلِيمِ وَالتَّعَلُّمِ».
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- السؤال 6 -->
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)"
+            >
+
+                <span class="question-text">
+
+                    📱 كَيْفَ أَتَوَاصَلُ مَعَ إِدَارَةِ الْمَدْرَسَةِ؟
+
+                </span>
+
+                <span class="plus">+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    تَجِدُونَ أَسْمَاءَ الْإِدَارِيَّاتِ
+                    وَبَيَانَاتِ التَّوَاصُلِ مَعَهُنَّ
+                    فِي قِسْمِ «التَّوَاصُلِ مَعَ الْمَدْرَسَةِ».
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- السؤال 7 -->
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)"
+            >
+
+                <span class="question-text">
+
+                    🎒 مَاذَا تَحْتَاجُ الطَّالِبَةُ قَبْلَ بَدْءِ الدِّرَاسَةِ؟
+
+                </span>
+
+                <span class="plus">+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    يُرْجَى الاطِّلَاعُ عَلَى قِسْمِ
+                    «الاسْتِعْدَادِ لِلْعَامِ الدِّرَاسِيِّ»
+                    لِمَعْرِفَةِ أَهَمِّ الإِرْشَادَاتِ
+                    وَالاسْتِعْدَادَاتِ.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- السؤال 8 -->
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)"
+            >
+
+                <span class="question-text">
+
+                    ❓ مَاذَا أَفْعَلُ إِذَا لَمْ أَجِدْ إِجَابَةَ سُؤَالِي؟
+
+                </span>
+
+                <span class="plus">+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                <p>
+
+                    يُمْكِنُ التَّوَاصُلُ مَعَ الْإِدَارَةِ
+                    الْمَدْرَسِيَّةِ مِنْ خِلَالِ
+                    بَيَانَاتِ التَّوَاصُلِ الْمَوْجُودَةِ
+                    فِي قِسْمِ «التَّوَاصُلِ مَعَ الْمَدْرَسَةِ».
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         التواصل
+    ========================================= -->
+
+    <div class="contact-box">
+
+        <h2>
+
+            لَمْ تَجِدْ إِجَابَةَ سُؤَالِكَ؟
+
+        </h2>
+
+
+        <p>
+
+            يُسْعِدُنَا تَوَاصُلُكُمْ مَعَ الْمَدْرَسَةِ.
+
+        </p>
+
+
+        <a
+            href="./communication.html"
+            class="contact-button"
+        >
+
+            📱 التَّوَاصُلُ مَعَ الْمَدْرَسَةِ
+
+        </a>
+
+    </div>
+
+
+
+    <!-- =========================================
+         العودة
+    ========================================= -->
+
+    <a
+        href="./home.html"
+        class="back-button"
+    >
+
+        ← العودة إلى الصفحة الرئيسية
+
+    </a>
+
+</main>
+
+
+
+<!-- =========================================
+     التذييل
+========================================= -->
+
+<footer class="footer">
+
+    مدرسة مربح الحلقة الثانية بنات
+
+    <br>
+
+    بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
+
+</footer>
+
+
+
+<!-- =========================================
+     تشغيل الأسئلة
+========================================= -->
+
+<script>
+
+function toggleFAQ(button) {
+
+    const item =
+        button.parentElement;
+
+    const allItems =
+        document.querySelectorAll(".faq-item");
+
+    allItems.forEach(function(otherItem) {
+
+        if (otherItem !== item) {
+
+            otherItem.classList.remove("active");
+
+        }
+
+    });
+
+
+    item.classList.toggle("active");
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+```
