@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
@@ -34,12 +35,14 @@ html {
 }
 
 body {
+
     font-family:
         "Sakkal Majalla",
         Arial,
         sans-serif;
 
     color: #26352f;
+
     line-height: 1.7;
 
     background:
@@ -50,9 +53,13 @@ body {
         url("ministry-logo.png");
 
     background-size: cover;
+
     background-position: center top;
+
     background-repeat: no-repeat;
+
     background-attachment: fixed;
+
 }
 
 
@@ -205,7 +212,7 @@ body {
 
 
 /* =========================================
-   عناوين الأقسام
+   عنوان الدليل
 ========================================= */
 
 .section-heading {
@@ -350,151 +357,6 @@ body {
     font-size: 19px;
 
     line-height: 1.45;
-
-}
-
-
-/* =========================================
-   الأقسام الداخلية
-========================================= */
-
-.content-section {
-
-    width: 92%;
-
-    max-width: 1100px;
-
-    margin:
-        0 auto 60px;
-
-    padding:
-        35px 25px;
-
-    background:
-        rgba(255,255,255,0.97);
-
-    border:
-        1px solid #d7c59e;
-
-    border-radius: 25px;
-
-    box-shadow:
-        0 8px 28px rgba(0,0,0,0.13);
-
-    text-align: center;
-
-    scroll-margin-top: 25px;
-
-}
-
-.content-section h2 {
-
-    color: #126b4f;
-
-    font-size:
-        clamp(34px,6vw,46px);
-
-    font-weight: bold;
-
-    margin-bottom: 5px;
-
-}
-
-.gold-line {
-
-    width: 110px;
-
-    height: 3px;
-
-    background: #c6a65b;
-
-    margin: 8px auto 18px;
-
-}
-
-.content-section p {
-
-    color: #5b554e;
-
-    font-size: 23px;
-
-    margin-bottom: 22px;
-
-}
-
-
-/* =========================================
-   الصور الداخلية
-========================================= */
-
-.section-image {
-
-    display: block;
-
-    width: 100%;
-
-    max-width: 900px;
-
-    height: auto;
-
-    margin: 20px auto;
-
-    border:
-        2px solid #c6a65b;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 8px 25px rgba(0,0,0,0.15);
-
-}
-
-
-/* =========================================
-   قائمة المعلومات
-========================================= */
-
-.info-list {
-
-    max-width: 850px;
-
-    margin: 20px auto;
-
-    display: grid;
-
-    gap: 14px;
-
-}
-
-.info-item {
-
-    background:
-        #faf8f3;
-
-    border-right:
-        5px solid #126b4f;
-
-    border-radius: 12px;
-
-    padding:
-        15px 20px;
-
-    text-align: right;
-
-    color: #403b35;
-
-    font-size: 21px;
-
-}
-
-
-/* =========================================
-   الاستعداد للعام الدراسي
-========================================= */
-
-#preparation {
-
-    scroll-margin-top: 25px;
 
 }
 
@@ -679,7 +541,6 @@ body {
 .welcome,
 .section-heading,
 .card,
-.content-section,
 .countdown-section,
 .closing {
 
@@ -759,31 +620,6 @@ body {
 
     }
 
-    .content-section {
-
-        padding:
-            25px 12px 30px;
-
-    }
-
-    .content-section h2 {
-
-        font-size: 34px;
-
-    }
-
-    .content-section p {
-
-        font-size: 20px;
-
-    }
-
-    .section-image {
-
-        border-radius: 12px;
-
-    }
-
     .time-box {
 
         width: 76px;
@@ -801,55 +637,6 @@ body {
         font-size: 14px;
 
     }
-
-    .info-item {
-
-        font-size: 18px;
-
-    }
-
-}
-
-
-/* =========================================
-   زر العودة للأعلى
-========================================= */
-
-.top-button {
-
-    position: fixed;
-
-    bottom: 20px;
-
-    left: 20px;
-
-    width: 45px;
-
-    height: 45px;
-
-    border-radius: 50%;
-
-    background: #126b4f;
-
-    color: white;
-
-    text-decoration: none;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 22px;
-
-    border:
-        2px solid #c6a65b;
-
-    box-shadow:
-        0 5px 15px rgba(0,0,0,0.20);
-
-    z-index: 1000;
 
 }
 
@@ -988,7 +775,7 @@ body {
     <!-- الاستعداد -->
 
     <a
-        href="#preparation"
+        href="./preparation.html"
         class="card"
     >
 
@@ -1013,7 +800,7 @@ body {
     <!-- المواعيد -->
 
     <a
-        href="#dates"
+        href="./dates.html"
         class="card"
     >
 
@@ -1038,7 +825,7 @@ body {
     <!-- الزي -->
 
     <a
-        href="#uniform"
+        href="./uniform.html"
         class="card"
     >
 
@@ -1060,10 +847,10 @@ body {
 
 
 
-    <!-- الحضور -->
+    <!-- الحضور والانصراف -->
 
     <a
-        href="#attendance"
+        href="./attendance.html"
         class="card"
     >
 
@@ -1077,8 +864,8 @@ body {
 
         <p>
             مَوَاعِيدُ الدَّوَامِ
-            وَتَعْلِيمَاتُ الْحُضُورِ
-            وَالانْصِرَافِ.
+            وَالتَّوْقِيتُ الدِّرَاسِيُّ
+            وَتَعْلِيمَاتُ الْحُضُورِ.
         </p>
 
     </a>
@@ -1088,7 +875,7 @@ body {
     <!-- المواصلات -->
 
     <a
-        href="#transport"
+        href="./transport.html"
         class="card"
     >
 
@@ -1110,10 +897,10 @@ body {
 
 
 
-    <!-- التعليم -->
+    <!-- التعليم والتعلم -->
 
     <a
-        href="#learning"
+        href="./learning.html"
         class="card"
     >
 
@@ -1139,7 +926,7 @@ body {
     <!-- التواصل -->
 
     <a
-        href="#communication"
+        href="./communication.html"
         class="card"
     >
 
@@ -1161,10 +948,10 @@ body {
 
 
 
-    <!-- الأسئلة -->
+    <!-- الأسئلة الشائعة -->
 
     <a
-        href="#faq"
+        href="./faq.html"
         class="card"
     >
 
@@ -1183,372 +970,6 @@ body {
         </p>
 
     </a>
-
-</section>
-
-
-
-<!-- =========================================
-     الاستعداد للعام الدراسي
-========================================= -->
-
-<section
-    id="preparation"
-    class="content-section"
->
-
-    <h2>
-
-        إِرْشَادَاتُ اسْتِقْبَالِ الْعَامِ الدِّرَاسِيِّ
-
-    </h2>
-
-    <div class="gold-line"></div>
-
-    <p>
-
-        دَلِيلٌ مُبَسَّطٌ لِاسْتِعْدَادِ طَالِبَاتِنَا
-        لِبِدَايَةِ عَامٍ دِرَاسِيٍّ مُوَفَّقٍ.
-
-    </p>
-
-
-    <!-- الاسم الصحيح للصورة الموجودة في المستودع -->
-
-    <img
-        src="family-back-to-school.jpg.png"
-        class="section-image"
-        alt="إرشادات استقبال العام الدراسي"
-    >
-
-</section>
-
-
-
-<!-- =========================================
-     المواعيد المهمة
-========================================= -->
-
-<section
-    id="dates"
-    class="content-section"
->
-
-    <h2>
-
-        الْمَوَاعِيدُ الْمُهِمَّةُ
-
-    </h2>
-
-    <div class="gold-line"></div>
-
-    <p>
-
-        أَهَمُّ التَّوَارِيخِ وَالْمَوَاعِيدِ
-        لِلْعَامِ الدِّرَاسِيِّ ٢٠٢٦ – ٢٠٢٧.
-
-    </p>
-
-
-    <img
-        src="academic-calendar-2026-2027.png"
-        class="section-image"
-        alt="التقويم الأكاديمي 2026-2027"
-    >
-
-
-    <img
-        src="term1-dates-2026-2027.png"
-        class="section-image"
-        alt="مواعيد الفصل الدراسي الأول 2026-2027"
-    >
-
-</section>
-
-
-
-<!-- =========================================
-     الزي المدرسي
-========================================= -->
-
-<section
-    id="uniform"
-    class="content-section"
->
-
-    <h2>
-
-        الزِّيُّ الْمَدْرَسِيُّ
-
-    </h2>
-
-    <div class="gold-line"></div>
-
-    <p>
-
-        التَّعْلِيمَاتُ وَالْمَعْلُومَاتُ
-        الْخَاصَّةُ بِالزِّيِّ الْمَدْرَسِيِّ.
-
-    </p>
-
-
-    <img
-        src="school-uniform-2026-2027.png"
-        class="section-image"
-        alt="الزي المدرسي 2026-2027"
-    >
-
-</section>
-
-
-
-<!-- =========================================
-     الحضور والانصراف
-========================================= -->
-
-<section
-    id="attendance"
-    class="content-section"
->
-
-    <h2>
-
-        الْحُضُورُ وَالانْصِرَافُ
-
-    </h2>
-
-    <div class="gold-line"></div>
-
-    <p>
-
-        حُضُورُ الطَّالِبَةِ فِي الْوَقْتِ
-        الْمُحَدَّدِ وَالِالْتِزَامُ
-        بِتَعْلِيمَاتِ الْحُضُورِ وَالانْصِرَافِ
-        يُسَاهِمَانِ فِي بَدَايَةٍ مُنَظَّمَةٍ
-        وَمُوَفَّقَةٍ لِلْيَوْمِ الدِّرَاسِيِّ.
-
-    </p>
-
-
-    <div class="info-list">
-
-        <div class="info-item">
-            ⏰ يُرْجَى الِالْتِزَامُ بِمَوَاعِيدِ الْحُضُورِ.
-        </div>
-
-        <div class="info-item">
-            🏫 الْحِرْصُ عَلَى الْوُصُولِ إِلَى الْمَدْرَسَةِ مُبَكِّرًا.
-        </div>
-
-        <div class="info-item">
-            📋 مُتَابَعَةُ تَعْلِيمَاتِ الْمَدْرَسَةِ بِشَأْنِ الانْصِرَافِ.
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     المواصلات
-========================================= -->
-
-<section
-    id="transport"
-    class="content-section"
->
-
-    <h2>
-
-        الْمُوَاصَلَاتُ الْمَدْرَسِيَّةُ
-
-    </h2>
-
-    <div class="gold-line"></div>
-
-    <p>
-
-        نَحْرِصُ عَلَى سَلَامَةِ طَالِبَاتِنَا
-        وَانْتِظَامِ رِحْلَتِهِنَّ مِنَ الْمَنْزِلِ
-        إِلَى الْمَدْرَسَةِ وَبِالْعَكْسِ.
-
-    </p>
-
-
-    <div class="info-list">
-
-        <div class="info-item">
-            🚌 الِالْتِزَامُ بِمَوْعِدِ الْحَافِلَةِ الْمُحَدَّدِ.
-        </div>
-
-        <div class="info-item">
-            👧 الِالْتِزَامُ بِتَعْلِيمَاتِ السَّلَامَةِ دَاخِلَ الْحَافِلَةِ.
-        </div>
-
-        <div class="info-item">
-            📞 التَّوَاصُلُ مَعَ الْمَدْرَسَةِ عِنْدَ الْحَاجَةِ إِلَى الِاسْتِفْسَارِ.
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     التعليم والتعلم
-========================================= -->
-
-<section
-    id="learning"
-    class="content-section"
->
-
-    <h2>
-
-        التَّعْلِيمُ وَالتَّعَلُّمُ
-
-    </h2>
-
-    <div class="gold-line"></div>
-
-    <p>
-
-        شَرَاكَةُ الْبَيْتِ وَالْمَدْرَسَةِ
-        أَسَاسٌ لِدَعْمِ تَقَدُّمِ طَالِبَاتِنَا
-        وَتَعْزِيزِ تَعَلُّمِهِنَّ.
-
-    </p>
-
-
-    <div class="info-list">
-
-        <div class="info-item">
-            📚 مُتَابَعَةُ الْوَاجِبَاتِ وَالْمَهَامِّ الدِّرَاسِيَّةِ.
-        </div>
-
-        <div class="info-item">
-            💡 تَشْجِيعُ الطَّالِبَةِ عَلَى التَّعَلُّمِ وَالِاسْتِكْشَافِ.
-        </div>
-
-        <div class="info-item">
-            📝 مُتَابَعَةُ النَّتَائِجِ وَالْمُسْتَوَى الدِّرَاسِيِّ.
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     التواصل
-========================================= -->
-
-<section
-    id="communication"
-    class="content-section"
->
-
-    <h2>
-
-        التَّوَاصُلُ مَعَ الْمَدْرَسَةِ
-
-    </h2>
-
-    <div class="gold-line"></div>
-
-    <p>
-
-        نُرَحِّبُ بِتَوَاصُلِ أَوْلِيَاءِ الأُمُورِ
-        مَعَ الْمَدْرَسَةِ عَبْرَ الْقَنَوَاتِ
-        وَالطُّرُقِ الرَّسْمِيَّةِ الْمُعْتَمَدَةِ.
-
-    </p>
-
-
-    <div class="info-list">
-
-        <div class="info-item">
-            📱 يُرْجَى مُتَابَعَةُ قَنَوَاتِ التَّوَاصُلِ الرَّسْمِيَّةِ.
-        </div>
-
-        <div class="info-item">
-            🏫 يُمْكِنُ التَّوَاصُلُ مَعَ إِدَارَةِ الْمَدْرَسَةِ عِنْدَ الْحَاجَةِ.
-        </div>
-
-        <div class="info-item">
-            🤝 نُؤْمِنُ بِأَهَمِّيَّةِ الشَّرَاكَةِ بَيْنَ الْبَيْتِ وَالْمَدْرَسَةِ.
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     الأسئلة الشائعة
-========================================= -->
-
-<section
-    id="faq"
-    class="content-section"
->
-
-    <h2>
-
-        أَسْئِلَةٌ شَائِعَةٌ
-
-    </h2>
-
-    <div class="gold-line"></div>
-
-
-    <div class="info-list">
-
-        <div class="info-item">
-
-            <strong>
-                س: مَا أَهَمُّ مَا تَحْتَاجُهُ الطَّالِبَةُ فِي بَدَايَةِ الْعَامِ؟
-            </strong>
-
-            <br>
-
-            ج: يُرْجَى مُتَابَعَةُ إِرْشَادَاتِ اسْتِقْبَالِ
-            الْعَامِ الدِّرَاسِيِّ الْمَوْجُودَةِ فِي هَذَا الْمَرْجِعِ.
-
-        </div>
-
-
-        <div class="info-item">
-
-            <strong>
-                س: أَيْنَ أَجِدُ التَّقْوِيمَ وَالْمَوَاعِيدَ الْمُهِمَّةَ؟
-            </strong>
-
-            <br>
-
-            ج: فِي قِسْمِ «الْمَوَاعِيدِ الْمُهِمَّةِ»
-            أَعْلَاهُ.
-
-        </div>
-
-
-        <div class="info-item">
-
-            <strong>
-                س: أَيْنَ أَجِدُ مَعْلُومَاتِ الزِّيِّ الْمَدْرَسِيِّ؟
-            </strong>
-
-            <br>
-
-            ج: فِي قِسْمِ «الزِّيِّ الْمَدْرَسِيِّ».
-
-        </div>
-
-    </div>
 
 </section>
 
@@ -1687,20 +1108,6 @@ body {
 
 
 <!-- =========================================
-     زر العودة للأعلى
-========================================= -->
-
-<a
-    href="#top"
-    class="top-button"
-    aria-label="العودة إلى الأعلى"
->
-    ↑
-</a>
-
-
-
-<!-- =========================================
      العداد
 ========================================= -->
 
@@ -1808,3 +1215,4 @@ setInterval(
 </body>
 
 </html>
+```
