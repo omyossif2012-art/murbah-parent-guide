@@ -3,621 +3,667 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<title>
-مَرْجِعُ أَوْلِيَاءِ الأُمُورِ
-</title>
+    <title>مَرْجِعُ أَوْلِيَاءِ الأُمُورِ</title>
 
 
-<style>
+    <!-- =========================================
+         بيانات معاينة الرابط في Telegram و WhatsApp
+    ========================================== -->
 
-/* =====================================
-   الخط المفضل
-===================================== */
+    <meta property="og:type"
+          content="website">
 
-@font-face {
+    <meta property="og:url"
+          content="https://omyossif2012-art.github.io/murbah-parent-guide/">
 
-    font-family:
-        "Sakkal Majalla";
+    <meta property="og:title"
+          content="مَرْجِعُ أَوْلِيَاءِ الأُمُورِ">
 
-    src:
-        local("Sakkal Majalla");
+    <meta property="og:description"
+          content="مرجع أولياء الأمور - مدرسة مربح الحلقة الثانية بنات">
 
-}
+    <meta property="og:image"
+          content="https://omyossif2012-art.github.io/murbah-parent-guide/og-image.jpg">
 
+    <meta property="og:image:secure_url"
+          content="https://omyossif2012-art.github.io/murbah-parent-guide/og-image.jpg">
 
-/* =====================================
-   الإعدادات العامة
-===================================== */
+    <meta property="og:image:type"
+          content="image/jpeg">
 
-* {
+    <meta property="og:image:width"
+          content="1200">
 
-    box-sizing:
-        border-box;
+    <meta property="og:image:height"
+          content="630">
 
-    margin:
-        0;
+    <meta property="og:locale"
+          content="ar_AE">
 
-    padding:
-        0;
 
-}
+    <!-- =========================================
+         بيانات إضافية للمشاركة
+    ========================================== -->
 
+    <meta name="twitter:card"
+          content="summary_large_image">
 
-html,
-body {
+    <meta name="twitter:title"
+          content="مَرْجِعُ أَوْلِيَاءِ الأُمُورِ">
 
-    width:
-        100%;
+    <meta name="twitter:description"
+          content="مرجع أولياء الأمور - مدرسة مربح الحلقة الثانية بنات">
 
-    min-height:
-        100%;
+    <meta name="twitter:image"
+          content="https://omyossif2012-art.github.io/murbah-parent-guide/og-image.jpg">
 
-}
 
+    <style>
 
-body {
+        /* =====================================
+           الخط
+        ===================================== */
 
-    font-family:
-        "Sakkal Majalla",
-        Arial,
-        sans-serif;
+        @font-face {
 
-    overflow:
-        hidden;
+            font-family:
+                "Sakkal Majalla";
 
-    background:
-        #ffffff;
+            src:
+                local("Sakkal Majalla");
 
-}
+        }
 
 
-/* =====================================
-   صفحة البداية
-===================================== */
+        /* =====================================
+           الإعدادات العامة
+        ===================================== */
 
-.opening-page {
+        * {
 
-    position:
-        relative;
+            box-sizing:
+                border-box;
 
-    width:
-        100%;
+            margin:
+                0;
 
-    height:
-        100vh;
+            padding:
+                0;
 
-    min-height:
-        650px;
+        }
 
-    display:
-        flex;
 
-    justify-content:
-        center;
+        html,
+        body {
 
-    align-items:
-        center;
+            width:
+                100%;
 
-    text-align:
-        center;
+            min-height:
+                100%;
 
-    overflow:
-        hidden;
+        }
 
-    background-image:
-        url("ministry-logo.png");
 
-    background-size:
-        cover;
+        body {
 
-    background-position:
-        center center;
+            font-family:
+                "Sakkal Majalla",
+                Arial,
+                sans-serif;
 
-    background-repeat:
-        no-repeat;
+            overflow:
+                hidden;
 
-    animation:
-        backgroundReveal
-        2.5s
-        ease-out
-        forwards;
+            background:
+                #ffffff;
 
-}
+        }
 
 
-/* =====================================
-   طبقة شفافة خفيفة جدًا
-===================================== */
+        /* =====================================
+           صفحة البداية
+        ===================================== */
 
-.opening-page::before {
+        .opening-page {
 
-    content:
-        "";
+            position:
+                relative;
 
-    position:
-        absolute;
+            width:
+                100%;
 
-    inset:
-        0;
+            height:
+                100vh;
 
-    background:
-        rgba(255,255,255,0.08);
+            min-height:
+                650px;
 
-    z-index:
-        1;
+            display:
+                flex;
 
-}
+            justify-content:
+                center;
 
+            align-items:
+                center;
 
-/* =====================================
-   المحتوى
-===================================== */
+            text-align:
+                center;
 
-.opening-content {
+            overflow:
+                hidden;
 
-    position:
-        relative;
+            background-image:
+                url("ministry-logo.png");
 
-    z-index:
-        2;
+            background-size:
+                cover;
 
-    width:
-        90%;
+            background-position:
+                center center;
 
-    max-width:
-        900px;
+            background-repeat:
+                no-repeat;
 
-    padding:
-        35px 25px;
+            animation:
+                backgroundReveal
+                2.5s
+                ease-out
+                forwards;
 
-    background:
-        rgba(255,255,255,0.86);
+        }
 
-    border:
-        1px solid
-        rgba(198,166,91,0.75);
 
-    border-radius:
-        30px;
+        /* =====================================
+           طبقة شفافة
+        ===================================== */
 
-    box-shadow:
-        0 15px 45px
-        rgba(0,0,0,0.16);
+        .opening-page::before {
 
-    animation:
-        contentAppear
-        1.8s
-        ease-out
-        0.5s
-        both;
+            content:
+                "";
 
-}
+            position:
+                absolute;
 
+            inset:
+                0;
 
-/* =====================================
-   الشعاران
-===================================== */
+            background:
+                rgba(255,255,255,0.08);
 
-.logos {
+            z-index:
+                1;
 
-    display:
-        flex;
+        }
 
-    justify-content:
-        center;
 
-    align-items:
-        center;
+        /* =====================================
+           المحتوى
+        ===================================== */
 
-    gap:
-        22px;
+        .opening-content {
 
-    margin-bottom:
-        18px;
+            position:
+                relative;
 
-}
+            z-index:
+                2;
 
+            width:
+                90%;
 
-.logo {
+            max-width:
+                900px;
 
-    width:
-        85px;
+            padding:
+                35px 25px;
 
-    height:
-        85px;
+            background:
+                rgba(255,255,255,0.86);
 
-    object-fit:
-        contain;
+            border:
+                1px solid
+                rgba(198,166,91,0.75);
 
-    background:
-        #ffffff;
+            border-radius:
+                30px;
 
-    padding:
-        6px;
+            box-shadow:
+                0 15px 45px
+                rgba(0,0,0,0.16);
 
-    border-radius:
-        16px;
+            animation:
+                contentAppear
+                1.8s
+                ease-out
+                0.5s
+                both;
 
-    border:
-        1px solid
-        #c6a65b;
+        }
 
-    box-shadow:
-        0 5px 15px
-        rgba(0,0,0,0.10);
 
-}
+        /* =====================================
+           الشعارات
+        ===================================== */
 
+        .logos {
 
-/* =====================================
-   اسم المدرسة
-===================================== */
+            display:
+                flex;
 
-.school-name {
+            justify-content:
+                center;
 
-    color:
-        #126b4f;
+            align-items:
+                center;
 
-    font-size:
-        clamp(30px,5vw,45px);
+            gap:
+                22px;
 
-    font-weight:
-        bold;
+            margin-bottom:
+                18px;
 
-    line-height:
-        1.2;
+        }
 
-    margin-bottom:
-        8px;
 
-}
+        .logo {
 
+            width:
+                85px;
 
-/* =====================================
-   عنوان الموقع
-===================================== */
+            height:
+                85px;
 
-.main-title {
+            object-fit:
+                contain;
 
-    color:
-        #7a2837;
+            background:
+                #ffffff;
 
-    font-size:
-        clamp(42px,8vw,70px);
+            padding:
+                6px;
 
-    font-weight:
-        bold;
+            border-radius:
+                16px;
 
-    line-height:
-        1.1;
+            border:
+                1px solid
+                #c6a65b;
 
-    margin-bottom:
-        10px;
+            box-shadow:
+                0 5px 15px
+                rgba(0,0,0,0.10);
 
-}
+        }
 
 
-/* =====================================
-   الميثاق
-===================================== */
+        /* =====================================
+           اسم المدرسة
+        ===================================== */
 
-.motto {
+        .school-name {
 
-    color:
-        #126b4f;
+            color:
+                #126b4f;
 
-    font-size:
-        clamp(25px,4vw,36px);
+            font-size:
+                clamp(30px,5vw,45px);
 
-    font-weight:
-        bold;
+            font-weight:
+                bold;
 
-    margin-bottom:
-        25px;
+            line-height:
+                1.2;
 
-}
+            margin-bottom:
+                8px;
 
+        }
 
-/* =====================================
-   الخط الزخرفي
-===================================== */
 
-.decor-line {
+        /* =====================================
+           عنوان الموقع
+        ===================================== */
 
-    width:
-        120px;
+        .main-title {
 
-    height:
-        3px;
+            color:
+                #7a2837;
 
-    background:
-        #c6a65b;
+            font-size:
+                clamp(42px,8vw,70px);
 
-    margin:
-        0 auto 28px;
+            font-weight:
+                bold;
 
-    border-radius:
-        10px;
+            line-height:
+                1.1;
 
-}
+            margin-bottom:
+                10px;
 
+        }
 
-/* =====================================
-   زر الدخول
-===================================== */
 
-.enter-button {
+        /* =====================================
+           الميثاق
+        ===================================== */
 
-    display:
-        inline-flex;
+        .motto {
 
-    justify-content:
-        center;
+            color:
+                #126b4f;
 
-    align-items:
-        center;
+            font-size:
+                clamp(25px,4vw,36px);
 
-    min-width:
-        260px;
+            font-weight:
+                bold;
 
-    padding:
-        14px 35px;
+            margin-bottom:
+                25px;
 
-    background:
-        #126b4f;
+        }
 
-    color:
-        white;
 
-    text-decoration:
-        none;
+        /* =====================================
+           الخط الزخرفي
+        ===================================== */
 
-    border:
-        2px solid
-        #c6a65b;
+        .decor-line {
 
-    border-radius:
-        50px;
+            width:
+                120px;
 
-    font-family:
-        "Sakkal Majalla",
-        Arial,
-        sans-serif;
+            height:
+                3px;
 
-    font-size:
-        28px;
+            background:
+                #c6a65b;
 
-    font-weight:
-        bold;
+            margin:
+                0 auto 28px;
 
-    box-shadow:
-        0 8px 20px
-        rgba(0,0,0,0.18);
+            border-radius:
+                10px;
 
-    transition:
-        all
-        0.35s
-        ease;
+        }
 
-    animation:
-        buttonPulse
-        3s
-        ease-in-out
-        infinite;
 
-}
+        /* =====================================
+           زر الدخول
+        ===================================== */
 
+        .enter-button {
 
-.enter-button:hover {
+            display:
+                inline-flex;
 
-    background:
-        #7a2837;
+            justify-content:
+                center;
 
-    transform:
-        translateY(-4px)
-        scale(1.03);
+            align-items:
+                center;
 
-    box-shadow:
-        0 12px 28px
-        rgba(0,0,0,0.22);
+            min-width:
+                260px;
 
-}
+            padding:
+                14px 35px;
 
+            background:
+                #126b4f;
 
-/* =====================================
-   ظهور الخلفية
-===================================== */
+            color:
+                white;
 
-@keyframes backgroundReveal {
+            text-decoration:
+                none;
 
-    from {
+            border:
+                2px solid
+                #c6a65b;
 
-        opacity:
-            0;
+            border-radius:
+                50px;
 
-        background-size:
-            112%;
+            font-family:
+                "Sakkal Majalla",
+                Arial,
+                sans-serif;
 
-    }
+            font-size:
+                28px;
 
-    to {
+            font-weight:
+                bold;
 
-        opacity:
-            1;
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,0.18);
 
-        background-size:
-            100%;
+            transition:
+                all
+                0.35s
+                ease;
 
-    }
+            animation:
+                buttonPulse
+                3s
+                ease-in-out
+                infinite;
 
-}
+        }
 
 
-/* =====================================
-   ظهور المحتوى
-===================================== */
+        .enter-button:hover {
 
-@keyframes contentAppear {
+            background:
+                #7a2837;
 
-    from {
+            transform:
+                translateY(-4px)
+                scale(1.03);
 
-        opacity:
-            0;
+            box-shadow:
+                0 12px 28px
+                rgba(0,0,0,0.22);
 
-        transform:
-            translateY(35px)
-            scale(0.96);
+        }
 
-    }
 
-    to {
+        /* =====================================
+           ظهور الخلفية
+        ===================================== */
 
-        opacity:
-            1;
+        @keyframes backgroundReveal {
 
-        transform:
-            translateY(0)
-            scale(1);
+            from {
 
-    }
+                opacity:
+                    0;
 
-}
+                background-size:
+                    112%;
 
+            }
 
-/* =====================================
-   نبض خفيف للزر
-===================================== */
+            to {
 
-@keyframes buttonPulse {
+                opacity:
+                    1;
 
-    0%,
-    100% {
+                background-size:
+                    100%;
 
-        box-shadow:
-            0 8px 20px
-            rgba(0,0,0,0.18);
+            }
 
-    }
+        }
 
-    50% {
 
-        box-shadow:
-            0 10px 30px
-            rgba(198,166,91,0.35);
+        /* =====================================
+           ظهور المحتوى
+        ===================================== */
 
-    }
+        @keyframes contentAppear {
 
-}
+            from {
 
+                opacity:
+                    0;
 
-/* =====================================
-   الجوال
-===================================== */
+                transform:
+                    translateY(35px)
+                    scale(0.96);
 
-@media (max-width:600px) {
+            }
 
-    .opening-page {
+            to {
 
-        min-height:
-            600px;
+                opacity:
+                    1;
 
-        background-position:
-            center center;
+                transform:
+                    translateY(0)
+                    scale(1);
 
-    }
+            }
 
+        }
 
-    .opening-content {
 
-        width:
-            92%;
+        /* =====================================
+           نبض الزر
+        ===================================== */
 
-        padding:
-            28px 15px;
+        @keyframes buttonPulse {
 
-        border-radius:
-            24px;
+            0%,
+            100% {
 
-    }
+                box-shadow:
+                    0 8px 20px
+                    rgba(0,0,0,0.18);
 
+            }
 
-    .logos {
+            50% {
 
-        gap:
-            12px;
+                box-shadow:
+                    0 10px 30px
+                    rgba(198,166,91,0.35);
 
-        margin-bottom:
-            12px;
+            }
 
-    }
+        }
 
 
-    .logo {
+        /* =====================================
+           الجوال
+        ===================================== */
 
-        width:
-            65px;
+        @media (max-width:600px) {
 
-        height:
-            65px;
+            .opening-page {
 
-    }
+                min-height:
+                    600px;
 
+                background-position:
+                    center center;
 
-    .school-name {
+            }
 
-        font-size:
-            28px;
 
-    }
+            .opening-content {
 
+                width:
+                    92%;
 
-    .main-title {
+                padding:
+                    28px 15px;
 
-        font-size:
-            43px;
+                border-radius:
+                    24px;
 
-    }
+            }
 
 
-    .motto {
+            .logos {
 
-        font-size:
-            24px;
+                gap:
+                    12px;
 
-    }
+                margin-bottom:
+                    12px;
 
+            }
 
-    .enter-button {
 
-        min-width:
-            220px;
+            .logo {
 
-        font-size:
-            24px;
+                width:
+                    65px;
 
-        padding:
-            12px 25px;
+                height:
+                    65px;
 
-    }
+            }
 
-}
 
-</style>
+            .school-name {
+
+                font-size:
+                    28px;
+
+            }
+
+
+            .main-title {
+
+                font-size:
+                    43px;
+
+            }
+
+
+            .motto {
+
+                font-size:
+                    24px;
+
+            }
+
+
+            .enter-button {
+
+                min-width:
+                    220px;
+
+                font-size:
+                    24px;
+
+                padding:
+                    12px 25px;
+
+            }
+
+        }
+
+    </style>
 
 </head>
 
 
 <body>
 
-
-<!-- =====================================
-     صفحة الاستفتاح
-===================================== -->
 
 <main class="opening-page">
 
@@ -647,7 +693,6 @@ body {
         </div>
 
 
-
         <!-- اسم المدرسة -->
 
         <div class="school-name">
@@ -655,7 +700,6 @@ body {
             مدرسة مربح الحلقة الثانية بنات
 
         </div>
-
 
 
         <!-- العنوان -->
@@ -667,7 +711,6 @@ body {
         </div>
 
 
-
         <!-- الميثاق -->
 
         <div class="motto">
@@ -677,11 +720,9 @@ body {
         </div>
 
 
-
-        <!-- الخط الزخرفي -->
+        <!-- الخط -->
 
         <div class="decor-line"></div>
-
 
 
         <!-- زر الدخول -->
