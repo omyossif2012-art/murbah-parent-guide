@@ -403,48 +403,6 @@ body {
 
 
 /* =========================================
-   صورة بطاقة استلام الكتب المدرسية
-========================================= */
-
-.card-image {
-
-    width: 100%;
-
-    height: 180px;
-
-    object-fit: cover;
-
-    display: block;
-
-    border-radius: 12px;
-
-    margin-bottom: 15px;
-
-    border:
-        1px solid #E0D6C3;
-
-    transition:
-        transform 0.3s ease;
-
-}
-
-.book-card {
-
-    overflow: hidden;
-
-    padding-top: 15px;
-
-}
-
-.book-card:hover .card-image {
-
-    transform:
-        scale(1.02);
-
-}
-
-
-/* =========================================
    الرسالة الختامية
 ========================================= */
 
@@ -835,15 +793,6 @@ body {
     }
 
 
-    /* صورة بطاقة الكتب على الجوال */
-
-    .card-image {
-
-        height: 160px;
-
-    }
-
-
     /* العداد في الجوال */
 
     .countdown-section {
@@ -932,13 +881,6 @@ body {
     }
 
     .card {
-
-        transition:
-            none;
-
-    }
-
-    .card-image {
 
         transition:
             none;
@@ -1101,19 +1043,18 @@ body {
 
 
     <!-- =========================================
-         ⭐ القسم الجديد: استلام الكتب المدرسية
+         ⭐ القسم الجديد
+         استلام الكتب المدرسية
     ========================================= -->
 
     <a
         href="./books.html"
-        class="card book-card"
+        class="card"
     >
 
-        <img
-            src="khutta-istilam-al-kutub.jpg"
-            class="card-image"
-            alt="استلام الكتب المدرسية"
-        >
+        <div class="icon">
+            📚
+        </div>
 
         <h3>
             اسْتِلَامُ الْكُتُبِ الْمَدْرَسِيَّةِ
