@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+استلام الكتب المدرسية | مدرسة مربح الحلقة الثانية بنات
+</title>
+
+<style>
+
+/* =========================================
+   الخط والألوان
+========================================= */
+
+@font-face {
+
+    font-family: "Sakkal Majalla";
+
+    src: local("Sakkal Majalla");
+
+}
+
+:root {
+
+    --brown-dark: #5A4032;
+
+    --brown-deep: #463026;
+
+    --brown: #765544;
+
+    --brown-light: #92705B;
+
+    --gold: #C6A65B;
+
+    --gold-light: #E8D5A3;
+
+    --cream: #FAF8F3;
+
+    --white: #FFFFFF;
+
+    --text: #403831;
+
+    --burgundy: #7A2837;
+
+}
+
+
+/* =========================================
+   الإعدادات العامة
+========================================= */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family:
+        "Sakkal Majalla",
+        Arial,
+        sans-serif;
+
+    color: var(--text);
+
+    line-height: 1.7;
+
+    min-height: 100vh;
+
+    background:
+
+        linear-gradient(
+            rgba(250,248,243,0.95),
+            rgba(250,248,243,0.95)
+        ),
+
+        url("ministry-logo.png");
+
+    background-size: cover;
+
+    background-position: center top;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+}
+
+
+/* =========================================
+   الرأس
+========================================= */
+
+.header {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(90,64,50,0.98),
+            rgba(70,48,38,0.98)
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 15px 30px;
+
+    border-bottom:
+        5px solid var(--gold);
+
+}
+
+.logos {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 12px;
+
+}
+
+.logo {
+
+    width: 78px;
+
+    height: 78px;
+
+    object-fit: contain;
+
+    background: white;
+
+    padding: 5px;
+
+    border-radius: 15px;
+
+    border:
+        1px solid var(--gold);
+
+}
+
+.school-name {
+
+    font-size:
+        clamp(27px,5vw,42px);
+
+    font-weight: bold;
+
+}
+
+.page-title {
+
+    color: var(--gold-light);
+
+    font-size:
+        clamp(36px,7vw,54px);
+
+    font-weight: bold;
+
+    line-height: 1.2;
+
+}
+
+.motto {
+
+    font-size: 22px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================
+   المحتوى الرئيسي
+========================================= */
+
+.main {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: 40px auto 60px;
+
+}
+
+
+/* =========================================
+   عنوان الصفحة
+========================================= */
+
+.heading {
+
+    text-align: center;
+
+    background:
+        rgba(255,255,255,0.97);
+
+    border:
+        1px solid rgba(198,166,91,0.70);
+
+    border-radius: 25px;
+
+    padding: 25px 20px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 8px 28px rgba(0,0,0,0.12);
+
+}
+
+.heading h1 {
+
+    color: var(--burgundy);
+
+    font-size:
+        clamp(34px,6vw,48px);
+
+    margin-bottom: 5px;
+
+}
+
+.heading span {
+
+    display: block;
+
+    width: 110px;
+
+    height: 3px;
+
+    background: var(--gold);
+
+    margin: 8px auto 12px;
+
+}
+
+.heading p {
+
+    color: var(--brown-dark);
+
+    font-size:
+        clamp(21px,4vw,27px);
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   الصورة
+========================================= */
+
+.image-container {
+
+    background:
+        rgba(255,255,255,0.98);
+
+    border:
+        1px solid rgba(198,166,91,0.75);
+
+    border-top:
+        5px solid var(--gold);
+
+    border-radius: 25px;
+
+    padding: 18px;
+
+    box-shadow:
+        0 8px 28px rgba(0,0,0,0.14);
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+.main-image {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 16px;
+
+}
+
+
+/* =========================================
+   رسالة أسفل الصورة
+========================================= */
+
+.note {
+
+    background:
+        rgba(255,255,255,0.97);
+
+    border:
+        1px solid #DFD2B9;
+
+    border-radius: 22px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 7px 22px rgba(0,0,0,0.10);
+
+    margin-bottom: 30px;
+
+}
+
+.note h2 {
+
+    color: var(--brown-dark);
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+
+}
+
+.note p {
+
+    color: #5B544B;
+
+    font-size: 21px;
+
+}
+
+
+/* =========================================
+   زر العودة
+========================================= */
+
+.back-button {
+
+    display: block;
+
+    width: fit-content;
+
+    margin: 0 auto;
+
+    padding: 12px 28px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--brown-dark),
+            var(--brown-deep)
+        );
+
+    color: white;
+
+    text-decoration: none;
+
+    border:
+        2px solid var(--gold);
+
+    border-radius: 30px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.16);
+
+    transition:
+        all 0.3s ease;
+
+}
+
+.back-button:hover {
+
+    transform:
+        translateY(-3px);
+
+    background:
+        var(--burgundy);
+
+}
+
+
+/* =========================================
+   التذييل
+========================================= */
+
+.footer {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(90,64,50,0.98),
+            rgba(70,48,38,0.98)
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-top:
+        4px solid var(--gold);
+
+    font-size: 19px;
+
+}
+
+
+/* =========================================
+   الحركة
+========================================= */
+
+.header,
+.heading,
+.image-container,
+.note,
+.back-button {
+
+    animation:
+        fadeIn 0.8s ease both;
+
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(18px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================
+   الجوال
+========================================= */
+
+@media (max-width:600px) {
+
+    body {
+
+        background-attachment:
+            scroll;
+
+    }
+
+    .logo {
+
+        width: 62px;
+
+        height: 62px;
+
+    }
+
+    .logos {
+
+        gap: 10px;
+
+    }
+
+    .main {
+
+        width: 94%;
+
+        margin-top: 25px;
+
+    }
+
+    .heading {
+
+        padding:
+            22px 14px;
+
+    }
+
+    .heading h1 {
+
+        font-size: 34px;
+
+    }
+
+    .heading p {
+
+        font-size: 20px;
+
+    }
+
+    .image-container {
+
+        padding: 10px;
+
+        border-radius: 18px;
+
+    }
+
+    .main-image {
+
+        border-radius: 10px;
+
+    }
+
+    .note h2 {
+
+        font-size: 28px;
+
+    }
+
+    .note p {
+
+        font-size: 19px;
+
+    }
+
+    .back-button {
+
+        font-size: 20px;
+
+        padding:
+            10px 22px;
+
+    }
+
+}
+
+
+/* =========================================
+   تقليل الحركة
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior:
+            auto;
+
+    }
+
+    .header,
+    .heading,
+    .image-container,
+    .note,
+    .back-button {
+
+        animation: none;
+
+    }
+
+    .back-button {
+
+        transition: none;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     الرأس
+========================================= -->
+
+<header class="header">
+
+    <div class="logos">
+
+        <img
+            src="moe.png.jfif"
+            class="logo"
+            alt="وزارة التربية والتعليم"
+        >
+
+        <img
+            src="school-logo.png"
+            class="logo"
+            alt="مدرسة مربح الحلقة الثانية بنات"
+        >
+
+    </div>
+
+
+    <div class="school-name">
+
+        مدرسة مربح الحلقة الثانية بنات
+
+    </div>
+
+
+    <div class="page-title">
+
+        اسْتِلَامُ الْكُتُبِ الْمَدْرَسِيَّةِ
+
+    </div>
+
+
+    <div class="motto">
+
+        بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     المحتوى
+========================================= -->
+
+<main class="main">
+
+
+    <!-- عنوان الصفحة -->
+
+    <section class="heading">
+
+        <h1>
+
+            📚 اسْتِلَامُ الْكُتُبِ الْمَدْرَسِيَّةِ
+
+        </h1>
+
+        <span></span>
+
+        <p>
+
+            خُطَّةُ اسْتِلَامِ الْكُتُبِ
+            الْمَدْرَسِيَّةِ لِطَالِبَاتِنَا
+
+        </p>
+
+    </section>
+
+
+
+    <!-- الصورة -->
+
+    <section class="image-container">
+
+        <img
+
+            src="khutta-istilam-al-kutub.jpg"
+
+            class="main-image"
+
+            alt="خطة استلام الكتب المدرسية"
+
+        >
+
+    </section>
+
+
+
+    <!-- ملاحظة -->
+
+    <section class="note">
+
+        <h2>
+
+            📖 نتمنى لطالباتنا عامًا دراسيًا موفقًا
+
+        </h2>
+
+        <p>
+
+            نرجو الاطلاع على تفاصيل خطة استلام الكتب
+            والالتزام بالتعليمات والمواعيد المحددة.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- زر العودة -->
+
+    <a
+
+        href="./home.html"
+
+        class="back-button"
+
+    >
+
+        ← العودة إلى دليل أولياء الأمور
+
+    </a>
+
+
+</main>
+
+
+
+<!-- =========================================
+     التذييل
+========================================= -->
+
+<footer class="footer">
+
+    مدرسة مربح الحلقة الثانية بنات
+
+    <br>
+
+    بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
+
+</footer>
+
+
+</body>
+
+</html>
