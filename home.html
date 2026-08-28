@@ -12,6 +12,7 @@
 مَرْجِعُ أَوْلِيَاءِ الأُمُورِ | مدرسة مربح الحلقة الثانية بنات
 </title>
 
+
 <style>
 
 /* =========================================
@@ -19,28 +20,34 @@
 ========================================= */
 
 @font-face {
+
     font-family: "Sakkal Majalla";
+
     src: local("Sakkal Majalla");
+
 }
 
 :root {
 
     --brown-dark: #5A4032;
+
     --brown-deep: #463026;
+
     --brown: #765544;
+
     --brown-light: #92705B;
 
     --gold: #C6A65B;
+
     --gold-light: #E8D5A3;
 
     --cream: #FAF8F3;
+
     --white: #FFFFFF;
 
     --text: #403831;
 
     --burgundy: #7A2837;
-
-    --green: #126B4F;
 
 }
 
@@ -50,13 +57,19 @@
 ========================================= */
 
 * {
+
     box-sizing: border-box;
+
     margin: 0;
+
     padding: 0;
+
 }
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -175,148 +188,6 @@ body {
     font-size: 22px;
 
     margin-top: 5px;
-
-}
-
-
-/* =========================================
-   ⭐ عداد موعد دوام الطالبات
-========================================= */
-
-.countdown-section {
-
-    width: 92%;
-
-    max-width: 1100px;
-
-    margin: 25px auto 0;
-
-    padding: 18px 15px 20px;
-
-    text-align: center;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,0.98),
-            rgba(250,248,243,0.98)
-        );
-
-    border:
-
-        1px solid
-        rgba(198,166,91,0.75);
-
-    border-top:
-
-        4px solid
-        var(--gold);
-
-    border-radius: 20px;
-
-    box-shadow:
-
-        0 7px 22px
-        rgba(0,0,0,0.12);
-
-}
-
-
-.countdown-heading {
-
-    color:
-        var(--burgundy);
-
-    font-size:
-        clamp(24px,4vw,32px);
-
-    font-weight:
-        bold;
-
-    margin-bottom: 10px;
-
-}
-
-
-.countdown-date {
-
-    color:
-        var(--brown-dark);
-
-    font-size:
-        clamp(18px,3vw,23px);
-
-    font-weight:
-        bold;
-
-    margin-bottom: 12px;
-
-}
-
-
-.countdown {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 10px;
-
-    flex-wrap: wrap;
-
-}
-
-
-.time-box {
-
-    min-width: 82px;
-
-    padding: 8px 10px;
-
-    background:
-        var(--green);
-
-    color: white;
-
-    border:
-        2px solid var(--gold);
-
-    border-radius: 15px;
-
-    box-shadow:
-        0 5px 15px
-        rgba(0,0,0,0.12);
-
-}
-
-
-.time-number {
-
-    display: block;
-
-    font-family:
-        Arial,
-        sans-serif;
-
-    font-size: 25px;
-
-    font-weight: bold;
-
-    line-height: 1.1;
-
-}
-
-
-.time-label {
-
-    display: block;
-
-    font-size: 17px;
-
-    margin-top: 3px;
 
 }
 
@@ -542,7 +413,7 @@ body {
     max-width: 900px;
 
     margin:
-        0 auto 50px;
+        0 auto 30px;
 
     text-align: center;
 
@@ -574,6 +445,173 @@ body {
     color: #5B544B;
 
     font-size: 21px;
+
+}
+
+
+/* =========================================
+   ⭐ عداد موعد دوام الطالبات
+   موجود في أسفل الصفحة
+========================================= */
+
+.countdown-section {
+
+    width: 92%;
+
+    max-width: 1000px;
+
+    margin:
+        0 auto 50px;
+
+    padding:
+        28px 20px;
+
+    text-align: center;
+
+    background:
+        rgba(255,255,255,0.98);
+
+    border:
+        1px solid rgba(198,166,91,0.75);
+
+    border-top:
+        5px solid var(--gold);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 8px 28px rgba(0,0,0,0.12);
+
+}
+
+
+/* عنوان العداد */
+
+.countdown-title {
+
+    color:
+        var(--burgundy);
+
+    font-size:
+        clamp(28px,5vw,40px);
+
+    font-weight:
+        bold;
+
+    line-height: 1.2;
+
+}
+
+
+/* التاريخ */
+
+.countdown-date {
+
+    color:
+        var(--brown-dark);
+
+    font-size:
+        clamp(22px,4vw,30px);
+
+    font-weight:
+        bold;
+
+    margin-bottom:
+        18px;
+
+}
+
+
+/* صناديق العداد */
+
+.countdown {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    flex-wrap:
+        wrap;
+
+    direction:
+        rtl;
+
+}
+
+
+.time-box {
+
+    min-width:
+        90px;
+
+    padding:
+        10px 12px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--brown-dark),
+            var(--brown-deep)
+        );
+
+    color:
+        white;
+
+    border:
+        2px solid var(--gold);
+
+    border-radius:
+        16px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+.time-number {
+
+    display:
+        block;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size:
+        28px;
+
+    font-weight:
+        bold;
+
+    line-height:
+        1.1;
+
+}
+
+
+.time-label {
+
+    display:
+        block;
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        18px;
+
+    margin-top:
+        4px;
 
 }
 
@@ -701,6 +739,7 @@ body {
 
     }
 
+
     .logo {
 
         width: 62px;
@@ -709,11 +748,13 @@ body {
 
     }
 
+
     .logos {
 
         gap: 10px;
 
     }
+
 
     .welcome {
 
@@ -724,11 +765,13 @@ body {
 
     }
 
+
     .welcome h2 {
 
         font-size: 34px;
 
     }
+
 
     .welcome p {
 
@@ -736,11 +779,13 @@ body {
 
     }
 
+
     .card h3 {
 
         font-size: 25px;
 
     }
+
 
     .card p {
 
@@ -748,50 +793,64 @@ body {
 
     }
 
+
+    /* العداد في الجوال */
+
     .countdown-section {
 
-        margin-top: 18px;
+        width: 92%;
 
         padding:
-            15px 8px 18px;
+            22px 10px;
+
+        margin-bottom:
+            35px;
 
     }
 
-    .countdown-heading {
-
-        font-size: 23px;
-
-    }
-
-    .countdown-date {
-
-        font-size: 18px;
-
-    }
 
     .countdown {
 
-        gap: 5px;
+        gap:
+            6px;
 
     }
+
 
     .time-box {
 
-        min-width: 62px;
+        min-width:
+            68px;
 
-        padding: 6px 5px;
+        padding:
+            7px 5px;
+
+        border-radius:
+            12px;
 
     }
+
 
     .time-number {
 
-        font-size: 20px;
+        font-size:
+            21px;
 
     }
 
+
     .time-label {
 
-        font-size: 14px;
+        font-size:
+            14px;
+
+    }
+
+
+    .countdown-date {
+
+        margin-bottom:
+            12px;
 
     }
 
@@ -799,14 +858,15 @@ body {
 
 
 /* =========================================
-   تحسين الحركة
+   تقليل الحركة
 ========================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
     html {
 
-        scroll-behavior: auto;
+        scroll-behavior:
+            auto;
 
     }
 
@@ -816,13 +876,15 @@ body {
     .closing,
     .countdown-section {
 
-        animation: none;
+        animation:
+            none;
 
     }
 
     .card {
 
-        transition: none;
+        transition:
+            none;
 
     }
 
@@ -884,12 +946,294 @@ body {
 
 
 <!-- =========================================
-     ⭐ عداد موعد دوام الطالبات
+     الترحيب
+========================================= -->
+
+<section class="welcome">
+
+    <h2>
+
+        أَهْلًا وَسَهْلًا بِأَوْلِيَاءِ أُمُورِ طَالِبَاتِنَا 🌷
+
+    </h2>
+
+
+    <p>
+
+        نُرَحِّبُ بِكُمْ فِي مَرْجِعِنَا
+        الإِلِكْتُرُونِيِّ الَّذِي
+        أُعِدَّ لِيَكُونَ دَلِيلًا
+        مُبَسَّطًا وَشَامِلًا
+        لِبِدَايَةِ عَامٍ دِرَاسِيٍّ
+        مُوَفَّقٍ.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================
+     عنوان الدليل
+========================================= -->
+
+<div class="section-heading">
+
+    <h2>
+
+        دَلِيلُ أَوْلِيَاءِ الأُمُورِ
+
+    </h2>
+
+    <span></span>
+
+</div>
+
+
+
+<!-- =========================================
+     بطاقات الأقسام
+========================================= -->
+
+<section class="cards">
+
+
+    <a
+        href="./about.html"
+        class="card"
+    >
+
+        <div class="icon">
+            🏫
+        </div>
+
+        <h3>
+            مَنْ نَحْنُ؟
+        </h3>
+
+        <p>
+            تَعَرَّفُوا عَلَى الْمَدْرَسَةِ
+            وَرُؤْيَتِهَا وَرِسَالَتِهَا.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./preparation.html"
+        class="card"
+    >
+
+        <div class="icon">
+            🎒
+        </div>
+
+        <h3>
+            الاسْتِعْدَادُ لِلْعَامِ
+        </h3>
+
+        <p>
+            كُلُّ مَا تَحْتَاجُهُ
+            الطَّالِبَةُ قَبْلَ بَدْءِ
+            الدِّرَاسَةِ.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./dates.html"
+        class="card"
+    >
+
+        <div class="icon">
+            📅
+        </div>
+
+        <h3>
+            الْمَوَاعِيدُ الْمُهِمَّةُ
+        </h3>
+
+        <p>
+            أَهَمُّ التَّوَارِيخِ
+            وَالْفَعَالِيَّاتِ
+            وَالْمُنَاسَبَاتِ.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./uniform.html"
+        class="card"
+    >
+
+        <div class="icon">
+            👗
+        </div>
+
+        <h3>
+            الزِّيُّ الْمَدْرَسِيُّ
+        </h3>
+
+        <p>
+            التَّعْلِيمَاتُ الْخَاصَّةُ
+            بِالزِّيِّ الْمَدْرَسِيِّ
+            وَالْمَظْهَرِ الْعَامِّ.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./attendance.html"
+        class="card"
+    >
+
+        <div class="icon">
+            ⏰
+        </div>
+
+        <h3>
+            الْحُضُورُ وَالانْصِرَافُ
+        </h3>
+
+        <p>
+            مَوَاعِيدُ الدَّوَامِ
+            وَالتَّوْقِيتُ الدِّرَاسِيُّ
+            وَتَعْلِيمَاتُ الحُضُورِ
+            وَالانْصِرَافِ.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./transport.html"
+        class="card"
+    >
+
+        <div class="icon">
+            🚌
+        </div>
+
+        <h3>
+            الْمُوَاصَلَاتُ
+        </h3>
+
+        <p>
+            إِرْشَادَاتٌ وَمَعْلُومَاتٌ
+            تَخُصُّ الْمُوَاصَلَاتِ
+            الْمَدْرَسِيَّةِ.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./learning.html"
+        class="card"
+    >
+
+        <div class="icon">
+            📚
+        </div>
+
+        <h3>
+            التَّعْلِيمُ وَالتَّعَلُّمُ
+        </h3>
+
+        <p>
+            مَعْلُومَاتٌ وَقَنَوَاتٌ
+            تُسَاعِدُ أَوْلِيَاءَ الأُمُورِ
+            عَلَى دَعْمِ تَعَلُّمِ بَنَاتِنَا.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./communication.html"
+        class="card"
+    >
+
+        <div class="icon">
+            📱
+        </div>
+
+        <h3>
+            التَّوَاصُلُ مَعَ الْمَدْرَسَةِ
+        </h3>
+
+        <p>
+            أَسْمَاءُ الْإِدَارِيَّاتِ
+            وَقَنَوَاتُ التَّوَاصُلِ
+            الرَّسْمِيَّةُ.
+        </p>
+
+    </a>
+
+
+    <a
+        href="./faq.html"
+        class="card"
+    >
+
+        <div class="icon">
+            ❓
+        </div>
+
+        <h3>
+            أَسْئِلَةٌ شَائِعَةٌ
+        </h3>
+
+        <p>
+            إِجَابَاتٌ مُخْتَصَرَةٌ
+            عَنْ أَهَمِّ اسْتِفْسَارَاتِ
+            أَوْلِيَاءِ الأُمُورِ.
+        </p>
+
+    </a>
+
+
+</section>
+
+
+
+<!-- =========================================
+     الرسالة الختامية
+========================================= -->
+
+<section class="closing">
+
+    <h2>
+
+        مَعًا نَبْدَأُ عَامًا دِرَاسِيًّا مُلْهِمًا 🤍
+
+    </h2>
+
+
+    <p>
+
+        شَكَرًا لِثِقَتِكُمْ،
+        وَنَتَطَلَّعُ إِلَى شَرَاكَةٍ
+        فَاعِلَةٍ بَيْنَ الْبَيْتِ
+        وَالْمَدْرَسَةِ.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================
+     ⭐ العداد - في أسفل الصفحة
+     فوق التذييل مباشرة
 ========================================= -->
 
 <section class="countdown-section">
 
-    <div class="countdown-heading" id="countdownTitle">
+    <div class="countdown-title">
 
         🎒 موعد دوام الطالبات
 
@@ -898,7 +1242,7 @@ body {
 
     <div class="countdown-date">
 
-        📅 31 أغسطس 2026 — الساعة 7:00 صباحًا
+        31 أغسطس 2026 — الساعة 7:00 صباحًا
 
     </div>
 
@@ -989,295 +1333,6 @@ body {
 
 
 <!-- =========================================
-     الترحيب
-========================================= -->
-
-<section class="welcome">
-
-    <h2>
-
-        أَهْلًا وَسَهْلًا بِأَوْلِيَاءِ أُمُورِ طَالِبَاتِنَا 🌷
-
-    </h2>
-
-
-    <p>
-
-        نُرَحِّبُ بِكُمْ فِي مَرْجِعِنَا
-        الإِلِكْتُرُونِيِّ الَّذِي
-        أُعِدَّ لِيَكُونَ دَلِيلًا
-        مُبَسَّطًا وَشَامِلًا
-        لِبِدَايَةِ عَامٍ دِرَاسِيٍّ
-        مُوَفَّقٍ.
-
-    </p>
-
-</section>
-
-
-
-<!-- =========================================
-     عنوان الدليل
-========================================= -->
-
-<div class="section-heading">
-
-    <h2>
-
-        دَلِيلُ أَوْلِيَاءِ الأُمُورِ
-
-    </h2>
-
-    <span></span>
-
-</div>
-
-
-
-<!-- =========================================
-     بطاقات الأقسام
-========================================= -->
-
-<section class="cards">
-
-
-    <a
-        href="./about.html"
-        class="card"
-    >
-
-        <div class="icon">
-            🏫
-        </div>
-
-        <h3>
-            مَنْ نَحْنُ؟
-        </h3>
-
-        <p>
-            تَعَرَّفُوا عَلَى الْمَدْرَسَةِ
-            وَرُؤْيَتِهَا وَرِسَالَتِهَا.
-        </p>
-
-    </a>
-
-
-
-    <a
-        href="./preparation.html"
-        class="card"
-    >
-
-        <div class="icon">
-            🎒
-        </div>
-
-        <h3>
-            الاسْتِعْدَادُ لِلْعَامِ
-        </h3>
-
-        <p>
-            كُلُّ مَا تَحْتَاجُهُ
-            الطَّالِبَةُ قَبْلَ بَدْءِ
-            الدِّرَاسَةِ.
-        </p>
-
-    </a>
-
-
-
-    <a
-        href="./dates.html"
-        class="card"
-    >
-
-        <div class="icon">
-            📅
-        </div>
-
-        <h3>
-            الْمَوَاعِيدُ الْمُهِمَّةُ
-        </h3>
-
-        <p>
-            أَهَمُّ التَّوَارِيخِ
-            وَالْفَعَالِيَّاتِ
-            وَالْمُنَاسَبَاتِ.
-        </p>
-
-    </a>
-
-
-
-    <a
-        href="./uniform.html"
-        class="card"
-    >
-
-        <div class="icon">
-            👗
-        </div>
-
-        <h3>
-            الزِّيُّ الْمَدْرَسِيُّ
-        </h3>
-
-        <p>
-            التَّعْلِيمَاتُ الْخَاصَّةُ
-            بِالزِّيِّ الْمَدْرَسِيِّ
-            وَالْمَظْهَرِ الْعَامِّ.
-        </p>
-
-    </a>
-
-
-
-    <a
-        href="./attendance.html"
-        class="card"
-    >
-
-        <div class="icon">
-            ⏰
-        </div>
-
-        <h3>
-            الْحُضُورُ وَالانْصِرَافُ
-        </h3>
-
-        <p>
-            مَوَاعِيدُ الدَّوَامِ
-            وَالتَّوْقِيتُ الدِّرَاسِيُّ
-            وَتَعْلِيمَاتُ الحُضُورِ
-            وَالانْصِرَافِ.
-        </p>
-
-    </a>
-
-
-
-    <a
-        href="./transport.html"
-        class="card"
-    >
-
-        <div class="icon">
-            🚌
-        </div>
-
-        <h3>
-            الْمُوَاصَلَاتُ
-        </h3>
-
-        <p>
-            إِرْشَادَاتٌ وَمَعْلُومَاتٌ
-            تَخُصُّ الْمُوَاصَلَاتِ
-            الْمَدْرَسِيَّةِ.
-        </p>
-
-    </a>
-
-
-
-    <a
-        href="./learning.html"
-        class="card"
-    >
-
-        <div class="icon">
-            📚
-        </div>
-
-        <h3>
-            التَّعْلِيمُ وَالتَّعَلُّمُ
-        </h3>
-
-        <p>
-            مَعْلُومَاتٌ وَقَنَوَاتٌ
-            تُسَاعِدُ أَوْلِيَاءَ الأُمُورِ
-            عَلَى دَعْمِ تَعَلُّمِ بَنَاتِنَا.
-        </p>
-
-    </a>
-
-
-
-    <a
-        href="./communication.html"
-        class="card"
-    >
-
-        <div class="icon">
-            📱
-        </div>
-
-        <h3>
-            التَّوَاصُلُ مَعَ الْمَدْرَسَةِ
-        </h3>
-
-        <p>
-            أَسْمَاءُ الْإِدَارِيَّاتِ
-            وَقَنَوَاتُ التَّوَاصُلِ
-            الرَّسْمِيَّةُ.
-        </p>
-
-    </a>
-
-
-
-    <a
-        href="./faq.html"
-        class="card"
-    >
-
-        <div class="icon">
-            ❓
-        </div>
-
-        <h3>
-            أَسْئِلَةٌ شَائِعَةٌ
-        </h3>
-
-        <p>
-            إِجَابَاتٌ مُخْتَصَرَةٌ
-            عَنْ أَهَمِّ اسْتِفْسَارَاتِ
-            أَوْلِيَاءِ الأُمُورِ.
-        </p>
-
-    </a>
-
-
-</section>
-
-
-
-<!-- =========================================
-     الرسالة الختامية
-========================================= -->
-
-<section class="closing">
-
-    <h2>
-
-        مَعًا نَبْدَأُ عَامًا دِرَاسِيًّا مُلْهِمًا 🤍
-
-    </h2>
-
-
-    <p>
-
-        شَكَرًا لِثِقَتِكُمْ،
-        وَنَتَطَلَّعُ إِلَى شَرَاكَةٍ
-        فَاعِلَةٍ بَيْنَ الْبَيْتِ
-        وَالْمَدْرَسَةِ.
-
-    </p>
-
-</section>
-
-
-
-<!-- =========================================
      التذييل
 ========================================= -->
 
@@ -1310,17 +1365,23 @@ body {
 
 
 <!-- =========================================
-     JavaScript - العداد
+     JavaScript
+     تشغيل العداد
 ========================================= -->
 
 <script>
 
 /*
-   موعد دوام الطالبات:
-   31 أغسطس 2026
-   الساعة 7:00 صباحًا
-   بتوقيت الإمارات (+04:00)
+=========================================
+عداد موعد دوام الطالبات
+
+الموعد:
+31 أغسطس 2026
+الساعة: 7:00 صباحًا
+بتوقيت الإمارات +04:00
+=========================================
 */
+
 
 const targetDate =
     new Date(
@@ -1328,42 +1389,67 @@ const targetDate =
     ).getTime();
 
 
+
 function updateCountdown() {
+
 
     const now =
         new Date().getTime();
+
 
     const distance =
         targetDate - now;
 
 
+
     /*
-       إذا وصل موعد الدوام
+    =====================================
+    إذا وصل الموعد
+    =====================================
     */
 
     if (distance <= 0) {
 
+
         document.getElementById("days").textContent =
             "00";
+
 
         document.getElementById("hours").textContent =
             "00";
 
+
         document.getElementById("minutes").textContent =
             "00";
+
 
         document.getElementById("seconds").textContent =
             "00";
 
 
-        document.getElementById("countdownTitle").textContent =
+        document.querySelector(
+            ".countdown-title"
+        ).textContent =
             "🎉 أهلاً بعودة طالباتنا العزيزات";
+
+
+        document.querySelector(
+            ".countdown-date"
+        ).textContent =
+            "بدأ العام الدراسي";
 
 
         return;
 
     }
 
+
+
+    /*
+    =====================================
+    حساب الأيام
+    =====================================
+    */
 
     const days =
         Math.floor(
@@ -1372,29 +1458,66 @@ function updateCountdown() {
         );
 
 
+
+    /*
+    =====================================
+    حساب الساعات
+    =====================================
+    */
+
     const hours =
         Math.floor(
-            (distance %
-            (1000 * 60 * 60 * 24)) /
+            (
+                distance %
+                (1000 * 60 * 60 * 24)
+            )
+            /
             (1000 * 60 * 60)
         );
 
 
+
+    /*
+    =====================================
+    حساب الدقائق
+    =====================================
+    */
+
     const minutes =
         Math.floor(
-            (distance %
-            (1000 * 60 * 60)) /
+            (
+                distance %
+                (1000 * 60 * 60)
+            )
+            /
             (1000 * 60)
         );
 
 
+
+    /*
+    =====================================
+    حساب الثواني
+    =====================================
+    */
+
     const seconds =
         Math.floor(
-            (distance %
-            (1000 * 60)) /
+            (
+                distance %
+                (1000 * 60)
+            )
+            /
             1000
         );
 
+
+
+    /*
+    =====================================
+    عرض النتائج
+    =====================================
+    */
 
     document.getElementById("days").textContent =
         String(days).padStart(2, "0");
@@ -1415,14 +1538,18 @@ function updateCountdown() {
 
 
 /*
-   تشغيل العداد فورًا
+=========================================
+تشغيل العداد فورًا
+=========================================
 */
 
 updateCountdown();
 
 
 /*
-   تحديث كل ثانية
+=========================================
+تحديث العداد كل ثانية
+=========================================
 */
 
 setInterval(
