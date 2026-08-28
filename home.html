@@ -16,7 +16,7 @@
 <style>
 
 /* =========================================
-   الإعدادات العامة
+   الخط والألوان الأساسية
 ========================================= */
 
 @font-face {
@@ -24,14 +24,49 @@
     src: local("Sakkal Majalla");
 }
 
+:root {
+
+    --brown-dark: #5A4032;
+
+    --brown-deep: #463026;
+
+    --brown: #765544;
+
+    --brown-light: #92705B;
+
+    --gold: #C6A65B;
+
+    --gold-light: #E8D5A3;
+
+    --cream: #FAF8F3;
+
+    --white: #FFFFFF;
+
+    --text: #403831;
+
+    --burgundy: #7A2837;
+
+}
+
+
+/* =========================================
+   الإعدادات العامة
+========================================= */
+
 * {
+
     box-sizing: border-box;
+
     margin: 0;
+
     padding: 0;
+
 }
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -41,15 +76,17 @@ body {
         Arial,
         sans-serif;
 
-    color: #26352f;
+    color: var(--text);
 
     line-height: 1.7;
 
     background:
+
         linear-gradient(
-            rgba(250,248,243,0.94),
-            rgba(250,248,243,0.94)
+            rgba(250,248,243,0.95),
+            rgba(250,248,243,0.95)
         ),
+
         url("ministry-logo.png");
 
     background-size: cover;
@@ -70,10 +107,11 @@ body {
 .header {
 
     background:
+
         linear-gradient(
             135deg,
-            rgba(18,107,79,0.98),
-            rgba(11,81,60,0.98)
+            rgba(90,64,50,0.98),
+            rgba(70,48,38,0.98)
         );
 
     color: white;
@@ -83,7 +121,7 @@ body {
     padding: 25px 15px 30px;
 
     border-bottom:
-        5px solid #c6a65b;
+        5px solid var(--gold);
 
 }
 
@@ -116,7 +154,7 @@ body {
     border-radius: 15px;
 
     border:
-        1px solid #c6a65b;
+        1px solid var(--gold);
 
 }
 
@@ -131,7 +169,7 @@ body {
 
 .page-title {
 
-    color: #f0d995;
+    color: var(--gold-light);
 
     font-size:
         clamp(38px,7vw,56px);
@@ -168,7 +206,7 @@ body {
     text-align: center;
 
     background:
-        rgba(255,255,255,0.96);
+        rgba(255,255,255,0.97);
 
     border:
         1px solid rgba(198,166,91,0.70);
@@ -182,7 +220,7 @@ body {
 
 .welcome h2 {
 
-    color: #126b4f;
+    color: var(--brown-dark);
 
     font-size:
         clamp(35px,7vw,54px);
@@ -199,7 +237,7 @@ body {
 
     margin: auto;
 
-    color: #403b35;
+    color: var(--text);
 
     font-size:
         clamp(24px,4vw,34px);
@@ -228,7 +266,7 @@ body {
     text-align: center;
 
     background:
-        rgba(255,255,255,0.96);
+        rgba(255,255,255,0.97);
 
     border-radius: 20px;
 
@@ -239,7 +277,7 @@ body {
 
 .section-heading h2 {
 
-    color: #7a2837;
+    color: var(--burgundy);
 
     font-size:
         clamp(32px,5vw,44px);
@@ -254,7 +292,7 @@ body {
 
     height: 3px;
 
-    background: #c6a65b;
+    background: var(--gold);
 
     margin: 8px auto;
 
@@ -295,13 +333,13 @@ body {
     color: inherit;
 
     background:
-        rgba(255,255,255,0.97);
+        rgba(255,255,255,0.98);
 
     border:
-        1px solid #e0d6c3;
+        1px solid #E0D6C3;
 
     border-top:
-        5px solid #126b4f;
+        5px solid var(--brown-dark);
 
     border-radius: 18px;
 
@@ -325,7 +363,7 @@ body {
         translateY(-7px);
 
     border-top-color:
-        #7a2837;
+        var(--burgundy);
 
     box-shadow:
         0 14px 30px rgba(0,0,0,0.16);
@@ -342,7 +380,7 @@ body {
 
 .card h3 {
 
-    color: #7a2837;
+    color: var(--burgundy);
 
     font-size: 27px;
 
@@ -352,114 +390,11 @@ body {
 
 .card p {
 
-    color: #5b554e;
+    color: #5B554E;
 
     font-size: 19px;
 
     line-height: 1.45;
-
-}
-
-
-/* =========================================
-   العداد
-========================================= */
-
-.countdown-section {
-
-    width: 92%;
-
-    max-width: 1000px;
-
-    margin:
-        10px auto 50px;
-
-    background:
-        rgba(255,255,255,0.97);
-
-    text-align: center;
-
-    padding: 35px 20px;
-
-    border:
-        1px solid #d7c59e;
-
-    border-radius: 25px;
-
-    box-shadow:
-        0 8px 25px rgba(0,0,0,0.12);
-
-}
-
-.countdown-title {
-
-    color: #7a2837;
-
-    font-size: 36px;
-
-    font-weight: bold;
-
-}
-
-.countdown-subtitle {
-
-    color: #625b52;
-
-    font-size: 21px;
-
-}
-
-.countdown {
-
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 12px;
-
-    margin-top: 18px;
-
-}
-
-.time-box {
-
-    width: 105px;
-
-    background: white;
-
-    border:
-        2px solid #c6a65b;
-
-    border-radius: 17px;
-
-    padding: 13px;
-
-    box-shadow:
-        0 5px 18px rgba(0,0,0,0.08);
-
-}
-
-.number {
-
-    display: block;
-
-    color: #126b4f;
-
-    font-size: 42px;
-
-    font-weight: bold;
-
-    line-height: 1;
-
-}
-
-.label {
-
-    color: #6d655c;
-
-    font-size: 18px;
 
 }
 
@@ -483,7 +418,7 @@ body {
         rgba(255,255,255,0.97);
 
     border:
-        1px solid #dfd2b9;
+        1px solid #DFD2B9;
 
     border-radius: 22px;
 
@@ -496,7 +431,7 @@ body {
 
 .closing h2 {
 
-    color: #126b4f;
+    color: var(--brown-dark);
 
     font-size: 35px;
 
@@ -504,7 +439,7 @@ body {
 
 .closing p {
 
-    color: #5b544b;
+    color: #5B544B;
 
     font-size: 21px;
 
@@ -518,7 +453,12 @@ body {
 .footer {
 
     background:
-        rgba(18,107,79,0.98);
+
+        linear-gradient(
+            135deg,
+            rgba(90,64,50,0.98),
+            rgba(70,48,38,0.98)
+        );
 
     color: white;
 
@@ -527,7 +467,7 @@ body {
     padding: 20px;
 
     border-top:
-        4px solid #c6a65b;
+        4px solid var(--gold);
 
     font-size: 19px;
 
@@ -541,7 +481,6 @@ body {
 .welcome,
 .section-heading,
 .card,
-.countdown-section,
 .closing {
 
     animation:
@@ -568,6 +507,50 @@ body {
             translateY(0);
 
     }
+
+}
+
+
+/* =========================================
+   زر العودة للأعلى
+========================================= */
+
+.top-button {
+
+    position: fixed;
+
+    bottom: 20px;
+
+    left: 20px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background:
+        var(--brown-dark);
+
+    color: white;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+    border:
+        2px solid var(--gold);
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.20);
+
+    z-index: 1000;
 
 }
 
@@ -620,21 +603,45 @@ body {
 
     }
 
-    .time-box {
+    .card h3 {
 
-        width: 76px;
-
-    }
-
-    .number {
-
-        font-size: 30px;
+        font-size: 25px;
 
     }
 
-    .label {
+    .card p {
 
-        font-size: 14px;
+        font-size: 18px;
+
+    }
+
+}
+
+
+/* =========================================
+   تحسين الحركة للأجهزة التي تفضل تقليل الحركة
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+
+    }
+
+    .welcome,
+    .section-heading,
+    .card,
+    .closing {
+
+        animation: none;
+
+    }
+
+    .card {
+
+        transition: none;
 
     }
 
@@ -742,13 +749,15 @@ body {
 
 
 <!-- =========================================
-     البطاقات
+     بطاقات الأقسام
 ========================================= -->
 
 <section class="cards">
 
 
-    <!-- من نحن -->
+    <!-- =====================================
+         من نحن
+    ====================================== -->
 
     <a
         href="./about.html"
@@ -772,7 +781,9 @@ body {
 
 
 
-    <!-- الاستعداد -->
+    <!-- =====================================
+         الاستعداد
+    ====================================== -->
 
     <a
         href="./preparation.html"
@@ -797,7 +808,9 @@ body {
 
 
 
-    <!-- المواعيد -->
+    <!-- =====================================
+         المواعيد
+    ====================================== -->
 
     <a
         href="./dates.html"
@@ -822,7 +835,9 @@ body {
 
 
 
-    <!-- الزي -->
+    <!-- =====================================
+         الزي
+    ====================================== -->
 
     <a
         href="./uniform.html"
@@ -847,7 +862,9 @@ body {
 
 
 
-    <!-- الحضور والانصراف -->
+    <!-- =====================================
+         الحضور والانصراف
+    ====================================== -->
 
     <a
         href="./attendance.html"
@@ -865,14 +882,17 @@ body {
         <p>
             مَوَاعِيدُ الدَّوَامِ
             وَالتَّوْقِيتُ الدِّرَاسِيُّ
-            وَتَعْلِيمَاتُ الْحُضُورِ.
+            وَتَعْلِيمَاتُ الحُضُورِ
+            وَالانْصِرَافِ.
         </p>
 
     </a>
 
 
 
-    <!-- المواصلات -->
+    <!-- =====================================
+         المواصلات
+    ====================================== -->
 
     <a
         href="./transport.html"
@@ -897,7 +917,9 @@ body {
 
 
 
-    <!-- التعليم والتعلم -->
+    <!-- =====================================
+         التعليم والتعلم
+    ====================================== -->
 
     <a
         href="./learning.html"
@@ -913,17 +935,18 @@ body {
         </h3>
 
         <p>
-            مَعْلُومَاتٌ تُسَاعِدُ
-            أَوْلِيَاءَ الأُمُورِ
-            عَلَى دَعْمِ تَعَلُّمِ
-            بَنَاتِنَا.
+            مَعْلُومَاتٌ وَقَنَوَاتٌ
+            تُسَاعِدُ أَوْلِيَاءَ الأُمُورِ
+            عَلَى دَعْمِ تَعَلُّمِ بَنَاتِنَا.
         </p>
 
     </a>
 
 
 
-    <!-- التواصل -->
+    <!-- =====================================
+         التواصل
+    ====================================== -->
 
     <a
         href="./communication.html"
@@ -939,16 +962,18 @@ body {
         </h3>
 
         <p>
-            قَنَوَاتُ التَّوَاصُلِ
-            وَالطُّرُقُ الرَّسْمِيَّةُ
-            لِلتَّوَاصُلِ.
+            أَسْمَاءُ الْإِدَارِيَّاتِ
+            وَقَنَوَاتُ التَّوَاصُلِ
+            الرَّسْمِيَّةُ.
         </p>
 
     </a>
 
 
 
-    <!-- الأسئلة الشائعة -->
+    <!-- =====================================
+         الأسئلة الشائعة
+    ====================================== -->
 
     <a
         href="./faq.html"
@@ -971,95 +996,6 @@ body {
 
     </a>
 
-</section>
-
-
-
-<!-- =========================================
-     العداد
-========================================= -->
-
-<section class="countdown-section">
-
-    <div class="countdown-title">
-
-        ⏳ الْعَدُّ التَّنَازُلِيُّ
-
-    </div>
-
-
-    <div class="countdown-subtitle">
-
-        مُتَبَقٍّ عَلَى بَدْءِ الْعَامِ الدِّرَاسِيِّ
-        ٢٠٢٦ – ٢٠٢٧
-
-    </div>
-
-
-    <div class="countdown">
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="days">
-                00
-            </span>
-
-            <span class="label">
-                يَوْم
-            </span>
-
-        </div>
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="hours">
-                00
-            </span>
-
-            <span class="label">
-                سَاعَة
-            </span>
-
-        </div>
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="minutes">
-                00
-            </span>
-
-            <span class="label">
-                دَقِيقَة
-            </span>
-
-        </div>
-
-
-        <div class="time-box">
-
-            <span
-                class="number"
-                id="seconds">
-                00
-            </span>
-
-            <span class="label">
-                ثَانِيَة
-            </span>
-
-        </div>
-
-
-    </div>
 
 </section>
 
@@ -1108,108 +1044,18 @@ body {
 
 
 <!-- =========================================
-     العداد
+     زر العودة للأعلى
 ========================================= -->
 
-<script>
+<a
+    href="#top"
+    class="top-button"
+    aria-label="العودة إلى الأعلى"
+>
 
-const targetDate =
-    new Date(
-        "2026-08-31T00:00:00+04:00"
-    ).getTime();
+    ↑
 
-
-function updateCountdown() {
-
-    const now =
-        new Date().getTime();
-
-
-    const difference =
-        targetDate - now;
-
-
-    if (difference <= 0) {
-
-        document.getElementById("days")
-            .textContent = "00";
-
-        document.getElementById("hours")
-            .textContent = "00";
-
-        document.getElementById("minutes")
-            .textContent = "00";
-
-        document.getElementById("seconds")
-            .textContent = "00";
-
-        return;
-
-    }
-
-
-    const days =
-        Math.floor(
-            difference /
-            (1000 * 60 * 60 * 24)
-        );
-
-
-    const hours =
-        Math.floor(
-            (difference %
-            (1000 * 60 * 60 * 24)) /
-            (1000 * 60 * 60)
-        );
-
-
-    const minutes =
-        Math.floor(
-            (difference %
-            (1000 * 60 * 60)) /
-            (1000 * 60)
-        );
-
-
-    const seconds =
-        Math.floor(
-            (difference %
-            (1000 * 60)) /
-            1000
-        );
-
-
-    document.getElementById("days")
-        .textContent =
-        String(days).padStart(2,"0");
-
-
-    document.getElementById("hours")
-        .textContent =
-        String(hours).padStart(2,"0");
-
-
-    document.getElementById("minutes")
-        .textContent =
-        String(minutes).padStart(2,"0");
-
-
-    document.getElementById("seconds")
-        .textContent =
-        String(seconds).padStart(2,"0");
-
-}
-
-
-updateCountdown();
-
-
-setInterval(
-    updateCountdown,
-    1000
-);
-
-</script>
+</a>
 
 
 </body>
