@@ -1,0 +1,539 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+الحضور والانصراف | مدرسة مربح الحلقة الثانية بنات
+</title>
+
+<style>
+
+@font-face {
+    font-family: "Sakkal Majalla";
+    src: local("Sakkal Majalla");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family:
+        "Sakkal Majalla",
+        Arial,
+        sans-serif;
+
+    color: #26352f;
+
+    line-height: 1.7;
+
+    background:
+        linear-gradient(
+            rgba(250,248,243,0.94),
+            rgba(250,248,243,0.94)
+        ),
+        url("ministry-logo.png");
+
+    background-size: cover;
+
+    background-position: center top;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+}
+
+
+/* =========================================
+   الرأس
+========================================= */
+
+.header {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(18,107,79,0.98),
+            rgba(11,81,60,0.98)
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 15px 30px;
+
+    border-bottom:
+        5px solid #c6a65b;
+
+}
+
+.logos {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 12px;
+
+}
+
+.logo {
+
+    width: 75px;
+
+    height: 75px;
+
+    object-fit: contain;
+
+    background: white;
+
+    padding: 5px;
+
+    border-radius: 15px;
+
+    border:
+        1px solid #c6a65b;
+
+}
+
+.school-name {
+
+    font-size:
+        clamp(25px,5vw,40px);
+
+    font-weight: bold;
+
+}
+
+.page-title {
+
+    color: #f0d995;
+
+    font-size:
+        clamp(34px,7vw,52px);
+
+    font-weight: bold;
+
+    line-height: 1.2;
+
+}
+
+.motto {
+
+    font-size: 21px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================
+   المحتوى
+========================================= */
+
+.content {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: 45px auto 50px;
+
+    padding: 35px 25px;
+
+    background:
+        rgba(255,255,255,0.97);
+
+    border:
+        1px solid #d7c59e;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 8px 28px rgba(0,0,0,0.13);
+
+    text-align: center;
+
+}
+
+.content h2 {
+
+    color: #126b4f;
+
+    font-size:
+        clamp(34px,6vw,48px);
+
+    font-weight: bold;
+
+}
+
+.gold-line {
+
+    width: 110px;
+
+    height: 3px;
+
+    background: #c6a65b;
+
+    margin: 8px auto 20px;
+
+}
+
+.intro {
+
+    color: #5b554e;
+
+    font-size:
+        clamp(21px,4vw,27px);
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   عناوين الصور
+========================================= */
+
+.image-title {
+
+    color: #7a2837;
+
+    font-size:
+        clamp(27px,5vw,36px);
+
+    font-weight: bold;
+
+    margin:
+        35px auto 12px;
+
+}
+
+
+/* =========================================
+   الصور
+========================================= */
+
+.section-image {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    height: auto;
+
+    margin: 15px auto 35px;
+
+    border:
+        2px solid #c6a65b;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.15);
+
+}
+
+
+/* =========================================
+   زر العودة
+========================================= */
+
+.back-button {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding:
+        12px 35px;
+
+    background: #126b4f;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    border:
+        2px solid #c6a65b;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.back-button:hover {
+
+    background: #7a2837;
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =========================================
+   التذييل
+========================================= */
+
+.footer {
+
+    background:
+        rgba(18,107,79,0.98);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-top:
+        4px solid #c6a65b;
+
+    font-size: 19px;
+
+}
+
+
+/* =========================================
+   الجوال
+========================================= */
+
+@media (max-width:600px) {
+
+    body {
+
+        background-attachment:
+            scroll;
+
+    }
+
+    .logo {
+
+        width: 62px;
+
+        height: 62px;
+
+    }
+
+    .logos {
+
+        gap: 10px;
+
+    }
+
+    .content {
+
+        padding:
+            25px 12px 30px;
+
+        margin-top: 25px;
+
+    }
+
+    .content h2 {
+
+        font-size: 34px;
+
+    }
+
+    .intro {
+
+        font-size: 20px;
+
+    }
+
+    .image-title {
+
+        font-size: 28px;
+
+    }
+
+    .section-image {
+
+        border-radius: 12px;
+
+    }
+
+    .back-button {
+
+        font-size: 20px;
+
+        padding:
+            10px 28px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     الرأس
+========================================= -->
+
+<header class="header">
+
+    <div class="logos">
+
+        <img
+            src="moe.png.jfif"
+            class="logo"
+            alt="وزارة التربية والتعليم"
+        >
+
+        <img
+            src="school-logo.png"
+            class="logo"
+            alt="مدرسة مربح الحلقة الثانية بنات"
+        >
+
+    </div>
+
+
+    <div class="school-name">
+
+        مدرسة مربح الحلقة الثانية بنات
+
+    </div>
+
+
+    <div class="page-title">
+
+        الْحُضُورُ وَالانْصِرَافُ
+
+    </div>
+
+
+    <div class="motto">
+
+        بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     المحتوى
+========================================= -->
+
+<main class="content">
+
+    <h2>
+
+        الْحُضُورُ وَالانْصِرَافُ
+
+    </h2>
+
+    <div class="gold-line"></div>
+
+
+    <p class="intro">
+
+        مَوَاعِيدُ الدَّوَامِ وَالتَّوْقِيتُ
+        الدِّرَاسِيُّ وَأَهَمُّ التَّعْلِيمَاتِ
+        الْمُرْتَبِطَةِ بِالْحُضُورِ وَالانْصِرَافِ.
+
+    </p>
+
+
+
+    <!-- توقيت الدوام -->
+
+    <div class="image-title">
+
+        ⏰ تَوْقِيتُ الْحُضُورِ وَالانْصِرَافِ
+
+    </div>
+
+
+    <img
+        src="school-attendance-times.png"
+        class="section-image"
+        alt="توقيت الحضور والانصراف"
+    >
+
+
+
+    <!-- التوقيت الدراسي اليومي -->
+
+    <div class="image-title">
+
+        🕘 التَّوْقِيتُ الدِّرَاسِيُّ الْيَوْمِيُّ
+
+    </div>
+
+
+    <img
+        src="daily-school-schedule.png"
+        class="section-image"
+        alt="التوقيت الدراسي اليومي"
+    >
+
+
+
+    <!-- زر العودة -->
+
+    <a
+        href="./home.html"
+        class="back-button"
+    >
+
+        ← العودة إلى الصفحة الرئيسية
+
+    </a>
+
+</main>
+
+
+
+<!-- =========================================
+     التذييل
+========================================= -->
+
+<footer class="footer">
+
+    مدرسة مربح الحلقة الثانية بنات
+
+    <br>
+
+    بِالْمِيثَاقِ نَبْلُغُ الْآفَاقَ
+
+</footer>
+
+
+</body>
+
+</html>
+```
